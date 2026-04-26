@@ -21,6 +21,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 import static org.neo4j.driver.Values.parameters;
 
@@ -126,7 +129,7 @@ public class Example {
 
         long articlesRead = 0;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonPath))) {
+        try (BufferedReader br = openReader(jsonPath)) {
             String line;
 
             while ((line = br.readLine()) != null) {
@@ -205,7 +208,7 @@ public class Example {
 
         long articlesRead = 0;
 
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonPath))) {
+        try (BufferedReader br = openReader(jsonPath)) {
             String line;
 
             while ((line = br.readLine()) != null) {
@@ -369,6 +372,18 @@ public class Example {
         }
 
         return "generated-author-id:" + name.toLowerCase(Locale.ROOT).replaceAll("\\s+", " ");
+    }
+
+    private static BufferedReader openReader(String source) throws IOException {
+        if (source.startsWith("http://") || source.startsWith("https://")) {
+            System.out.println("Opening remote JSONL stream: " + source);
+            return new BufferedReader(
+                    new InputStreamReader(new URL(source).openStream(), StandardCharsets.UTF_8)
+            );
+        }
+
+        System.out.println("Opening local JSONL file: " + source);
+        return new BufferedReader(new FileReader(source));
     }
 
     private static String getenv(String key, String defaultValue) {
