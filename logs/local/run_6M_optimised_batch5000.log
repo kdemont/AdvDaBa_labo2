@@ -1,0 +1,267 @@
+ Network advdaba_labo2_internal  Creating
+ Network advdaba_labo2_internal  Created
+ Container advdaba_labo2-db-1  Creating
+ Container advdaba_labo2-db-1  Created
+ Container advdaba_labo2-app-1  Creating
+ Container advdaba_labo2-app-1  Created
+Attaching to app-1, db-1
+db-1  | Warning: Folder mounted to "/logs" is not writable from inside container. Changing folder owner to neo4j.
+db-1  | Warning: Folder mounted to "/data" is not writable from inside container. Changing folder owner to neo4j.
+app-1  | [INFO] Scanning for projects...
+app-1  | [WARNING] 
+app-1  | [WARNING] Some problems were encountered while building the effective model for icosys:advDB:jar:1.0-SNAPSHOT
+app-1  | [WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 45, column 22
+app-1  | [WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 95, column 21
+app-1  | [WARNING] 
+app-1  | [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+app-1  | [WARNING] 
+app-1  | [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+app-1  | [WARNING] 
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+app-1  | Progress (1): 3.1 kBProgress (1): 7.7 kBProgress (2): 7.7 kB | 4.6 kBProgress (2): 7.7 kB | 9.7 kBProgress (2): 12 kB | 9.7 kB Progress (2): 17 kB | 9.7 kBProgress (2): 17 kB | 14 kB Progress (2): 20 kB | 14 kBProgress (2): 21 kB | 14 kB                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 31 kB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 42 kB/s)
+app-1  | [INFO] 
+app-1  | [INFO] ----------------------------< icosys:advDB >----------------------------
+app-1  | [INFO] Building advDB 1.0-SNAPSHOT
+app-1  | [INFO]   from pom.xml
+app-1  | [INFO] --------------------------------[ jar ]---------------------------------
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar
+app-1  | Progress (1): 0.9/6.4 kBProgress (1): 2.3/6.4 kBProgress (1): 3.6/6.4 kBProgress (1): 5.0/6.4 kBProgress (1): 6.4/6.4 kBProgress (1): 6.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar (6.4 kB at 156 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+app-1  | Progress (1): 0.9/14 kBProgress (2): 0.9/14 kB | 0.9/312 kBProgress (2): 2.3/14 kB | 0.9/312 kBProgress (2): 3.6/14 kB | 0.9/312 kBProgress (2): 3.6/14 kB | 2.3/312 kBProgress (2): 5.0/14 kB | 2.3/312 kBProgress (2): 5.0/14 kB | 3.6/312 kBProgress (2): 6.4/14 kB | 3.6/312 kBProgress (2): 6.4/14 kB | 5.0/312 kBProgress (2): 7.7/14 kB | 5.0/312 kBProgress (2): 7.7/14 kB | 6.4/312 kBProgress (2): 9.1/14 kB | 6.4/312 kBProgress (2): 9.1/14 kB | 7.7/312 kBProgress (2): 9.1/14 kB | 8.2/312 kBProgress (2): 10/14 kB | 8.2/312 kB Progress (2): 10/14 kB | 9.6/312 kBProgress (2): 10/14 kB | 11/312 kB Progress (2): 12/14 kB | 11/312 kBProgress (2): 13/14 kB | 11/312 kBProgress (2): 13/14 kB | 12/312 kBProgress (2): 14 kB | 12/312 kB   Progress (2): 14 kB | 14/312 kBProgress (2): 14 kB | 15/312 kBProgress (2): 14 kB | 16/312 kBProgress (2): 14 kB | 18/312 kBProgress (2): 14 kB | 19/312 kBProgress (2): 14 kB | 21/312 kBProgress (2): 14 kB | 22/312 kBProgress (2): 14 kB | 23/312 kBProgress (2): 14 kB | 25/312 kBProgress (2): 14 kB | 26/312 kBProgress (2): 14 kB | 27/312 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 220 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar
+app-1  | Progress (1): 29/312 kBProgress (1): 30/312 kBProgress (1): 31/312 kBProgress (1): 33/312 kBProgress (1): 34/312 kBProgress (1): 36/312 kBProgress (1): 37/312 kBProgress (1): 38/312 kBProgress (1): 40/312 kBProgress (1): 44/312 kBProgress (1): 48/312 kBProgress (1): 52/312 kBProgress (1): 57/312 kBProgress (1): 61/312 kBProgress (1): 65/312 kBProgress (1): 69/312 kBProgress (1): 74/312 kBProgress (1): 78/312 kBProgress (1): 82/312 kBProgress (1): 86/312 kBProgress (1): 90/312 kBProgress (1): 95/312 kBProgress (1): 99/312 kBProgress (1): 103/312 kBProgress (1): 107/312 kBProgress (1): 112/312 kBProgress (1): 116/312 kBProgress (1): 120/312 kBProgress (1): 124/312 kBProgress (1): 128/312 kBProgress (1): 133/312 kBProgress (1): 137/312 kBProgress (1): 139/312 kBProgress (1): 143/312 kBProgress (1): 148/312 kBProgress (1): 152/312 kBProgress (1): 156/312 kBProgress (2): 156/312 kB | 0.9/6.8 kBProgress (2): 156/312 kB | 2.3/6.8 kBProgress (2): 160/312 kB | 2.3/6.8 kBProgress (2): 160/312 kB | 3.6/6.8 kBProgress (2): 165/312 kB | 3.6/6.8 kBProgress (2): 165/312 kB | 5.0/6.8 kBProgress (3): 165/312 kB | 5.0/6.8 kB | 0.9/3.8 kBProgress (3): 165/312 kB | 6.4/6.8 kB | 0.9/3.8 kBProgress (3): 169/312 kB | 6.4/6.8 kB | 0.9/3.8 kBProgress (3): 169/312 kB | 6.8 kB | 0.9/3.8 kB    Progress (3): 169/312 kB | 6.8 kB | 2.3/3.8 kBProgress (3): 169/312 kB | 6.8 kB | 3.6/3.8 kBProgress (3): 173/312 kB | 6.8 kB | 3.6/3.8 kBProgress (3): 173/312 kB | 6.8 kB | 3.8 kB    Progress (3): 177/312 kB | 6.8 kB | 3.8 kB                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 75 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar
+app-1  | Progress (2): 182/312 kB | 3.8 kBProgress (3): 182/312 kB | 3.8 kB | 0.9/303 kBProgress (3): 182/312 kB | 3.8 kB | 2.3/303 kBProgress (3): 186/312 kB | 3.8 kB | 2.3/303 kBProgress (3): 186/312 kB | 3.8 kB | 3.6/303 kBProgress (3): 190/312 kB | 3.8 kB | 3.6/303 kBProgress (3): 190/312 kB | 3.8 kB | 5.0/303 kBProgress (3): 190/312 kB | 3.8 kB | 6.4/303 kBProgress (3): 194/312 kB | 3.8 kB | 6.4/303 kBProgress (3): 194/312 kB | 3.8 kB | 7.7/303 kBProgress (3): 198/312 kB | 3.8 kB | 7.7/303 kBProgress (3): 198/312 kB | 3.8 kB | 9.1/303 kBProgress (3): 198/312 kB | 3.8 kB | 10/303 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar (3.8 kB at 39 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar
+app-1  | Progress (2): 198/312 kB | 12/303 kBProgress (2): 203/312 kB | 12/303 kBProgress (2): 203/312 kB | 13/303 kBProgress (2): 207/312 kB | 13/303 kBProgress (2): 207/312 kB | 15/303 kBProgress (2): 207/312 kB | 16/303 kBProgress (2): 207/312 kB | 17/303 kBProgress (2): 223/312 kB | 17/303 kBProgress (2): 223/312 kB | 19/303 kBProgress (2): 223/312 kB | 20/303 kBProgress (2): 223/312 kB | 21/303 kBProgress (2): 223/312 kB | 23/303 kBProgress (2): 223/312 kB | 24/303 kBProgress (2): 223/312 kB | 25/303 kBProgress (2): 240/312 kB | 25/303 kBProgress (2): 240/312 kB | 26/303 kBProgress (2): 240/312 kB | 27/303 kBProgress (2): 240/312 kB | 29/303 kBProgress (2): 240/312 kB | 30/303 kBProgress (2): 240/312 kB | 31/303 kBProgress (3): 240/312 kB | 31/303 kB | 0.9/176 kBProgress (3): 240/312 kB | 33/303 kB | 0.9/176 kBProgress (3): 240/312 kB | 33/303 kB | 2.3/176 kBProgress (3): 240/312 kB | 34/303 kB | 2.3/176 kBProgress (3): 240/312 kB | 34/303 kB | 3.6/176 kBProgress (3): 240/312 kB | 36/303 kB | 3.6/176 kBProgress (3): 240/312 kB | 36/303 kB | 5.0/176 kBProgress (3): 240/312 kB | 36/303 kB | 6.4/176 kBProgress (3): 240/312 kB | 40/303 kB | 6.4/176 kBProgress (3): 256/312 kB | 40/303 kB | 6.4/176 kBProgress (3): 256/312 kB | 40/303 kB | 7.7/176 kBProgress (3): 256/312 kB | 40/303 kB | 9.1/176 kBProgress (3): 256/312 kB | 44/303 kB | 9.1/176 kBProgress (3): 256/312 kB | 44/303 kB | 10/176 kB Progress (3): 256/312 kB | 44/303 kB | 12/176 kBProgress (3): 256/312 kB | 48/303 kB | 12/176 kBProgress (3): 256/312 kB | 48/303 kB | 12/176 kBProgress (3): 270/312 kB | 48/303 kB | 12/176 kBProgress (3): 270/312 kB | 48/303 kB | 14/176 kBProgress (3): 270/312 kB | 52/303 kB | 14/176 kBProgress (3): 270/312 kB | 52/303 kB | 15/176 kBProgress (3): 270/312 kB | 52/303 kB | 16/176 kBProgress (3): 270/312 kB | 57/303 kB | 16/176 kBProgress (3): 270/312 kB | 57/303 kB | 18/176 kBProgress (3): 270/312 kB | 57/303 kB | 19/176 kBProgress (3): 270/312 kB | 57/303 kB | 21/176 kBProgress (3): 270/312 kB | 57/303 kB | 22/176 kBProgress (3): 270/312 kB | 61/303 kB | 22/176 kBProgress (3): 270/312 kB | 61/303 kB | 23/176 kBProgress (3): 287/312 kB | 61/303 kB | 23/176 kBProgress (3): 287/312 kB | 61/303 kB | 25/176 kBProgress (3): 287/312 kB | 61/303 kB | 26/176 kBProgress (3): 287/312 kB | 61/303 kB | 27/176 kBProgress (3): 287/312 kB | 61/303 kB | 29/176 kBProgress (3): 287/312 kB | 65/303 kB | 29/176 kBProgress (3): 287/312 kB | 65/303 kB | 30/176 kBProgress (3): 303/312 kB | 65/303 kB | 30/176 kBProgress (3): 303/312 kB | 65/303 kB | 31/176 kBProgress (3): 303/312 kB | 65/303 kB | 33/176 kBProgress (3): 303/312 kB | 69/303 kB | 33/176 kBProgress (3): 303/312 kB | 69/303 kB | 34/176 kBProgress (3): 303/312 kB | 69/303 kB | 36/176 kBProgress (3): 303/312 kB | 69/303 kB | 37/176 kBProgress (3): 312 kB | 69/303 kB | 37/176 kB    Progress (3): 312 kB | 69/303 kB | 38/176 kBProgress (3): 312 kB | 74/303 kB | 38/176 kBProgress (3): 312 kB | 74/303 kB | 40/176 kBProgress (3): 312 kB | 78/303 kB | 40/176 kBProgress (3): 312 kB | 78/303 kB | 41/176 kBProgress (3): 312 kB | 82/303 kB | 41/176 kBProgress (3): 312 kB | 82/303 kB | 42/176 kBProgress (3): 312 kB | 82/303 kB | 44/176 kBProgress (3): 312 kB | 86/303 kB | 44/176 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar (312 kB at 2.7 MB/s)
+app-1  | Progress (2): 86/303 kB | 45/176 kBProgress (2): 91/303 kB | 45/176 kBProgress (2): 91/303 kB | 47/176 kBProgress (2): 91/303 kB | 48/176 kBProgress (2): 95/303 kB | 48/176 kBProgress (2): 95/303 kB | 49/176 kBProgress (2): 95/303 kB | 51/176 kBProgress (2): 99/303 kB | 51/176 kBProgress (2): 99/303 kB | 52/176 kBProgress (2): 99/303 kB | 53/176 kBProgress (2): 103/303 kB | 53/176 kBProgress (2): 103/303 kB | 55/176 kBProgress (2): 103/303 kB | 59/176 kBProgress (2): 107/303 kB | 59/176 kBProgress (2): 107/303 kB | 63/176 kBProgress (2): 112/303 kB | 63/176 kBProgress (2): 116/303 kB | 63/176 kBProgress (2): 120/303 kB | 63/176 kBProgress (2): 123/303 kB | 63/176 kBProgress (2): 127/303 kB | 63/176 kBProgress (2): 131/303 kB | 63/176 kBProgress (2): 131/303 kB | 66/176 kBProgress (2): 136/303 kB | 66/176 kBProgress (2): 140/303 kB | 66/176 kBProgress (2): 144/303 kB | 66/176 kBProgress (2): 148/303 kB | 66/176 kBProgress (2): 152/303 kB | 66/176 kBProgress (2): 157/303 kB | 66/176 kBProgress (2): 161/303 kB | 66/176 kBProgress (2): 165/303 kB | 66/176 kBProgress (2): 165/303 kB | 70/176 kBProgress (2): 169/303 kB | 70/176 kBProgress (2): 169/303 kB | 74/176 kBProgress (2): 169/303 kB | 78/176 kBProgress (2): 174/303 kB | 78/176 kBProgress (2): 178/303 kB | 78/176 kBProgress (2): 182/303 kB | 78/176 kBProgress (2): 182/303 kB | 82/176 kBProgress (2): 186/303 kB | 82/176 kBProgress (2): 186/303 kB | 87/176 kBProgress (2): 186/303 kB | 91/176 kBProgress (2): 191/303 kB | 91/176 kBProgress (2): 195/303 kB | 91/176 kBProgress (2): 199/303 kB | 91/176 kBProgress (2): 203/303 kB | 91/176 kBProgress (2): 203/303 kB | 95/176 kBProgress (2): 203/303 kB | 99/176 kBProgress (2): 220/303 kB | 99/176 kBProgress (2): 220/303 kB | 104/176 kBProgress (2): 220/303 kB | 108/176 kBProgress (2): 220/303 kB | 112/176 kBProgress (2): 236/303 kB | 112/176 kBProgress (2): 236/303 kB | 116/176 kBProgress (2): 236/303 kB | 121/176 kBProgress (2): 252/303 kB | 121/176 kBProgress (2): 254/303 kB | 121/176 kBProgress (2): 254/303 kB | 125/176 kBProgress (2): 254/303 kB | 129/176 kBProgress (2): 270/303 kB | 129/176 kBProgress (2): 270/303 kB | 133/176 kBProgress (2): 270/303 kB | 137/176 kBProgress (3): 270/303 kB | 137/176 kB | 0.9/353 kBProgress (3): 270/303 kB | 137/176 kB | 2.3/353 kBProgress (3): 270/303 kB | 142/176 kB | 2.3/353 kBProgress (3): 270/303 kB | 142/176 kB | 3.6/353 kBProgress (3): 270/303 kB | 142/176 kB | 5.0/353 kBProgress (3): 287/303 kB | 142/176 kB | 5.0/353 kBProgress (3): 287/303 kB | 142/176 kB | 6.4/353 kBProgress (3): 287/303 kB | 142/176 kB | 7.7/353 kBProgress (3): 287/303 kB | 146/176 kB | 7.7/353 kBProgress (3): 287/303 kB | 146/176 kB | 9.1/353 kBProgress (3): 303/303 kB | 146/176 kB | 9.1/353 kBProgress (3): 303/303 kB | 146/176 kB | 10/353 kB Progress (3): 303 kB | 146/176 kB | 10/353 kB    Progress (3): 303 kB | 150/176 kB | 10/353 kBProgress (3): 303 kB | 150/176 kB | 12/353 kBProgress (3): 303 kB | 150/176 kB | 12/353 kBProgress (3): 303 kB | 150/176 kB | 14/353 kBProgress (3): 303 kB | 154/176 kB | 14/353 kBProgress (3): 303 kB | 154/176 kB | 15/353 kBProgress (3): 303 kB | 154/176 kB | 16/353 kBProgress (3): 303 kB | 159/176 kB | 16/353 kBProgress (3): 303 kB | 159/176 kB | 18/353 kBProgress (3): 303 kB | 159/176 kB | 19/353 kBProgress (3): 303 kB | 163/176 kB | 19/353 kBProgress (3): 303 kB | 163/176 kB | 21/353 kBProgress (3): 303 kB | 163/176 kB | 22/353 kBProgress (3): 303 kB | 163/176 kB | 23/353 kBProgress (3): 303 kB | 167/176 kB | 23/353 kBProgress (3): 303 kB | 167/176 kB | 25/353 kBProgress (3): 303 kB | 167/176 kB | 26/353 kB                                             Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar (303 kB at 2.4 MB/s)
+app-1  | Progress (2): 167/176 kB | 27/353 kBProgress (2): 171/176 kB | 27/353 kBProgress (2): 175/176 kB | 27/353 kBProgress (3): 175/176 kB | 27/353 kB | 0.9/324 kBProgress (3): 176 kB | 27/353 kB | 0.9/324 kB    Progress (3): 176 kB | 29/353 kB | 0.9/324 kBProgress (3): 176 kB | 30/353 kB | 0.9/324 kBProgress (3): 176 kB | 30/353 kB | 2.3/324 kBProgress (3): 176 kB | 30/353 kB | 3.6/324 kBProgress (3): 176 kB | 31/353 kB | 3.6/324 kBProgress (3): 176 kB | 33/353 kB | 3.6/324 kBProgress (3): 176 kB | 34/353 kB | 3.6/324 kBProgress (3): 176 kB | 34/353 kB | 5.0/324 kBProgress (3): 176 kB | 36/353 kB | 5.0/324 kBProgress (3): 176 kB | 37/353 kB | 5.0/324 kBProgress (3): 176 kB | 37/353 kB | 6.4/324 kBProgress (3): 176 kB | 38/353 kB | 6.4/324 kBProgress (3): 176 kB | 38/353 kB | 7.7/324 kBProgress (3): 176 kB | 40/353 kB | 7.7/324 kBProgress (3): 176 kB | 40/353 kB | 8.2/324 kBProgress (3): 176 kB | 41/353 kB | 8.2/324 kBProgress (3): 176 kB | 42/353 kB | 8.2/324 kBProgress (3): 176 kB | 42/353 kB | 9.6/324 kBProgress (3): 176 kB | 42/353 kB | 11/324 kB Progress (3): 176 kB | 44/353 kB | 11/324 kBProgress (3): 176 kB | 44/353 kB | 12/324 kBProgress (3): 176 kB | 44/353 kB | 14/324 kBProgress (3): 176 kB | 45/353 kB | 14/324 kBProgress (3): 176 kB | 45/353 kB | 15/324 kBProgress (3): 176 kB | 45/353 kB | 16/324 kBProgress (3): 176 kB | 47/353 kB | 16/324 kBProgress (3): 176 kB | 47/353 kB | 18/324 kBProgress (3): 176 kB | 48/353 kB | 18/324 kBProgress (3): 176 kB | 48/353 kB | 19/324 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar (176 kB at 1.3 MB/s)
+app-1  | Progress (2): 48/353 kB | 21/324 kBProgress (2): 49/353 kB | 21/324 kBProgress (2): 49/353 kB | 22/324 kBProgress (2): 49/353 kB | 23/324 kBProgress (2): 49/353 kB | 25/324 kBProgress (2): 49/353 kB | 26/324 kBProgress (2): 53/353 kB | 26/324 kBProgress (2): 58/353 kB | 26/324 kBProgress (2): 62/353 kB | 26/324 kBProgress (2): 66/353 kB | 26/324 kBProgress (2): 66/353 kB | 27/324 kBProgress (2): 70/353 kB | 27/324 kBProgress (2): 70/353 kB | 29/324 kBProgress (2): 70/353 kB | 30/324 kBProgress (2): 75/353 kB | 30/324 kBProgress (2): 75/353 kB | 31/324 kBProgress (2): 75/353 kB | 33/324 kBProgress (2): 75/353 kB | 34/324 kBProgress (2): 75/353 kB | 36/324 kBProgress (2): 75/353 kB | 37/324 kBProgress (2): 79/353 kB | 37/324 kBProgress (2): 79/353 kB | 38/324 kBProgress (2): 79/353 kB | 40/324 kBProgress (2): 79/353 kB | 41/324 kBProgress (2): 79/353 kB | 42/324 kBProgress (2): 79/353 kB | 44/324 kBProgress (2): 79/353 kB | 45/324 kBProgress (2): 79/353 kB | 47/324 kBProgress (2): 83/353 kB | 47/324 kBProgress (2): 83/353 kB | 51/324 kBProgress (2): 87/353 kB | 51/324 kBProgress (2): 87/353 kB | 55/324 kBProgress (2): 92/353 kB | 55/324 kBProgress (2): 92/353 kB | 59/324 kBProgress (2): 92/353 kB | 63/324 kBProgress (2): 96/353 kB | 63/324 kBProgress (2): 100/353 kB | 63/324 kBProgress (2): 104/353 kB | 63/324 kBProgress (2): 108/353 kB | 63/324 kBProgress (2): 113/353 kB | 63/324 kBProgress (2): 117/353 kB | 63/324 kBProgress (2): 121/353 kB | 63/324 kBProgress (2): 121/353 kB | 68/324 kBProgress (2): 121/353 kB | 72/324 kBProgress (2): 121/353 kB | 76/324 kBProgress (2): 125/353 kB | 76/324 kBProgress (2): 125/353 kB | 80/324 kBProgress (2): 125/353 kB | 85/324 kBProgress (2): 130/353 kB | 85/324 kBProgress (2): 130/353 kB | 89/324 kBProgress (2): 130/353 kB | 93/324 kBProgress (2): 130/353 kB | 97/324 kBProgress (2): 134/353 kB | 97/324 kBProgress (2): 134/353 kB | 102/324 kBProgress (2): 134/353 kB | 106/324 kBProgress (2): 138/353 kB | 106/324 kBProgress (2): 138/353 kB | 110/324 kBProgress (2): 142/353 kB | 110/324 kBProgress (2): 142/353 kB | 114/324 kBProgress (2): 142/353 kB | 118/324 kBProgress (2): 143/353 kB | 118/324 kBProgress (2): 143/353 kB | 123/324 kBProgress (2): 148/353 kB | 123/324 kBProgress (2): 152/353 kB | 123/324 kBProgress (2): 156/353 kB | 123/324 kBProgress (2): 160/353 kB | 123/324 kBProgress (2): 160/353 kB | 127/324 kBProgress (2): 165/353 kB | 127/324 kBProgress (2): 169/353 kB | 127/324 kBProgress (2): 173/353 kB | 127/324 kBProgress (2): 173/353 kB | 131/324 kBProgress (2): 177/353 kB | 131/324 kBProgress (2): 177/353 kB | 135/324 kBProgress (2): 181/353 kB | 135/324 kBProgress (2): 181/353 kB | 139/324 kBProgress (2): 186/353 kB | 139/324 kBProgress (2): 186/353 kB | 143/324 kBProgress (2): 186/353 kB | 148/324 kBProgress (2): 190/353 kB | 148/324 kBProgress (2): 190/353 kB | 152/324 kBProgress (2): 190/353 kB | 156/324 kBProgress (2): 194/353 kB | 156/324 kBProgress (2): 194/353 kB | 160/324 kBProgress (2): 198/353 kB | 160/324 kBProgress (2): 198/353 kB | 165/324 kBProgress (2): 203/353 kB | 165/324 kBProgress (2): 207/353 kB | 165/324 kBProgress (2): 207/353 kB | 169/324 kBProgress (2): 211/353 kB | 169/324 kBProgress (2): 211/353 kB | 173/324 kBProgress (2): 215/353 kB | 173/324 kBProgress (2): 215/353 kB | 177/324 kBProgress (2): 215/353 kB | 182/324 kBProgress (2): 232/353 kB | 182/324 kBProgress (2): 232/353 kB | 186/324 kBProgress (2): 232/353 kB | 190/324 kBProgress (2): 232/353 kB | 194/324 kBProgress (2): 232/353 kB | 198/324 kBProgress (2): 248/353 kB | 198/324 kBProgress (2): 248/353 kB | 203/324 kBProgress (2): 248/353 kB | 207/324 kBProgress (2): 248/353 kB | 211/324 kBProgress (2): 248/353 kB | 215/324 kBProgress (2): 248/353 kB | 232/324 kBProgress (2): 264/353 kB | 232/324 kBProgress (2): 264/353 kB | 248/324 kBProgress (2): 274/353 kB | 248/324 kBProgress (2): 291/353 kB | 248/324 kBProgress (2): 291/353 kB | 265/324 kBProgress (2): 291/353 kB | 270/324 kBProgress (2): 307/353 kB | 270/324 kBProgress (2): 307/353 kB | 287/324 kBProgress (2): 324/353 kB | 287/324 kBProgress (2): 324/353 kB | 303/324 kBProgress (2): 340/353 kB | 303/324 kBProgress (2): 340/353 kB | 319/324 kBProgress (2): 340/353 kB | 324 kB    Progress (2): 353 kB | 324 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar (353 kB at 2.0 MB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar (324 kB at 1.8 MB/s)
+app-1  | [INFO] 
+app-1  | [INFO] --- exec:3.6.3:java (default-cli) @ advDB ---
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom
+app-1  | Progress (1): 838 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom (2.2 kB at 62 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom
+app-1  | Progress (1): 752 BProgress (1): 2.3 kBProgress (1): 4.0 kBProgress (1): 9.1 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom (25 kB at 389 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom
+app-1  | Progress (1): 708 BProgress (1): 1.9 kBProgress (1): 5.5 kBProgress (1): 9.7 kBProgress (1): 14 kB Progress (1): 19 kBProgress (1): 23 kBProgress (1): 27 kBProgress (1): 28 kBProgress (1): 32 kBProgress (1): 35 kBProgress (1): 38 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 48 kBProgress (1): 48 kBProgress (1): 53 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom (53 kB at 1.8 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom
+app-1  | Progress (1): 739 BProgress (1): 2.1 kBProgress (1): 4.0 kBProgress (1): 5.9 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom (24 kB at 713 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom
+app-1  | Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom (5.6 kB at 153 kB/s)
+db-1   | Changed password for user 'neo4j'. IMPORTANT: this change will only take effect if performed before the database is started for the first time.
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom
+app-1  | Progress (1): 835 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom (2.2 kB at 77 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+app-1  | Progress (1): 976 BProgress (1): 4.3 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 427 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+app-1  | Progress (1): 814 BProgress (1): 2.6 kBProgress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 137 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+app-1  | Progress (1): 692 BProgress (1): 2.5 kBProgress (1): 6.4 kBProgress (1): 8.9 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 975 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom
+app-1  | Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom (5.6 kB at 182 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom
+app-1  | Progress (1): 757 BProgress (1): 2.2 kBProgress (1): 4.0 kBProgress (1): 6.5 kBProgress (1): 9.8 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom (11 kB at 264 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom
+app-1  | Progress (1): 700 BProgress (1): 1.9 kBProgress (1): 3.2 kBProgress (1): 4.7 kBProgress (1): 6.8 kBProgress (1): 9.4 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 19 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 32 kBProgress (1): 32 kBProgress (1): 36 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 46 kBProgress (1): 50 kBProgress (1): 52 kBProgress (1): 55 kBProgress (1): 58 kBProgress (1): 60 kBProgress (1): 63 kBProgress (1): 67 kBProgress (1): 70 kBProgress (1): 73 kBProgress (1): 75 kBProgress (1): 77 kBProgress (1): 79 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom (79 kB at 2.0 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom
+app-1  | Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom (5.7 kB at 183 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom
+app-1  | Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom (2.4 kB at 79 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
+app-1  | Progress (1): 709 BProgress (1): 2.1 kBProgress (1): 3.6 kBProgress (1): 5.7 kBProgress (1): 8.1 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom (11 kB at 353 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom
+app-1  | Progress (1): 1.1 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom (2.8 kB at 96 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom
+app-1  | Progress (1): 1.1 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom (2.6 kB at 76 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar
+app-1  | Progress (1): 7.7/196 kBProgress (1): 12/196 kB Progress (1): 29/196 kBProgress (1): 45/196 kBProgress (1): 61/196 kBProgress (1): 78/196 kBProgress (1): 94/196 kBProgress (1): 111/196 kBProgress (1): 127/196 kBProgress (1): 143/196 kBProgress (1): 160/196 kBProgress (1): 176/196 kBProgress (1): 193/196 kBProgress (1): 196 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar (196 kB at 4.8 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar
+app-1  | Progress (1): 7.7/157 kBProgress (1): 12/157 kB Progress (1): 29/157 kBProgress (1): 45/157 kBProgress (2): 45/157 kB | 3.8/94 kBProgress (2): 45/157 kB | 8.0/94 kBProgress (2): 45/157 kB | 12/94 kB Progress (2): 45/157 kB | 16/94 kBProgress (2): 61/157 kB | 16/94 kBProgress (2): 61/157 kB | 21/94 kBProgress (2): 61/157 kB | 25/94 kBProgress (3): 61/157 kB | 25/94 kB | 7.7/193 kBProgress (3): 61/157 kB | 25/94 kB | 16/193 kB Progress (3): 61/157 kB | 29/94 kB | 16/193 kBProgress (3): 61/157 kB | 29/94 kB | 25/193 kBProgress (3): 78/157 kB | 29/94 kB | 25/193 kBProgress (3): 78/157 kB | 33/94 kB | 25/193 kBProgress (3): 78/157 kB | 37/94 kB | 25/193 kBProgress (3): 78/157 kB | 41/94 kB | 25/193 kBProgress (3): 94/157 kB | 41/94 kB | 25/193 kBProgress (3): 94/157 kB | 41/94 kB | 41/193 kBProgress (3): 111/157 kB | 41/94 kB | 41/193 kBProgress (3): 127/157 kB | 41/94 kB | 41/193 kBProgress (3): 127/157 kB | 57/94 kB | 41/193 kBProgress (3): 127/157 kB | 74/94 kB | 41/193 kBProgress (3): 127/157 kB | 74/94 kB | 57/193 kBProgress (3): 127/157 kB | 90/94 kB | 57/193 kBProgress (3): 127/157 kB | 94 kB | 57/193 kB   Progress (3): 143/157 kB | 94 kB | 57/193 kBProgress (4): 143/157 kB | 94 kB | 57/193 kB | 7.7/126 kBProgress (4): 143/157 kB | 94 kB | 57/193 kB | 16/126 kB Progress (4): 157 kB | 94 kB | 57/193 kB | 16/126 kB    Progress (4): 157 kB | 94 kB | 74/193 kB | 16/126 kB                                                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 1.5 MB/s)
+app-1  | Progress (3): 157 kB | 82/193 kB | 16/126 kB                                            Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar (157 kB at 2.3 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar
+app-1  | Progress (3): 82/193 kB | 16/126 kB | 7.7/69 kBProgress (3): 82/193 kB | 16/126 kB | 16/69 kB Progress (3): 98/193 kB | 16/126 kB | 16/69 kBProgress (3): 98/193 kB | 32/126 kB | 16/69 kBProgress (3): 98/193 kB | 49/126 kB | 16/69 kBProgress (3): 115/193 kB | 49/126 kB | 16/69 kBProgress (3): 123/193 kB | 49/126 kB | 16/69 kBProgress (3): 123/193 kB | 49/126 kB | 32/69 kBProgress (3): 139/193 kB | 49/126 kB | 32/69 kBProgress (3): 139/193 kB | 49/126 kB | 49/69 kBProgress (3): 139/193 kB | 49/126 kB | 57/69 kBProgress (3): 156/193 kB | 49/126 kB | 57/69 kBProgress (3): 156/193 kB | 49/126 kB | 69 kB   Progress (3): 156/193 kB | 65/126 kB | 69 kBProgress (3): 172/193 kB | 65/126 kB | 69 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar (69 kB at 990 kB/s)
+app-1  | Progress (2): 172/193 kB | 81/126 kBProgress (2): 188/193 kB | 81/126 kBProgress (2): 193 kB | 81/126 kB    Progress (2): 193 kB | 98/126 kBProgress (2): 193 kB | 114/126 kBProgress (2): 193 kB | 126 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 2.6 MB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar (126 kB at 1.7 MB/s)
+app-1  | Progress (1): 7.7/52 kBProgress (1): 16/52 kB Progress (1): 32/52 kBProgress (1): 49/52 kBProgress (1): 52 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar (52 kB at 520 kB/s)
+app-1  | Progress (1): 7.3/75 kBProgress (1): 24/75 kB Progress (1): 40/75 kBProgress (1): 56/75 kBProgress (1): 73/75 kBProgress (1): 75 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar (75 kB at 682 kB/s)
+app-1  | === DBLP LOADER START ===
+app-1  | Start time: 2026-04-26T17:10:54.567115387Z
+app-1  | JSON file: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | Neo4j IP: 172.24.0.10
+app-1  | Max articles to read: 6000000
+app-1  | Batch size: 5000
+app-1  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+app-1  | WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3 (file:/root/.m2/repository/org/neo4j/driver/neo4j-java-driver/4.4.5/neo4j-java-driver-4.4.5.jar)
+app-1  | WARNING: Please consider reporting this to the maintainers of class org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3
+app-1  | WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+app-1  | Waiting for Neo4j...
+db-1   | 2026-04-26 17:10:55.909+0000 INFO  Starting...
+db-1   | 2026-04-26 17:10:56.341+0000 INFO  This instance is ServerId{c9cca46d} (c9cca46d-93a3-4189-9b86-3ac14407285f)
+db-1   | 2026-04-26 17:10:57.327+0000 INFO  ======== Neo4j 4.4.15 ========
+db-1   | 2026-04-26 17:10:58.872+0000 INFO  Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+db-1   | 2026-04-26 17:10:58.880+0000 INFO  Setting up initial user from `auth.ini` file: neo4j
+db-1   | 2026-04-26 17:10:58.880+0000 INFO  Creating new user 'neo4j' (passwordChangeRequired=false, suspended=false)
+db-1   | 2026-04-26 17:10:58.893+0000 INFO  Setting version for 'security-users' to 3
+db-1   | 2026-04-26 17:10:58.895+0000 INFO  After initialization of system graph model component 'security-users' have version 3 and status CURRENT
+db-1   | 2026-04-26 17:10:58.899+0000 INFO  Performing postInitialization step for component 'security-users' with version 3 and status CURRENT
+db-1   | 2026-04-26 17:10:59.193+0000 INFO  Bolt enabled on [0:0:0:0:0:0:0:0%0]:7687.
+db-1   | 2026-04-26 17:10:59.775+0000 INFO  Remote interface available at http://localhost:7474/
+db-1   | 2026-04-26 17:10:59.778+0000 INFO  id: 61A48A2934BD78A66A7EEA7E1454AC3F4C7AB9A34116CC25BCF7E744EB51C949
+db-1   | 2026-04-26 17:10:59.778+0000 INFO  name: system
+db-1   | 2026-04-26 17:10:59.779+0000 INFO  creationDate: 2026-04-26T17:10:57.88Z
+db-1   | 2026-04-26 17:10:59.779+0000 INFO  Started.
+app-1  | Connected to Neo4j.
+app-1  | Constraints created or already existing.
+app-1  | Pass 1/2: loading ARTICLE, AUTHOR and AUTHORED...
+app-1  | Opening remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | Pass 1 progress - articles read: 50000
+app-1  | Pass 1 progress - articles read: 100000
+app-1  | Pass 1 progress - articles read: 150000
+app-1  | Pass 1 progress - articles read: 200000
+app-1  | Pass 1 progress - articles read: 250000
+app-1  | Pass 1 progress - articles read: 300000
+app-1  | Pass 1 progress - articles read: 350000
+app-1  | Pass 1 progress - articles read: 400000
+app-1  | Pass 1 progress - articles read: 450000
+app-1  | Pass 1 progress - articles read: 500000
+app-1  | Pass 1 progress - articles read: 550000
+app-1  | Pass 1 progress - articles read: 600000
+app-1  | Pass 1 progress - articles read: 650000
+app-1  | Pass 1 progress - articles read: 700000
+app-1  | Pass 1 progress - articles read: 750000
+app-1  | Pass 1 progress - articles read: 800000
+app-1  | Pass 1 progress - articles read: 850000
+app-1  | Pass 1 progress - articles read: 900000
+app-1  | Pass 1 progress - articles read: 950000
+app-1  | Pass 1 progress - articles read: 1000000
+app-1  | Pass 1 progress - articles read: 1050000
+app-1  | Pass 1 progress - articles read: 1100000
+app-1  | Pass 1 progress - articles read: 1150000
+app-1  | Pass 1 progress - articles read: 1200000
+app-1  | Pass 1 progress - articles read: 1250000
+app-1  | Pass 1 progress - articles read: 1300000
+app-1  | Pass 1 progress - articles read: 1350000
+app-1  | Pass 1 progress - articles read: 1400000
+app-1  | Pass 1 progress - articles read: 1450000
+app-1  | Pass 1 progress - articles read: 1500000
+app-1  | Pass 1 progress - articles read: 1550000
+app-1  | Pass 1 progress - articles read: 1600000
+app-1  | Pass 1 progress - articles read: 1650000
+app-1  | Pass 1 progress - articles read: 1700000
+app-1  | Pass 1 progress - articles read: 1750000
+app-1  | Pass 1 progress - articles read: 1800000
+app-1  | Pass 1 progress - articles read: 1850000
+app-1  | Pass 1 progress - articles read: 1900000
+app-1  | Pass 1 progress - articles read: 1950000
+app-1  | Pass 1 progress - articles read: 2000000
+app-1  | Pass 1 progress - articles read: 2050000
+app-1  | Pass 1 progress - articles read: 2100000
+app-1  | Pass 1 progress - articles read: 2150000
+app-1  | Pass 1 progress - articles read: 2200000
+app-1  | Pass 1 progress - articles read: 2250000
+app-1  | Pass 1 progress - articles read: 2300000
+app-1  | Pass 1 progress - articles read: 2350000
+app-1  | Pass 1 progress - articles read: 2400000
+app-1  | Pass 1 progress - articles read: 2450000
+app-1  | Pass 1 progress - articles read: 2500000
+app-1  | Pass 1 progress - articles read: 2550000
+app-1  | Pass 1 progress - articles read: 2600000
+app-1  | Pass 1 progress - articles read: 2650000
+app-1  | Pass 1 progress - articles read: 2700000
+app-1  | Pass 1 progress - articles read: 2750000
+app-1  | Pass 1 progress - articles read: 2800000
+app-1  | Pass 1 progress - articles read: 2850000
+app-1  | Pass 1 progress - articles read: 2900000
+app-1  | Pass 1 progress - articles read: 2950000
+app-1  | Pass 1 progress - articles read: 3000000
+app-1  | Pass 1 progress - articles read: 3050000
+app-1  | Pass 1 progress - articles read: 3100000
+app-1  | Pass 1 progress - articles read: 3150000
+app-1  | Pass 1 progress - articles read: 3200000
+app-1  | Pass 1 progress - articles read: 3250000
+app-1  | Pass 1 progress - articles read: 3300000
+app-1  | Pass 1 progress - articles read: 3350000
+app-1  | Pass 1 progress - articles read: 3400000
+app-1  | Pass 1 progress - articles read: 3450000
+app-1  | Pass 1 progress - articles read: 3500000
+app-1  | Pass 1 progress - articles read: 3550000
+app-1  | Pass 1 progress - articles read: 3600000
+app-1  | Pass 1 progress - articles read: 3650000
+app-1  | Pass 1 progress - articles read: 3700000
+app-1  | Pass 1 progress - articles read: 3750000
+app-1  | Pass 1 progress - articles read: 3800000
+app-1  | Pass 1 progress - articles read: 3850000
+app-1  | Pass 1 progress - articles read: 3900000
+app-1  | Pass 1 progress - articles read: 3950000
+app-1  | Pass 1 progress - articles read: 4000000
+app-1  | Pass 1 progress - articles read: 4050000
+app-1  | Pass 1 progress - articles read: 4100000
+app-1  | Pass 1 progress - articles read: 4150000
+app-1  | Pass 1 progress - articles read: 4200000
+app-1  | Pass 1 progress - articles read: 4250000
+app-1  | Pass 1 progress - articles read: 4300000
+app-1  | Pass 1 progress - articles read: 4350000
+app-1  | Pass 1 progress - articles read: 4400000
+app-1  | Pass 1 progress - articles read: 4450000
+app-1  | Pass 1 progress - articles read: 4500000
+app-1  | Pass 1 progress - articles read: 4550000
+app-1  | Pass 1 progress - articles read: 4600000
+app-1  | Pass 1 progress - articles read: 4650000
+app-1  | Pass 1 progress - articles read: 4700000
+app-1  | Pass 1 progress - articles read: 4750000
+app-1  | Pass 1 progress - articles read: 4800000
+app-1  | Pass 1 progress - articles read: 4850000
+app-1  | Pass 1 progress - articles read: 4900000
+app-1  | Pass 1 progress - articles read: 4950000
+app-1  | Pass 1 progress - articles read: 5000000
+app-1  | Pass 1 progress - articles read: 5050000
+app-1  | Pass 1 progress - articles read: 5100000
+app-1  | Pass 1 progress - articles read: 5150000
+app-1  | Pass 1 progress - articles read: 5200000
+app-1  | Pass 1 progress - articles read: 5250000
+app-1  | Pass 1 progress - articles read: 5300000
+app-1  | Pass 1 progress - articles read: 5350000
+app-1  | Pass 1 progress - articles read: 5400000
+app-1  | Pass 1 progress - articles read: 5450000
+app-1  | Pass 1 progress - articles read: 5500000
+app-1  | Pass 1 progress - articles read: 5550000
+app-1  | Pass 1 progress - articles read: 5600000
+app-1  | Pass 1 progress - articles read: 5650000
+app-1  | Pass 1 progress - articles read: 5700000
+app-1  | Pass 1 progress - articles read: 5750000
+app-1  | Pass 1 progress - articles read: 5800000
+app-1  | Pass 1 progress - articles read: 5850000
+app-1  | Pass 1 progress - articles read: 5900000
+app-1  | Pass 1 progress - articles read: 5950000
+app-1  | Pass 1 progress - articles read: 6000000
+app-1  | Pass 2/2: loading CITES relationships...
+app-1  | Opening remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | === DBLP LOADER END ===
+app-1  | End time: 2026-04-26T18:30:14.177195208Z
+app-1  | Duration seconds: 4759
+app-1  | Input article lines read: 6000000
+app-1  | Articles loaded: 6000000
+app-1  | Authors loaded: 4590309
+app-1  | Total nodes loaded: 10590309
+app-1  | AUTHORED relationships loaded: 20494932
+app-1  | CITES relationships loaded: 58378898
+app-1  | [INFO] ------------------------------------------------------------------------
+app-1  | [INFO] BUILD SUCCESS
+app-1  | [INFO] ------------------------------------------------------------------------
+app-1  | [INFO] Total time:  01:19 h
+app-1  | [INFO] Finished at: 2026-04-26T18:30:15Z
+app-1  | [INFO] ------------------------------------------------------------------------
+[Kapp-1 exited with code 0

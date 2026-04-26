@@ -282,8 +282,9 @@ public class Example {
         session.writeTransaction(tx -> {
             tx.run(
                     "UNWIND $rows AS row " +
-                            "MERGE (a:AUTHOR {_id: row.id}) " +
-                            "SET a.name = row.name",
+                            "WITH DISTINCT row.id AS id, row.name AS name " +
+                            "MERGE (a:AUTHOR {_id: id}) " +
+                            "SET a.name = name",
                     parameters("rows", rows)
             ).consume();
 
@@ -301,9 +302,10 @@ public class Example {
         session.writeTransaction(tx -> {
             tx.run(
                     "UNWIND $rows AS row " +
-                            "MATCH (author:AUTHOR {_id: row.authorId}) " +
-                            "MATCH (article:ARTICLE {_id: row.articleId}) " +
-                            "MERGE (author)-[:AUTHORED]->(article)",
+                            "WITH DISTINCT row.authorId AS authorId, row.articleId AS articleId " +
+                            "MATCH (author:AUTHOR {_id: authorId}) " +
+                            "MATCH (article:ARTICLE {_id: articleId}) " +
+                            "CREATE (author)-[:AUTHORED]->(article)",
                     parameters("rows", rows)
             ).consume();
 
@@ -321,9 +323,10 @@ public class Example {
         session.writeTransaction(tx -> {
             tx.run(
                     "UNWIND $rows AS row " +
-                            "MATCH (source:ARTICLE {_id: row.sourceId}) " +
-                            "MATCH (target:ARTICLE {_id: row.targetId}) " +
-                            "MERGE (source)-[:CITES]->(target)",
+                            "WITH DISTINCT row.sourceId AS sourceId, row.targetId AS targetId " +
+                            "MATCH (source:ARTICLE {_id: sourceId}) " +
+                            "MATCH (target:ARTICLE {_id: targetId}) " +
+                            "CREATE (source)-[:CITES]->(target)",
                     parameters("rows", rows)
             ).consume();
 
