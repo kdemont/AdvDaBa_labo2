@@ -299,3 +299,171 @@ Duration seconds: 4759
 La version optimisée conserve exactement le même graphe final tout en réduisant le temps de chargement.
 
 Les logs locaux sont conservés dans `logs/local/`, car ils sont petits et utiles pour documenter les essais réalisés pendant le développement.
+
+--- 
+
+# Déploiement Kubernetes
+
+Ce dossier contient les fichiers de configuration Kubernetes pour le projet de chargement DBLP dans Neo4j.
+
+---
+
+## Fichiers
+
+- `neo4j-pvc.yaml` : volume persistant utilisé pour stocker les données Neo4j.
+- `neo4j-deployment.yaml` : déploiement du pod Neo4j.
+- `neo4j-service.yaml` : service interne exposant Neo4j Browser et Bolt.
+- `loader-job.yaml` : job Kubernetes exécutant le loader DBLP.
+
+---
+
+## Image Docker du loader
+
+L’image Docker du loader est publiée sur GitHub Container Registry :
+
+```text
+ghcr.io/florian-devenes/adbd-neo4j-loader:v1
+```
+
+Cette image est publique afin que Kubernetes puisse la télécharger sans `imagePullSecret`.
+
+## Namespace Kubernetes
+
+Avant de déployer les ressources, il faut se placer dans le namespace fourni pour le laboratoire.
+
+Remplacer `<NAMESPACE>` par le namespace attribué au groupe :
+
+```bash
+kubectl config set-context --current --namespace=<NAMESPACE>
+```
+
+Vérifier le namespace courant :
+
+```bash
+kubectl config view --minify | grep namespace
+```
+
+---
+
+## Ordre de déploiement
+
+Déployer d’abord Neo4j et son volume persistant :
+
+```bash
+kubectl apply -f k8s/neo4j-pvc.yaml
+kubectl apply -f k8s/neo4j-deployment.yaml
+kubectl apply -f k8s/neo4j-service.yaml
+```
+
+Vérifier que les ressources ont été créées :
+
+```bash
+kubectl get pvc
+kubectl get pods
+kubectl get svc
+```
+
+Attendre que le pod Neo4j soit en état `Running`.
+
+Afficher les logs du pod Neo4j :
+
+```bash
+kubectl logs -f deployment/neo4j
+```
+
+Une fois Neo4j démarré, lancer le job loader :
+
+```bash
+kubectl apply -f k8s/loader-job.yaml
+```
+
+Suivre les logs du loader :
+
+```bash
+kubectl logs -f job/dblp-loader
+```
+
+---
+
+## Configuration du loader
+
+La configuration du loader se trouve dans `k8s/loader-job.yaml`.
+
+Variables utilisées :
+
+| Variable | Description |
+|---|---|
+| `JSON_FILE` | URL ou chemin du fichier JSONL DBLP |
+| `MAX_NODES` | Nombre maximal d’articles à lire |
+| `BATCH_SIZE` | Taille des batchs envoyés à Neo4j |
+| `NEO4J_IP` | Nom du service Kubernetes Neo4j |
+
+---
+### logs
+
+Afficher les logs :
+
+```bash
+kubectl logs job/dblp-loader
+```
+
+Sauvegarder les logs dans un fichier local :
+
+```bash
+mkdir -p logs/k8s
+kubectl logs job/dblp-loader > logs/k8s/k8s_loader.log
+```
+
+Ces logs peuvent ensuite être ajoutés au dépôt si nécessaire :
+
+```bash
+git add -f logs/k8s/k8s_loader.log
+git commit -m "Add Kubernetes loader logs"
+```
+
+---
+
+## Nettoyer le job loader
+
+Avant de relancer un job avec le même nom, supprimer l’ancien job :
+
+```bash
+kubectl delete job dblp-loader
+```
+
+Cela supprime le job Kubernetes, mais ne supprime pas les données Neo4j stockées dans le volume persistant.
+
+---
+
+## Attention : base vide requise avant un nouvel import
+
+La version optimisée du loader utilise `CREATE` pour créer les relations `AUTHORED` et `CITES`.
+
+Cette optimisation améliore les performances, mais implique que la base Neo4j doit être vide avant chaque import complet.
+
+Si le loader est exécuté plusieurs fois sur la même base, les relations risquent d’être créées en double.
+
+Pour repartir d’une base vide, supprimer le déploiement Neo4j et le volume persistant :
+
+```bash
+kubectl delete job dblp-loader
+kubectl delete deployment neo4j
+kubectl delete pvc neo4j-data-pvc
+```
+
+Puis recréer Neo4j :
+
+```bash
+kubectl apply -f k8s/neo4j-pvc.yaml
+kubectl apply -f k8s/neo4j-deployment.yaml
+kubectl apply -f k8s/neo4j-service.yaml
+```
+
+Attendre que Neo4j soit `Running`, puis relancer le loader :
+
+```bash
+kubectl apply -f k8s/loader-job.yaml
+kubectl logs -f job/dblp-loader
+```
+
+---
