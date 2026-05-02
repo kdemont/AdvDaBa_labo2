@@ -4,7 +4,7 @@
 
 Ce projet a été réalisé dans le cadre du cours **Advanced Database**.
 
-L'objectif est de charger le dataset DBLP Citation Network dans Neo4j sous forme de graphe.
+L'objectif est de charger le dataset **DBLP Citation Network** dans Neo4j sous forme de graphe.
 
 Le modèle de graphe implémenté est le suivant :
 
@@ -13,7 +13,7 @@ Le modèle de graphe implémenté est le suivant :
 (:ARTICLE)-[:CITES]->(:ARTICLE)
 ```
 
-Le programme lit un fichier JSONL DBLP, crée les noeuds `ARTICLE` et `AUTHOR`, puis crée les relations `AUTHORED` et `CITES`.
+Le programme lit un fichier JSONL DBLP, crée les nœuds `ARTICLE` et `AUTHOR`, puis crée les relations `AUTHORED` et `CITES`.
 
 ---
 
@@ -30,23 +30,33 @@ Structure actuellement présente dans le dépôt :
 ├── README.md
 ├── src/
 │   └── main/java/mse/advDB/Example.java
+├── archive/
+│   └── anciennes versions du loader
+├── k8s/
+│   ├── neo4j-pvc.yaml
+│   ├── neo4j-deployment.yaml
+│   ├── neo4j-service.yaml
+│   ├── loader-job.yaml
+│   └── loader-job_batch_steaming.yaml
 ├── neo4j_mount/
 │   └── conf/
 │       └── neo4j.conf
 ├── logs/
-│   └── local/
-│       ├── run_10000.log
-│       ├── run_1M.log
-│       ├── run_4M.log
-│       ├── run_1M_optimised.log
-│       ├── run_1M_optimised_batch5000.log
-│       └── run_6M_optimised_batch5000.log
+│   ├── local/
+│   │   ├── run_10000.log
+│   │   ├── run_1M.log
+│   │   ├── run_4M.log
+│   │   ├── run_1M_optimised.log
+│   │   ├── run_1M_optimised_batch5000.log
+│   │   └── run_6M_optimised_batch5000.log
+│   └── k8s/
+│       └── logs Kubernetes des essais et du run final
 ├── TP02 AdvDB.pdf
 ├── dblpExample.json
 └── dblpExample.jsonl
 ```
 
-Le dossier `logs/local/` contient les logs des tests réalisés localement avec Docker Compose.
+Les dossiers `logs/local/` et `logs/k8s/` contiennent les logs des tests réalisés.
 
 ---
 
@@ -68,7 +78,7 @@ http://vmrum.isc.heia-fr.ch/files/test.jsonl
 
 ---
 
-## Configuration
+## Configuration locale
 
 Le loader est configuré avec des variables d'environnement dans le fichier `docker-compose.yaml`.
 
@@ -76,10 +86,10 @@ Configuration actuelle du dépôt :
 
 ```yaml
 environment:
-	- JSON_FILE=http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
-	- MAX_NODES=6000000
-	- BATCH_SIZE=5000
-	- NEO4J_IP=172.24.0.10
+  - JSON_FILE=http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+  - MAX_NODES=6000000
+  - BATCH_SIZE=5000
+  - NEO4J_IP=172.24.0.10
 ```
 
 | Variable | Description |
@@ -150,7 +160,6 @@ docker compose -f docker-compose.yaml up 2>&1 | tee logs/local/run_1M_optimised_
 ```
 
 ---
-
 
 ## Résultats locaux
 
@@ -272,6 +281,7 @@ Fichier de log :
 
 ```text
 logs/local/run_6M_optimised_batch5000.log
+```
 
 Résultat :
 
@@ -283,10 +293,11 @@ Total nodes loaded: 10590309
 AUTHORED relationships loaded: 20494932
 CITES relationships loaded: 58378898
 Duration seconds: 4759
+```
 
 ---
 
-## Comparaison des performances (résumé)
+## Comparaison des performances locales
 
 | Version | Batch size | Articles lus | Durée | Durée lisible | Nœuds | Relations |
 |---|---:|---:|---:|---:|---:|---:|
@@ -296,24 +307,36 @@ Duration seconds: 4759
 | Version initiale 4M | 1000 | 4'000'000 | 2957 s | 49 min 17 s | 7'639'993 | 39'678'268 |
 | Relations optimisées + batch 5000 6M | 5000 | 6'000'000 | 4759 s | 1 h 19 min 19 s | 10'590'309 | 78'873'830 |
 
-La version optimisée conserve exactement le même graphe final tout en réduisant le temps de chargement.
+La version optimisée conserve le même modèle de graphe final tout en réduisant le temps de chargement.
 
 Les logs locaux sont conservés dans `logs/local/`, car ils sont petits et utiles pour documenter les essais réalisés pendant le développement.
 
---- 
+---
 
 # Déploiement Kubernetes
 
-Ce dossier contient les fichiers de configuration Kubernetes pour le projet de chargement DBLP dans Neo4j.
+Le déploiement Kubernetes contient :
+
+```text
+1 pod Neo4j contenant les données chargées
+1 pod loader responsable de l'insertion des données
+```
+
+Namespace utilisé :
+
+```text
+dev-dem-adv-daba-26
+```
 
 ---
 
-## Fichiers
+## Fichiers Kubernetes
 
 - `neo4j-pvc.yaml` : volume persistant utilisé pour stocker les données Neo4j.
 - `neo4j-deployment.yaml` : déploiement du pod Neo4j.
 - `neo4j-service.yaml` : service interne exposant Neo4j Browser et Bolt.
-- `loader-job.yaml` : job Kubernetes exécutant le loader DBLP.
+- `loader-job.yaml` : job Kubernetes standard du loader.
+- `loader-job_batch_steaming.yaml` : job utilisant la version avec lecture HTTP par blocs.
 
 ---
 
@@ -322,19 +345,82 @@ Ce dossier contient les fichiers de configuration Kubernetes pour le projet de c
 L’image Docker du loader est publiée sur GitHub Container Registry :
 
 ```text
-ghcr.io/florian-devenes/adbd-neo4j-loader:v1
+ghcr.io/florian-devenes/adbd-neo4j-loader:v5
 ```
 
 Cette image est publique afin que Kubernetes puisse la télécharger sans `imagePullSecret`.
+
+Cette image contient :
+
+- lecture HTTP par blocs avec `Range requests` ;
+- cache mémoire temporaire par chunk ;
+- `CREATE` sur base vide pour accélérer l'import ;
+- déduplication des auteurs côté Java avec `HashSet` ;
+- batch size Kubernetes à `10000` ;
+- logs détaillés du temps total, des retries HTTP et des chunks lus.
+
+---
+
+## Configuration Kubernetes du loader
+
+La configuration du loader Kubernetes est définie dans `k8s/loader-job_batch_steaming.yaml`.
+
+```yaml
+env:
+  - name: JSON_FILE
+    value: "http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl"
+  - name: MAX_NODES
+    value: "6000000"
+  - name: BATCH_SIZE
+    value: "10000"
+  - name: HTTP_CHUNK_SIZE_MB
+    value: "16"
+  - name: NEO4J_IP
+    value: "neo4j"
+```
+
+| Variable | Description |
+|---|---|
+| `JSON_FILE` | URL du fichier DBLP JSONL |
+| `MAX_NODES` | Nombre maximal d’articles à lire |
+| `BATCH_SIZE` | Taille des batchs envoyés à Neo4j |
+| `HTTP_CHUNK_SIZE_MB` | Taille des blocs HTTP temporaires chargés en mémoire |
+| `NEO4J_IP` | Nom du service Kubernetes Neo4j |
+
+---
+
+## Lecture HTTP par blocs
+
+Les premiers essais Kubernetes ont montré que les connexions HTTP longues vers le fichier DBLP complet pouvaient être interrompues par des erreurs du type :
+
+```text
+Premature EOF
+Connection reset
+```
+
+Pour stabiliser la lecture, le loader utilise une lecture HTTP par blocs avec des requêtes `Range`.
+
+Le fichier complet n’est jamais copié dans le conteneur. Seuls des blocs temporaires de 16 MB sont chargés en mémoire, traités, puis libérés.
+
+Exemple conceptuel :
+
+```text
+GET bytes=0-16777215
+GET bytes=16777216-33554431
+GET bytes=33554432-50331647
+...
+```
+
+Cette approche respecte la contrainte du laboratoire : les données sont toujours streamées depuis l’URL officielle.
+
+---
 
 ## Namespace Kubernetes
 
 Avant de déployer les ressources, il faut se placer dans le namespace fourni pour le laboratoire.
 
-Remplacer `<NAMESPACE>` par le namespace attribué au groupe :
-
 ```bash
-kubectl config set-context --current --namespace=<NAMESPACE>
+kubectl config set-context --current --namespace=dev-dem-adv-daba-26
 ```
 
 Vérifier le namespace courant :
@@ -374,51 +460,33 @@ kubectl logs -f deployment/neo4j
 Une fois Neo4j démarré, lancer le job loader :
 
 ```bash
-kubectl apply -f k8s/loader-job.yaml
+kubectl apply -f k8s/loader-job_batch_steaming.yaml
 ```
 
 Suivre les logs du loader :
 
 ```bash
-kubectl logs -f job/dblp-loader
+kubectl logs -f job/dblp-loader --tail=80
 ```
 
----
-
-## Configuration du loader
-
-La configuration du loader se trouve dans `k8s/loader-job.yaml`.
-
-Variables utilisées :
-
-| Variable | Description |
-|---|---|
-| `JSON_FILE` | URL ou chemin du fichier JSONL DBLP |
-| `MAX_NODES` | Nombre maximal d’articles à lire |
-| `BATCH_SIZE` | Taille des batchs envoyés à Neo4j |
-| `NEO4J_IP` | Nom du service Kubernetes Neo4j |
-
----
-### logs
-
-Afficher les logs :
+Afficher les derniers logs sans suivre en continu :
 
 ```bash
-kubectl logs job/dblp-loader
+kubectl logs job/dblp-loader --tail=100
 ```
 
-Sauvegarder les logs dans un fichier local :
+---
+
+## Sauvegarder les logs Kubernetes
 
 ```bash
 mkdir -p logs/k8s
-kubectl logs job/dblp-loader > logs/k8s/k8s_loader.log
-```
 
-Ces logs peuvent ensuite être ajoutés au dépôt si nécessaire :
-
-```bash
-git add -f logs/k8s/k8s_loader.log
-git commit -m "Add Kubernetes loader logs"
+kubectl logs job/dblp-loader > logs/k8s/k8s_loader_final_batch_streaming.log
+kubectl get pods -o wide > logs/k8s/k8s_pods_final.txt
+kubectl get jobs -o wide > logs/k8s/k8s_jobs_final.txt
+kubectl get pvc -o wide > logs/k8s/k8s_pvc_final.txt
+kubectl get svc -o wide > logs/k8s/k8s_services_final.txt
 ```
 
 ---
@@ -437,11 +505,11 @@ Cela supprime le job Kubernetes, mais ne supprime pas les données Neo4j stocké
 
 ## Attention : base vide requise avant un nouvel import
 
-La version optimisée du loader utilise `CREATE` pour créer les relations `AUTHORED` et `CITES`.
+La version optimisée du loader utilise `CREATE` pour créer les nœuds et les relations sur une base vide.
 
 Cette optimisation améliore les performances, mais implique que la base Neo4j doit être vide avant chaque import complet.
 
-Si le loader est exécuté plusieurs fois sur la même base, les relations risquent d’être créées en double.
+Si le loader est exécuté plusieurs fois sur la même base, des doublons peuvent être créés.
 
 Pour repartir d’une base vide, supprimer le déploiement Neo4j et le volume persistant :
 
@@ -462,8 +530,83 @@ kubectl apply -f k8s/neo4j-service.yaml
 Attendre que Neo4j soit `Running`, puis relancer le loader :
 
 ```bash
-kubectl apply -f k8s/loader-job.yaml
-kubectl logs -f job/dblp-loader
+kubectl apply -f k8s/loader-job_batch_steaming.yaml
+kubectl logs -f job/dblp-loader --tail=80
 ```
+
+---
+
+## Vérifications Neo4j
+
+Ouvrir un port-forward :
+
+```bash
+kubectl port-forward svc/neo4j 7474:7474 7687:7687
+```
+
+Puis ouvrir Neo4j Browser :
+
+```text
+http://localhost:7474
+```
+
+Identifiants :
+
+```text
+neo4j / test
+```
+---
+
+## Informations utiles pour le rapport
+
+Namespace :
+
+```text
+dev-dem-adv-daba-26
+```
+
+Credentials Neo4j :
+
+```text
+neo4j / test
+```
+
+Image loader :
+
+```text
+ghcr.io/florian-devenes/adbd-neo4j-loader:v5
+```
+
+Les IDs des pods peuvent être obtenus avec :
+
+```bash
+kubectl get pods
+```
+
+Les logs du loader peuvent être obtenus avec :
+
+```bash
+kubectl logs job/dblp-loader
+```
+
+Les logs affichent explicitement :
+
+```text
+Start time
+End time
+Duration seconds
+HTTP retry count
+HTTP chunk count
+HTTP retry wait seconds
+Effective loading seconds excluding HTTP retry waits
+Input article lines read
+Articles loaded
+Authors loaded
+Total nodes loaded
+AUTHORED relationships loaded
+CITES relationships loaded
+```
+
+Ces informations permettent de justifier le temps de chargement et le volume de données chargé.
 
 ---
