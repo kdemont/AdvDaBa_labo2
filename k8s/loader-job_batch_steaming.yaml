@@ -12,7 +12,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: dblp-loader
-          image: ghcr.io/florian-devenes/adbd-neo4j-loader:v4
+          image: ghcr.io/florian-devenes/adbd-neo4j-loader:v5
           imagePullPolicy: Always
           env:
             - name: JSON_FILE
@@ -21,6 +21,8 @@ spec:
               value: "6000000"
             - name: BATCH_SIZE
               value: "10000"
+            - name: HTTP_CHUNK_SIZE_MB
+              value: "16"
             - name: NEO4J_IP
               value: "neo4j"
           resources:

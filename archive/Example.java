@@ -396,7 +396,7 @@ public class Example {
 
     private static BufferedReader openReader(String source) throws IOException {
         if (source.startsWith("http://") || source.startsWith("https://")) {
-            System.out.println("Opening chunked remote JSONL stream: " + source);
+            System.out.println("Opening resumable remote JSONL stream: " + source);
             return new BufferedReader(
                     new InputStreamReader(
                             new ChunkedHttpInputStream(source),

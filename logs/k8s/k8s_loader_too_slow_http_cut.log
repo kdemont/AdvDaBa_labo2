@@ -1,0 +1,1562 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for icosys:advDB:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 45, column 22
+[WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 95, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (1): 3.1 kBProgress (2): 3.1 kB | 4.6 kBProgress (2): 7.7 kB | 4.6 kBProgress (2): 7.7 kB | 9.7 kBProgress (2): 12 kB | 9.7 kB Progress (2): 17 kB | 9.7 kBProgress (2): 17 kB | 14 kB Progress (2): 20 kB | 14 kBProgress (2): 21 kB | 14 kB                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 25 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 35 kB/s)
+[INFO] 
+[INFO] ----------------------------< icosys:advDB >----------------------------
+[INFO] Building advDB 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar
+Progress (1): 0.9/6.4 kBProgress (1): 2.3/6.4 kBProgress (1): 3.2/6.4 kBProgress (1): 4.6/6.4 kBProgress (1): 5.9/6.4 kBProgress (1): 6.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar (6.4 kB at 206 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+Progress (1): 0.9/312 kBProgress (2): 0.9/312 kB | 0.9/14 kBProgress (2): 0.9/312 kB | 2.3/14 kBProgress (2): 2.3/312 kB | 2.3/14 kBProgress (2): 2.3/312 kB | 3.6/14 kBProgress (2): 2.3/312 kB | 5.0/14 kBProgress (2): 2.3/312 kB | 6.4/14 kBProgress (2): 2.3/312 kB | 7.3/14 kBProgress (2): 2.3/312 kB | 8.7/14 kBProgress (2): 2.3/312 kB | 10/14 kB Progress (3): 2.3/312 kB | 10/14 kB | 0.9/3.8 kBProgress (3): 2.3/312 kB | 10/14 kB | 2.3/3.8 kBProgress (4): 2.3/312 kB | 10/14 kB | 2.3/3.8 kB | 0.9/6.8 kBProgress (4): 3.6/312 kB | 10/14 kB | 2.3/3.8 kB | 0.9/6.8 kBProgress (4): 3.6/312 kB | 11/14 kB | 2.3/3.8 kB | 0.9/6.8 kBProgress (5): 3.6/312 kB | 11/14 kB | 2.3/3.8 kB | 0.9/6.8 kB | 0.9/176 kBProgress (5): 3.6/312 kB | 11/14 kB | 3.2/3.8 kB | 0.9/6.8 kB | 0.9/176 kBProgress (5): 3.6/312 kB | 11/14 kB | 3.2/3.8 kB | 2.3/6.8 kB | 0.9/176 kBProgress (5): 3.6/312 kB | 11/14 kB | 3.8 kB | 2.3/6.8 kB | 0.9/176 kB    Progress (5): 5.0/312 kB | 11/14 kB | 3.8 kB | 2.3/6.8 kB | 0.9/176 kBProgress (5): 5.0/312 kB | 13/14 kB | 3.8 kB | 2.3/6.8 kB | 0.9/176 kBProgress (5): 5.0/312 kB | 13/14 kB | 3.8 kB | 3.6/6.8 kB | 0.9/176 kBProgress (5): 5.0/312 kB | 13/14 kB | 3.8 kB | 3.6/6.8 kB | 2.3/176 kB                                                                      Downloaded from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar (3.8 kB at 35 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar
+Progress (4): 6.4/312 kB | 13/14 kB | 3.6/6.8 kB | 2.3/176 kBProgress (4): 6.4/312 kB | 14/14 kB | 3.6/6.8 kB | 2.3/176 kBProgress (4): 6.4/312 kB | 14/14 kB | 5.0/6.8 kB | 2.3/176 kBProgress (4): 6.4/312 kB | 14 kB | 5.0/6.8 kB | 2.3/176 kB   Progress (4): 6.4/312 kB | 14 kB | 5.0/6.8 kB | 3.6/176 kBProgress (4): 7.7/312 kB | 14 kB | 5.0/6.8 kB | 3.6/176 kBProgress (4): 7.7/312 kB | 14 kB | 6.4/6.8 kB | 3.6/176 kBProgress (4): 7.7/312 kB | 14 kB | 6.4/6.8 kB | 5.0/176 kBProgress (4): 8.2/312 kB | 14 kB | 6.4/6.8 kB | 5.0/176 kBProgress (4): 8.2/312 kB | 14 kB | 6.8 kB | 5.0/176 kB                                                          Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 124 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar
+Progress (3): 8.2/312 kB | 6.8 kB | 6.4/176 kBProgress (3): 9.6/312 kB | 6.8 kB | 6.4/176 kBProgress (3): 9.6/312 kB | 6.8 kB | 7.7/176 kBProgress (3): 11/312 kB | 6.8 kB | 7.7/176 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 59 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar
+Progress (2): 11/312 kB | 9.1/176 kBProgress (2): 12/312 kB | 9.1/176 kBProgress (2): 12/312 kB | 10/176 kB Progress (2): 14/312 kB | 10/176 kBProgress (2): 14/312 kB | 12/176 kBProgress (2): 15/312 kB | 12/176 kBProgress (2): 16/312 kB | 12/176 kBProgress (2): 16/312 kB | 13/176 kBProgress (2): 18/312 kB | 13/176 kBProgress (2): 18/312 kB | 15/176 kBProgress (2): 19/312 kB | 15/176 kBProgress (2): 19/312 kB | 16/176 kBProgress (2): 21/312 kB | 16/176 kBProgress (2): 21/312 kB | 17/176 kBProgress (2): 21/312 kB | 19/176 kBProgress (2): 22/312 kB | 19/176 kBProgress (2): 22/312 kB | 20/176 kBProgress (2): 23/312 kB | 20/176 kBProgress (2): 23/312 kB | 21/176 kBProgress (2): 25/312 kB | 21/176 kBProgress (2): 26/312 kB | 21/176 kBProgress (2): 26/312 kB | 23/176 kBProgress (2): 27/312 kB | 23/176 kBProgress (2): 27/312 kB | 24/176 kBProgress (2): 29/312 kB | 24/176 kBProgress (2): 29/312 kB | 25/176 kBProgress (2): 30/312 kB | 25/176 kBProgress (2): 30/312 kB | 26/176 kBProgress (2): 31/312 kB | 26/176 kBProgress (2): 31/312 kB | 27/176 kBProgress (2): 33/312 kB | 27/176 kBProgress (2): 33/312 kB | 29/176 kBProgress (2): 34/312 kB | 29/176 kBProgress (2): 34/312 kB | 30/176 kBProgress (2): 36/312 kB | 30/176 kBProgress (2): 36/312 kB | 31/176 kBProgress (2): 37/312 kB | 31/176 kBProgress (2): 37/312 kB | 33/176 kBProgress (2): 38/312 kB | 33/176 kBProgress (2): 38/312 kB | 34/176 kBProgress (2): 40/312 kB | 34/176 kBProgress (2): 40/312 kB | 36/176 kBProgress (2): 40/312 kB | 37/176 kBProgress (2): 44/312 kB | 37/176 kBProgress (2): 44/312 kB | 38/176 kBProgress (2): 44/312 kB | 40/176 kBProgress (2): 48/312 kB | 40/176 kBProgress (2): 48/312 kB | 41/176 kBProgress (2): 48/312 kB | 42/176 kBProgress (2): 52/312 kB | 42/176 kBProgress (2): 52/312 kB | 44/176 kBProgress (2): 57/312 kB | 44/176 kBProgress (2): 57/312 kB | 45/176 kBProgress (2): 61/312 kB | 45/176 kBProgress (2): 61/312 kB | 46/176 kBProgress (2): 61/312 kB | 48/176 kBProgress (2): 65/312 kB | 48/176 kBProgress (2): 66/312 kB | 48/176 kBProgress (2): 66/312 kB | 49/176 kBProgress (2): 70/312 kB | 49/176 kBProgress (2): 70/312 kB | 51/176 kBProgress (2): 70/312 kB | 52/176 kBProgress (2): 74/312 kB | 52/176 kBProgress (2): 74/312 kB | 53/176 kBProgress (2): 74/312 kB | 55/176 kBProgress (2): 78/312 kB | 55/176 kBProgress (2): 82/312 kB | 55/176 kBProgress (2): 87/312 kB | 55/176 kBProgress (3): 87/312 kB | 55/176 kB | 0.9/353 kBProgress (3): 91/312 kB | 55/176 kB | 0.9/353 kBProgress (3): 91/312 kB | 55/176 kB | 2.3/353 kBProgress (3): 95/312 kB | 55/176 kB | 2.3/353 kBProgress (3): 95/312 kB | 55/176 kB | 3.6/353 kBProgress (3): 99/312 kB | 55/176 kB | 3.6/353 kBProgress (3): 99/312 kB | 55/176 kB | 5.0/353 kBProgress (3): 99/312 kB | 55/176 kB | 6.4/353 kBProgress (3): 99/312 kB | 55/176 kB | 7.7/353 kBProgress (3): 99/312 kB | 55/176 kB | 8.2/353 kBProgress (4): 99/312 kB | 55/176 kB | 8.2/353 kB | 0.9/303 kBProgress (4): 99/312 kB | 55/176 kB | 9.6/353 kB | 0.9/303 kBProgress (4): 99/312 kB | 55/176 kB | 9.6/353 kB | 2.3/303 kBProgress (4): 99/312 kB | 55/176 kB | 11/353 kB | 2.3/303 kB Progress (4): 99/312 kB | 55/176 kB | 11/353 kB | 3.6/303 kBProgress (4): 99/312 kB | 55/176 kB | 12/353 kB | 3.6/303 kBProgress (4): 99/312 kB | 55/176 kB | 12/353 kB | 5.0/303 kBProgress (4): 99/312 kB | 55/176 kB | 14/353 kB | 5.0/303 kBProgress (4): 99/312 kB | 55/176 kB | 14/353 kB | 6.4/303 kBProgress (4): 99/312 kB | 55/176 kB | 15/353 kB | 6.4/303 kBProgress (5): 99/312 kB | 55/176 kB | 15/353 kB | 6.4/303 kB | 1.4/324 kBProgress (5): 99/312 kB | 55/176 kB | 15/353 kB | 7.7/303 kB | 1.4/324 kBProgress (5): 104/312 kB | 55/176 kB | 15/353 kB | 7.7/303 kB | 1.4/324 kBProgress (5): 104/312 kB | 59/176 kB | 15/353 kB | 7.7/303 kB | 1.4/324 kBProgress (5): 104/312 kB | 59/176 kB | 16/353 kB | 7.7/303 kB | 1.4/324 kBProgress (5): 104/312 kB | 59/176 kB | 16/353 kB | 7.7/303 kB | 2.7/324 kBProgress (5): 104/312 kB | 59/176 kB | 16/353 kB | 9.1/303 kB | 2.7/324 kBProgress (5): 108/312 kB | 59/176 kB | 16/353 kB | 9.1/303 kB | 2.7/324 kBProgress (5): 108/312 kB | 59/176 kB | 18/353 kB | 9.1/303 kB | 2.7/324 kBProgress (5): 108/312 kB | 59/176 kB | 18/353 kB | 9.1/303 kB | 4.1/324 kBProgress (5): 108/312 kB | 59/176 kB | 18/353 kB | 10/303 kB | 4.1/324 kB Progress (5): 108/312 kB | 59/176 kB | 19/353 kB | 10/303 kB | 4.1/324 kBProgress (5): 108/312 kB | 59/176 kB | 19/353 kB | 10/303 kB | 5.5/324 kBProgress (5): 108/312 kB | 59/176 kB | 19/353 kB | 12/303 kB | 5.5/324 kBProgress (5): 108/312 kB | 59/176 kB | 21/353 kB | 12/303 kB | 5.5/324 kBProgress (5): 108/312 kB | 59/176 kB | 21/353 kB | 12/303 kB | 5.5/324 kBProgress (5): 108/312 kB | 63/176 kB | 21/353 kB | 12/303 kB | 5.5/324 kBProgress (5): 108/312 kB | 63/176 kB | 21/353 kB | 12/303 kB | 6.8/324 kBProgress (5): 108/312 kB | 63/176 kB | 22/353 kB | 12/303 kB | 6.8/324 kBProgress (5): 108/312 kB | 63/176 kB | 22/353 kB | 14/303 kB | 6.8/324 kBProgress (5): 112/312 kB | 63/176 kB | 22/353 kB | 14/303 kB | 6.8/324 kBProgress (5): 112/312 kB | 63/176 kB | 22/353 kB | 14/303 kB | 8.2/324 kBProgress (5): 112/312 kB | 67/176 kB | 22/353 kB | 14/303 kB | 8.2/324 kBProgress (5): 112/312 kB | 67/176 kB | 22/353 kB | 15/303 kB | 8.2/324 kBProgress (5): 112/312 kB | 67/176 kB | 23/353 kB | 15/303 kB | 8.2/324 kBProgress (5): 112/312 kB | 67/176 kB | 23/353 kB | 15/303 kB | 9.6/324 kBProgress (5): 112/312 kB | 67/176 kB | 23/353 kB | 16/303 kB | 9.6/324 kBProgress (5): 112/312 kB | 67/176 kB | 25/353 kB | 16/303 kB | 9.6/324 kBProgress (5): 112/312 kB | 67/176 kB | 25/353 kB | 16/303 kB | 11/324 kB Progress (5): 116/312 kB | 67/176 kB | 25/353 kB | 16/303 kB | 11/324 kBProgress (5): 116/312 kB | 67/176 kB | 25/353 kB | 18/303 kB | 11/324 kBProgress (5): 116/312 kB | 72/176 kB | 25/353 kB | 18/303 kB | 11/324 kBProgress (5): 116/312 kB | 72/176 kB | 26/353 kB | 18/303 kB | 11/324 kBProgress (5): 116/312 kB | 72/176 kB | 26/353 kB | 18/303 kB | 12/324 kBProgress (5): 116/312 kB | 72/176 kB | 27/353 kB | 18/303 kB | 12/324 kBProgress (5): 116/312 kB | 72/176 kB | 27/353 kB | 19/303 kB | 12/324 kBProgress (5): 116/312 kB | 72/176 kB | 27/353 kB | 21/303 kB | 12/324 kBProgress (5): 121/312 kB | 72/176 kB | 27/353 kB | 21/303 kB | 12/324 kBProgress (5): 121/312 kB | 72/176 kB | 27/353 kB | 22/303 kB | 12/324 kBProgress (5): 121/312 kB | 72/176 kB | 27/353 kB | 23/303 kB | 12/324 kBProgress (5): 125/312 kB | 72/176 kB | 27/353 kB | 23/303 kB | 12/324 kBProgress (5): 125/312 kB | 72/176 kB | 27/353 kB | 25/303 kB | 12/324 kBProgress (5): 125/312 kB | 72/176 kB | 27/353 kB | 26/303 kB | 12/324 kBProgress (5): 129/312 kB | 72/176 kB | 27/353 kB | 26/303 kB | 12/324 kBProgress (5): 129/312 kB | 72/176 kB | 27/353 kB | 27/303 kB | 12/324 kBProgress (5): 129/312 kB | 72/176 kB | 27/353 kB | 29/303 kB | 12/324 kBProgress (5): 131/312 kB | 72/176 kB | 27/353 kB | 29/303 kB | 12/324 kBProgress (5): 131/312 kB | 72/176 kB | 27/353 kB | 30/303 kB | 12/324 kBProgress (5): 131/312 kB | 72/176 kB | 27/353 kB | 30/303 kB | 14/324 kBProgress (5): 131/312 kB | 72/176 kB | 27/353 kB | 31/303 kB | 14/324 kBProgress (5): 131/312 kB | 72/176 kB | 29/353 kB | 31/303 kB | 14/324 kBProgress (5): 135/312 kB | 72/176 kB | 29/353 kB | 31/303 kB | 14/324 kBProgress (5): 135/312 kB | 72/176 kB | 29/353 kB | 31/303 kB | 15/324 kBProgress (5): 135/312 kB | 72/176 kB | 29/353 kB | 33/303 kB | 15/324 kBProgress (5): 135/312 kB | 72/176 kB | 30/353 kB | 33/303 kB | 15/324 kBProgress (5): 135/312 kB | 76/176 kB | 30/353 kB | 33/303 kB | 15/324 kBProgress (5): 135/312 kB | 76/176 kB | 30/353 kB | 33/303 kB | 16/324 kBProgress (5): 135/312 kB | 76/176 kB | 30/353 kB | 34/303 kB | 16/324 kBProgress (5): 135/312 kB | 76/176 kB | 31/353 kB | 34/303 kB | 16/324 kBProgress (5): 135/312 kB | 76/176 kB | 31/353 kB | 34/303 kB | 18/324 kBProgress (5): 135/312 kB | 76/176 kB | 33/353 kB | 34/303 kB | 18/324 kBProgress (5): 140/312 kB | 76/176 kB | 33/353 kB | 34/303 kB | 18/324 kBProgress (5): 140/312 kB | 76/176 kB | 33/353 kB | 34/303 kB | 19/324 kBProgress (5): 140/312 kB | 76/176 kB | 34/353 kB | 34/303 kB | 19/324 kBProgress (5): 140/312 kB | 76/176 kB | 34/353 kB | 34/303 kB | 21/324 kBProgress (5): 140/312 kB | 80/176 kB | 34/353 kB | 34/303 kB | 21/324 kBProgress (5): 140/312 kB | 80/176 kB | 34/353 kB | 38/303 kB | 21/324 kBProgress (5): 140/312 kB | 80/176 kB | 36/353 kB | 38/303 kB | 21/324 kBProgress (5): 144/312 kB | 80/176 kB | 36/353 kB | 38/303 kB | 21/324 kBProgress (5): 144/312 kB | 80/176 kB | 36/353 kB | 38/303 kB | 22/324 kBProgress (5): 144/312 kB | 80/176 kB | 37/353 kB | 38/303 kB | 22/324 kBProgress (5): 144/312 kB | 80/176 kB | 38/353 kB | 38/303 kB | 22/324 kBProgress (5): 144/312 kB | 80/176 kB | 40/353 kB | 38/303 kB | 22/324 kBProgress (5): 144/312 kB | 80/176 kB | 40/353 kB | 43/303 kB | 22/324 kBProgress (5): 144/312 kB | 80/176 kB | 41/353 kB | 43/303 kB | 22/324 kBProgress (5): 148/312 kB | 80/176 kB | 41/353 kB | 43/303 kB | 22/324 kBProgress (5): 148/312 kB | 80/176 kB | 42/353 kB | 43/303 kB | 22/324 kBProgress (5): 148/312 kB | 84/176 kB | 42/353 kB | 43/303 kB | 22/324 kBProgress (5): 148/312 kB | 84/176 kB | 42/353 kB | 43/303 kB | 23/324 kBProgress (5): 148/312 kB | 84/176 kB | 44/353 kB | 43/303 kB | 23/324 kBProgress (5): 148/312 kB | 84/176 kB | 44/353 kB | 47/303 kB | 23/324 kBProgress (5): 152/312 kB | 84/176 kB | 44/353 kB | 47/303 kB | 23/324 kBProgress (5): 152/312 kB | 84/176 kB | 44/353 kB | 47/303 kB | 25/324 kBProgress (5): 152/312 kB | 84/176 kB | 45/353 kB | 47/303 kB | 25/324 kBProgress (5): 152/312 kB | 84/176 kB | 45/353 kB | 47/303 kB | 26/324 kBProgress (5): 152/312 kB | 89/176 kB | 45/353 kB | 47/303 kB | 26/324 kBProgress (5): 152/312 kB | 89/176 kB | 47/353 kB | 47/303 kB | 26/324 kBProgress (5): 152/312 kB | 89/176 kB | 47/353 kB | 47/303 kB | 27/324 kBProgress (5): 152/312 kB | 89/176 kB | 47/353 kB | 51/303 kB | 27/324 kBProgress (5): 156/312 kB | 89/176 kB | 47/353 kB | 51/303 kB | 27/324 kBProgress (5): 156/312 kB | 89/176 kB | 47/353 kB | 51/303 kB | 29/324 kBProgress (5): 156/312 kB | 93/176 kB | 47/353 kB | 51/303 kB | 29/324 kBProgress (5): 156/312 kB | 93/176 kB | 51/353 kB | 51/303 kB | 29/324 kBProgress (5): 156/312 kB | 93/176 kB | 51/353 kB | 51/303 kB | 30/324 kBProgress (5): 156/312 kB | 93/176 kB | 51/353 kB | 55/303 kB | 30/324 kBProgress (5): 161/312 kB | 93/176 kB | 51/353 kB | 55/303 kB | 30/324 kBProgress (5): 161/312 kB | 93/176 kB | 51/353 kB | 55/303 kB | 31/324 kBProgress (5): 161/312 kB | 97/176 kB | 51/353 kB | 55/303 kB | 31/324 kBProgress (5): 161/312 kB | 97/176 kB | 51/353 kB | 55/303 kB | 33/324 kBProgress (5): 161/312 kB | 97/176 kB | 51/353 kB | 55/303 kB | 34/324 kBProgress (5): 161/312 kB | 97/176 kB | 51/353 kB | 55/303 kB | 36/324 kBProgress (5): 161/312 kB | 97/176 kB | 55/353 kB | 55/303 kB | 36/324 kBProgress (5): 161/312 kB | 97/176 kB | 55/353 kB | 60/303 kB | 36/324 kBProgress (5): 161/312 kB | 101/176 kB | 55/353 kB | 60/303 kB | 36/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 60/303 kB | 36/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 60/303 kB | 37/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 60/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 64/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 68/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 72/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 76/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 81/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 85/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 89/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 93/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 98/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 102/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 106/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 55/353 kB | 110/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 59/353 kB | 110/303 kB | 38/324 kBProgress (5): 165/312 kB | 101/176 kB | 59/353 kB | 110/303 kB | 40/324 kBProgress (5): 165/312 kB | 105/176 kB | 59/353 kB | 110/303 kB | 40/324 kBProgress (5): 165/312 kB | 105/176 kB | 59/353 kB | 110/303 kB | 41/324 kBProgress (5): 169/312 kB | 105/176 kB | 59/353 kB | 110/303 kB | 41/324 kBProgress (5): 169/312 kB | 105/176 kB | 59/353 kB | 115/303 kB | 41/324 kBProgress (5): 169/312 kB | 105/176 kB | 59/353 kB | 115/303 kB | 42/324 kBProgress (5): 169/312 kB | 105/176 kB | 59/353 kB | 115/303 kB | 44/324 kBProgress (5): 169/312 kB | 105/176 kB | 63/353 kB | 115/303 kB | 44/324 kBProgress (5): 169/312 kB | 110/176 kB | 63/353 kB | 115/303 kB | 44/324 kBProgress (5): 173/312 kB | 110/176 kB | 63/353 kB | 115/303 kB | 44/324 kBProgress (5): 173/312 kB | 110/176 kB | 63/353 kB | 115/303 kB | 45/324 kBProgress (5): 173/312 kB | 110/176 kB | 63/353 kB | 119/303 kB | 45/324 kBProgress (5): 173/312 kB | 110/176 kB | 63/353 kB | 119/303 kB | 46/324 kBProgress (5): 173/312 kB | 110/176 kB | 68/353 kB | 119/303 kB | 46/324 kBProgress (5): 173/312 kB | 110/176 kB | 68/353 kB | 119/303 kB | 48/324 kBProgress (5): 173/312 kB | 114/176 kB | 68/353 kB | 119/303 kB | 48/324 kBProgress (5): 173/312 kB | 114/176 kB | 68/353 kB | 119/303 kB | 49/324 kBProgress (5): 178/312 kB | 114/176 kB | 68/353 kB | 119/303 kB | 49/324 kBProgress (5): 178/312 kB | 114/176 kB | 72/353 kB | 119/303 kB | 49/324 kBProgress (5): 178/312 kB | 114/176 kB | 72/353 kB | 123/303 kB | 49/324 kBProgress (5): 178/312 kB | 118/176 kB | 72/353 kB | 123/303 kB | 49/324 kBProgress (5): 182/312 kB | 118/176 kB | 72/353 kB | 123/303 kB | 49/324 kBProgress (5): 182/312 kB | 118/176 kB | 72/353 kB | 123/303 kB | 53/324 kBProgress (5): 182/312 kB | 118/176 kB | 76/353 kB | 123/303 kB | 53/324 kBProgress (5): 182/312 kB | 118/176 kB | 76/353 kB | 127/303 kB | 53/324 kBProgress (5): 182/312 kB | 122/176 kB | 76/353 kB | 127/303 kB | 53/324 kBProgress (5): 186/312 kB | 122/176 kB | 76/353 kB | 127/303 kB | 53/324 kBProgress (5): 186/312 kB | 122/176 kB | 76/353 kB | 127/303 kB | 58/324 kBProgress (5): 186/312 kB | 122/176 kB | 80/353 kB | 127/303 kB | 58/324 kBProgress (5): 186/312 kB | 122/176 kB | 80/353 kB | 131/303 kB | 58/324 kBProgress (5): 186/312 kB | 127/176 kB | 80/353 kB | 131/303 kB | 58/324 kBProgress (5): 190/312 kB | 127/176 kB | 80/353 kB | 131/303 kB | 58/324 kBProgress (5): 190/312 kB | 127/176 kB | 80/353 kB | 131/303 kB | 62/324 kBProgress (5): 190/312 kB | 127/176 kB | 85/353 kB | 131/303 kB | 62/324 kBProgress (5): 190/312 kB | 127/176 kB | 85/353 kB | 136/303 kB | 62/324 kBProgress (5): 190/312 kB | 127/176 kB | 85/353 kB | 136/303 kB | 66/324 kBProgress (5): 195/312 kB | 127/176 kB | 85/353 kB | 136/303 kB | 66/324 kBProgress (5): 195/312 kB | 127/176 kB | 89/353 kB | 136/303 kB | 66/324 kBProgress (5): 197/312 kB | 127/176 kB | 89/353 kB | 136/303 kB | 66/324 kBProgress (5): 197/312 kB | 127/176 kB | 89/353 kB | 136/303 kB | 70/324 kBProgress (5): 197/312 kB | 127/176 kB | 89/353 kB | 140/303 kB | 70/324 kBProgress (5): 197/312 kB | 127/176 kB | 93/353 kB | 140/303 kB | 70/324 kBProgress (5): 201/312 kB | 127/176 kB | 93/353 kB | 140/303 kB | 70/324 kBProgress (5): 201/312 kB | 127/176 kB | 93/353 kB | 143/303 kB | 70/324 kBProgress (5): 201/312 kB | 127/176 kB | 93/353 kB | 143/303 kB | 74/324 kBProgress (5): 201/312 kB | 127/176 kB | 97/353 kB | 143/303 kB | 74/324 kBProgress (5): 201/312 kB | 127/176 kB | 102/353 kB | 143/303 kB | 74/324 kBProgress (5): 201/312 kB | 127/176 kB | 102/353 kB | 143/303 kB | 78/324 kBProgress (5): 201/312 kB | 127/176 kB | 102/353 kB | 148/303 kB | 78/324 kBProgress (5): 201/312 kB | 131/176 kB | 102/353 kB | 148/303 kB | 78/324 kBProgress (5): 201/312 kB | 131/176 kB | 102/353 kB | 148/303 kB | 82/324 kBProgress (5): 201/312 kB | 131/176 kB | 106/353 kB | 148/303 kB | 82/324 kBProgress (5): 201/312 kB | 131/176 kB | 106/353 kB | 152/303 kB | 82/324 kBProgress (5): 201/312 kB | 135/176 kB | 106/353 kB | 152/303 kB | 82/324 kBProgress (5): 201/312 kB | 135/176 kB | 106/353 kB | 152/303 kB | 87/324 kBProgress (5): 201/312 kB | 135/176 kB | 106/353 kB | 156/303 kB | 87/324 kBProgress (5): 201/312 kB | 139/176 kB | 106/353 kB | 156/303 kB | 87/324 kBProgress (5): 201/312 kB | 139/176 kB | 110/353 kB | 156/303 kB | 87/324 kBProgress (5): 217/312 kB | 139/176 kB | 110/353 kB | 156/303 kB | 87/324 kBProgress (5): 217/312 kB | 139/176 kB | 110/353 kB | 156/303 kB | 91/324 kBProgress (5): 217/312 kB | 139/176 kB | 110/353 kB | 160/303 kB | 91/324 kBProgress (5): 217/312 kB | 144/176 kB | 110/353 kB | 160/303 kB | 91/324 kBProgress (5): 217/312 kB | 144/176 kB | 114/353 kB | 160/303 kB | 91/324 kBProgress (5): 217/312 kB | 144/176 kB | 114/353 kB | 160/303 kB | 95/324 kBProgress (5): 217/312 kB | 144/176 kB | 114/353 kB | 165/303 kB | 95/324 kBProgress (5): 217/312 kB | 148/176 kB | 114/353 kB | 165/303 kB | 95/324 kBProgress (5): 217/312 kB | 148/176 kB | 118/353 kB | 165/303 kB | 95/324 kBProgress (5): 217/312 kB | 148/176 kB | 118/353 kB | 169/303 kB | 95/324 kBProgress (5): 217/312 kB | 148/176 kB | 118/353 kB | 169/303 kB | 99/324 kBProgress (5): 217/312 kB | 152/176 kB | 118/353 kB | 169/303 kB | 99/324 kBProgress (5): 234/312 kB | 152/176 kB | 118/353 kB | 169/303 kB | 99/324 kBProgress (5): 234/312 kB | 152/176 kB | 118/353 kB | 173/303 kB | 99/324 kBProgress (5): 234/312 kB | 152/176 kB | 123/353 kB | 173/303 kB | 99/324 kBProgress (5): 234/312 kB | 156/176 kB | 123/353 kB | 173/303 kB | 99/324 kBProgress (5): 234/312 kB | 156/176 kB | 123/353 kB | 173/303 kB | 104/324 kBProgress (5): 234/312 kB | 156/176 kB | 123/353 kB | 173/303 kB | 104/324 kBProgress (5): 234/312 kB | 156/176 kB | 123/353 kB | 177/303 kB | 104/324 kBProgress (5): 250/312 kB | 156/176 kB | 123/353 kB | 177/303 kB | 104/324 kBProgress (5): 250/312 kB | 160/176 kB | 123/353 kB | 177/303 kB | 104/324 kBProgress (5): 250/312 kB | 160/176 kB | 123/353 kB | 177/303 kB | 108/324 kBProgress (5): 250/312 kB | 160/176 kB | 123/353 kB | 181/303 kB | 108/324 kBProgress (5): 250/312 kB | 160/176 kB | 127/353 kB | 181/303 kB | 108/324 kBProgress (5): 250/312 kB | 164/176 kB | 127/353 kB | 181/303 kB | 108/324 kBProgress (5): 250/312 kB | 164/176 kB | 127/353 kB | 186/303 kB | 108/324 kBProgress (5): 250/312 kB | 164/176 kB | 127/353 kB | 186/303 kB | 112/324 kBProgress (5): 250/312 kB | 164/176 kB | 131/353 kB | 186/303 kB | 112/324 kBProgress (5): 250/312 kB | 164/176 kB | 131/353 kB | 190/303 kB | 112/324 kBProgress (5): 250/312 kB | 168/176 kB | 131/353 kB | 190/303 kB | 112/324 kBProgress (5): 250/312 kB | 168/176 kB | 136/353 kB | 190/303 kB | 112/324 kBProgress (5): 250/312 kB | 168/176 kB | 136/353 kB | 190/303 kB | 116/324 kBProgress (5): 250/312 kB | 168/176 kB | 136/353 kB | 194/303 kB | 116/324 kBProgress (5): 250/312 kB | 173/176 kB | 136/353 kB | 194/303 kB | 116/324 kBProgress (5): 250/312 kB | 173/176 kB | 140/353 kB | 194/303 kB | 116/324 kBProgress (5): 250/312 kB | 173/176 kB | 140/353 kB | 194/303 kB | 121/324 kBProgress (5): 266/312 kB | 173/176 kB | 140/353 kB | 194/303 kB | 121/324 kBProgress (5): 266/312 kB | 176 kB | 140/353 kB | 194/303 kB | 121/324 kB    Progress (5): 266/312 kB | 176 kB | 140/353 kB | 198/303 kB | 121/324 kBProgress (5): 266/312 kB | 176 kB | 140/353 kB | 198/303 kB | 125/324 kBProgress (5): 266/312 kB | 176 kB | 144/353 kB | 198/303 kB | 125/324 kBProgress (5): 266/312 kB | 176 kB | 144/353 kB | 203/303 kB | 125/324 kB                                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar (176 kB at 282 kB/s)
+Progress (4): 266/312 kB | 148/353 kB | 203/303 kB | 125/324 kBProgress (4): 266/312 kB | 148/353 kB | 219/303 kB | 125/324 kBProgress (4): 266/312 kB | 152/353 kB | 219/303 kB | 125/324 kBProgress (4): 266/312 kB | 157/353 kB | 219/303 kB | 125/324 kBProgress (4): 266/312 kB | 157/353 kB | 235/303 kB | 125/324 kBProgress (4): 266/312 kB | 161/353 kB | 235/303 kB | 125/324 kBProgress (4): 266/312 kB | 165/353 kB | 235/303 kB | 125/324 kBProgress (4): 266/312 kB | 165/353 kB | 252/303 kB | 125/324 kBProgress (4): 266/312 kB | 165/353 kB | 252/303 kB | 129/324 kBProgress (4): 266/312 kB | 169/353 kB | 252/303 kB | 129/324 kBProgress (4): 266/312 kB | 169/353 kB | 252/303 kB | 131/324 kBProgress (4): 266/312 kB | 174/353 kB | 252/303 kB | 131/324 kBProgress (4): 283/312 kB | 174/353 kB | 252/303 kB | 131/324 kBProgress (4): 283/312 kB | 174/353 kB | 252/303 kB | 135/324 kBProgress (4): 283/312 kB | 174/353 kB | 268/303 kB | 135/324 kBProgress (4): 283/312 kB | 178/353 kB | 268/303 kB | 135/324 kBProgress (4): 283/312 kB | 178/353 kB | 268/303 kB | 140/324 kBProgress (4): 283/312 kB | 178/353 kB | 274/303 kB | 140/324 kBProgress (4): 283/312 kB | 182/353 kB | 274/303 kB | 140/324 kBProgress (4): 283/312 kB | 182/353 kB | 274/303 kB | 144/324 kBProgress (4): 283/312 kB | 186/353 kB | 274/303 kB | 144/324 kBProgress (4): 283/312 kB | 186/353 kB | 274/303 kB | 148/324 kBProgress (4): 283/312 kB | 191/353 kB | 274/303 kB | 148/324 kBProgress (4): 283/312 kB | 191/353 kB | 274/303 kB | 152/324 kBProgress (4): 283/312 kB | 195/353 kB | 274/303 kB | 152/324 kBProgress (4): 299/312 kB | 195/353 kB | 274/303 kB | 152/324 kBProgress (4): 299/312 kB | 195/353 kB | 291/303 kB | 152/324 kBProgress (4): 299/312 kB | 195/353 kB | 291/303 kB | 156/324 kBProgress (4): 299/312 kB | 199/353 kB | 291/303 kB | 156/324 kBProgress (4): 299/312 kB | 203/353 kB | 291/303 kB | 156/324 kBProgress (4): 299/312 kB | 203/353 kB | 291/303 kB | 161/324 kBProgress (4): 299/312 kB | 203/353 kB | 291/303 kB | 165/324 kBProgress (4): 299/312 kB | 207/353 kB | 291/303 kB | 165/324 kBProgress (4): 299/312 kB | 207/353 kB | 303 kB | 165/324 kB    Progress (4): 299/312 kB | 207/353 kB | 303 kB | 168/324 kBProgress (4): 312 kB | 207/353 kB | 303 kB | 168/324 kB    Progress (4): 312 kB | 212/353 kB | 303 kB | 168/324 kBProgress (4): 312 kB | 212/353 kB | 303 kB | 172/324 kB                                                       Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar (303 kB at 421 kB/s)
+Progress (3): 312 kB | 212/353 kB | 176/324 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar (312 kB at 432 kB/s)
+Progress (2): 228/353 kB | 176/324 kBProgress (2): 228/353 kB | 180/324 kBProgress (2): 228/353 kB | 185/324 kBProgress (2): 228/353 kB | 189/324 kBProgress (2): 244/353 kB | 189/324 kBProgress (2): 244/353 kB | 193/324 kBProgress (2): 244/353 kB | 197/324 kBProgress (2): 254/353 kB | 197/324 kBProgress (2): 254/353 kB | 201/324 kBProgress (2): 254/353 kB | 205/324 kBProgress (2): 254/353 kB | 209/324 kBProgress (2): 270/353 kB | 209/324 kBProgress (2): 270/353 kB | 214/324 kBProgress (2): 270/353 kB | 230/324 kBProgress (2): 270/353 kB | 246/324 kBProgress (2): 287/353 kB | 246/324 kBProgress (2): 287/353 kB | 263/324 kBProgress (2): 303/353 kB | 263/324 kBProgress (2): 303/353 kB | 279/324 kBProgress (2): 319/353 kB | 279/324 kBProgress (2): 336/353 kB | 279/324 kBProgress (2): 336/353 kB | 295/324 kBProgress (2): 352/353 kB | 295/324 kBProgress (2): 352/353 kB | 312/324 kBProgress (2): 353 kB | 312/324 kB    Progress (2): 353 kB | 324 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar (353 kB at 431 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar (324 kB at 396 kB/s)
+[INFO] 
+[INFO] --- exec:3.6.3:java (default-cli) @ advDB ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom
+Progress (1): 838 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom (2.2 kB at 93 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom
+Progress (1): 752 BProgress (1): 2.3 kBProgress (1): 4.0 kBProgress (1): 9.1 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom (25 kB at 1.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom
+Progress (1): 708 BProgress (1): 1.9 kBProgress (1): 5.5 kBProgress (1): 9.7 kBProgress (1): 14 kB Progress (1): 19 kBProgress (1): 23 kBProgress (1): 27 kBProgress (1): 28 kBProgress (1): 32 kBProgress (1): 35 kBProgress (1): 38 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 48 kBProgress (1): 48 kBProgress (1): 53 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom (53 kB at 2.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom
+Progress (1): 739 BProgress (1): 2.1 kBProgress (1): 4.0 kBProgress (1): 5.9 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom (24 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom (5.6 kB at 297 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom
+Progress (1): 835 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom (2.2 kB at 92 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+Progress (1): 976 BProgress (1): 4.3 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 640 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+Progress (1): 814 BProgress (1): 2.6 kBProgress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 176 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+Progress (1): 692 BProgress (1): 2.5 kBProgress (1): 6.4 kBProgress (1): 8.9 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom (5.6 kB at 314 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom
+Progress (1): 757 BProgress (1): 2.2 kBProgress (1): 4.0 kBProgress (1): 6.5 kBProgress (1): 9.8 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom (11 kB at 439 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom
+Progress (1): 700 BProgress (1): 1.9 kBProgress (1): 3.2 kBProgress (1): 4.7 kBProgress (1): 6.8 kBProgress (1): 9.4 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 19 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 32 kBProgress (1): 32 kBProgress (1): 36 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 46 kBProgress (1): 50 kBProgress (1): 52 kBProgress (1): 55 kBProgress (1): 58 kBProgress (1): 60 kBProgress (1): 63 kBProgress (1): 67 kBProgress (1): 70 kBProgress (1): 73 kBProgress (1): 75 kBProgress (1): 77 kBProgress (1): 79 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom (79 kB at 2.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom
+Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom (5.7 kB at 270 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom
+Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom (2.4 kB at 113 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
+Progress (1): 709 BProgress (1): 2.1 kBProgress (1): 3.6 kBProgress (1): 5.7 kBProgress (1): 8.1 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom (11 kB at 538 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom
+Progress (1): 1.1 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom (2.8 kB at 133 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom
+Progress (1): 1.1 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom (2.6 kB at 118 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar
+Progress (1): 7.7/196 kBProgress (1): 8.2/196 kBProgress (1): 25/196 kB Progress (1): 41/196 kBProgress (1): 57/196 kBProgress (1): 66/196 kBProgress (1): 82/196 kBProgress (1): 98/196 kBProgress (1): 115/196 kBProgress (1): 131/196 kBProgress (1): 147/196 kBProgress (1): 164/196 kBProgress (1): 180/196 kBProgress (1): 196 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar (196 kB at 3.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar
+Progress (1): 7.7/157 kBProgress (1): 16/157 kB Progress (1): 32/157 kBProgress (2): 32/157 kB | 7.7/193 kBProgress (3): 32/157 kB | 7.7/193 kB | 3.8/126 kBProgress (3): 32/157 kB | 16/193 kB | 3.8/126 kB Progress (3): 32/157 kB | 16/193 kB | 8.0/126 kBProgress (3): 49/157 kB | 16/193 kB | 8.0/126 kBProgress (3): 49/157 kB | 25/193 kB | 8.0/126 kBProgress (3): 49/157 kB | 25/193 kB | 12/126 kB Progress (3): 49/157 kB | 25/193 kB | 15/126 kBProgress (3): 49/157 kB | 25/193 kB | 20/126 kBProgress (3): 49/157 kB | 25/193 kB | 24/126 kBProgress (4): 49/157 kB | 25/193 kB | 24/126 kB | 7.7/69 kBProgress (4): 49/157 kB | 25/193 kB | 28/126 kB | 7.7/69 kBProgress (4): 49/157 kB | 25/193 kB | 28/126 kB | 16/69 kB Progress (4): 49/157 kB | 41/193 kB | 28/126 kB | 16/69 kBProgress (4): 65/157 kB | 41/193 kB | 28/126 kB | 16/69 kBProgress (4): 65/157 kB | 41/193 kB | 32/126 kB | 16/69 kBProgress (4): 65/157 kB | 41/193 kB | 32/126 kB | 25/69 kBProgress (4): 65/157 kB | 41/193 kB | 37/126 kB | 25/69 kBProgress (4): 65/157 kB | 41/193 kB | 41/126 kB | 25/69 kBProgress (4): 65/157 kB | 41/193 kB | 45/126 kB | 25/69 kBProgress (4): 65/157 kB | 41/193 kB | 45/126 kB | 41/69 kBProgress (4): 81/157 kB | 41/193 kB | 45/126 kB | 41/69 kBProgress (4): 81/157 kB | 57/193 kB | 45/126 kB | 41/69 kBProgress (4): 81/157 kB | 57/193 kB | 61/126 kB | 41/69 kBProgress (5): 81/157 kB | 57/193 kB | 61/126 kB | 41/69 kB | 7.7/94 kBProgress (5): 81/157 kB | 57/193 kB | 61/126 kB | 41/69 kB | 7.7/94 kBProgress (5): 81/157 kB | 57/193 kB | 65/126 kB | 41/69 kB | 7.7/94 kBProgress (5): 81/157 kB | 57/193 kB | 65/126 kB | 57/69 kB | 7.7/94 kBProgress (5): 98/157 kB | 57/193 kB | 65/126 kB | 57/69 kB | 7.7/94 kBProgress (5): 98/157 kB | 57/193 kB | 65/126 kB | 69 kB | 7.7/94 kB   Progress (5): 98/157 kB | 57/193 kB | 81/126 kB | 69 kB | 7.7/94 kBProgress (5): 98/157 kB | 74/193 kB | 81/126 kB | 69 kB | 7.7/94 kBProgress (5): 114/157 kB | 74/193 kB | 81/126 kB | 69 kB | 7.7/94 kBProgress (5): 114/157 kB | 74/193 kB | 81/126 kB | 69 kB | 24/94 kB Progress (5): 114/157 kB | 74/193 kB | 97/126 kB | 69 kB | 24/94 kB                                                                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar (69 kB at 2.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar
+Progress (4): 114/157 kB | 90/193 kB | 97/126 kB | 24/94 kBProgress (4): 114/157 kB | 90/193 kB | 114/126 kB | 24/94 kBProgress (4): 131/157 kB | 90/193 kB | 114/126 kB | 24/94 kBProgress (4): 131/157 kB | 90/193 kB | 114/126 kB | 40/94 kBProgress (4): 131/157 kB | 90/193 kB | 126 kB | 40/94 kB    Progress (4): 147/157 kB | 90/193 kB | 126 kB | 40/94 kBProgress (4): 147/157 kB | 106/193 kB | 126 kB | 40/94 kB                                                         Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar (126 kB at 3.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar
+Progress (3): 147/157 kB | 106/193 kB | 57/94 kBProgress (3): 157 kB | 106/193 kB | 57/94 kB    Progress (3): 157 kB | 123/193 kB | 57/94 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar (157 kB at 4.4 MB/s)
+Progress (2): 123/193 kB | 73/94 kBProgress (2): 139/193 kB | 73/94 kBProgress (2): 139/193 kB | 90/94 kBProgress (2): 139/193 kB | 94 kB   Progress (2): 156/193 kB | 94 kB                                Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 2.4 MB/s)
+Progress (1): 172/193 kBProgress (1): 188/193 kBProgress (1): 193 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 4.5 MB/s)
+Progress (1): 7.7/52 kBProgress (1): 15/52 kB Progress (1): 32/52 kBProgress (1): 48/52 kBProgress (1): 52 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar (52 kB at 999 kB/s)
+Progress (1): 7.7/75 kBProgress (1): 16/75 kB Progress (1): 32/75 kBProgress (1): 48/75 kBProgress (1): 65/75 kBProgress (1): 75 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar (75 kB at 1.3 MB/s)
+=== DBLP LOADER START ===
+Start time: 2026-04-30T08:40:16.070414038Z
+JSON file: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+Neo4j IP: neo4j
+Max articles to read: 6000000
+Batch size: 10000
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3 (file:/root/.m2/repository/org/neo4j/driver/neo4j-java-driver/4.4.5/neo4j-java-driver-4.4.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Waiting for Neo4j...
+Neo4j not ready yet.
+Waiting for Neo4j...
+Neo4j not ready yet.
+Waiting for Neo4j...
+Connected to Neo4j.
+Constraints created or already existing.
+Pass 1/2: loading ARTICLE, AUTHOR and AUTHORED...
+Opening resumable remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+Pass 1 progress - articles read: 100000
+Pass 1 progress - articles read: 200000
+Pass 1 progress - articles read: 300000
+Pass 1 progress - articles read: 400000
+Pass 1 progress - articles read: 500000
+Pass 1 progress - articles read: 600000
+Pass 1 progress - articles read: 700000
+Pass 1 progress - articles read: 800000
+Pass 1 progress - articles read: 900000
+Pass 1 progress - articles read: 1000000
+Pass 1 progress - articles read: 1100000
+Pass 1 progress - articles read: 1200000
+Pass 1 progress - articles read: 1300000
+Pass 1 progress - articles read: 1400000
+Pass 1 progress - articles read: 1500000
+Pass 1 progress - articles read: 1600000
+Pass 1 progress - articles read: 1700000
+Pass 1 progress - articles read: 1800000
+Pass 1 progress - articles read: 1900000
+Pass 1 progress - articles read: 2000000
+Pass 1 progress - articles read: 2100000
+Pass 1 progress - articles read: 2200000
+Pass 1 progress - articles read: 2300000
+Pass 1 progress - articles read: 2400000
+Pass 1 progress - articles read: 2500000
+Pass 1 progress - articles read: 2600000
+Pass 1 progress - articles read: 2700000
+Pass 1 progress - articles read: 2800000
+Pass 1 progress - articles read: 2900000
+Pass 1 progress - articles read: 3000000
+Pass 1 progress - articles read: 3100000
+Pass 1 progress - articles read: 3200000
+Pass 1 progress - articles read: 3300000
+Pass 1 progress - articles read: 3400000
+Pass 1 progress - articles read: 3500000
+Pass 1 progress - articles read: 3600000
+Pass 1 progress - articles read: 3700000
+Pass 1 progress - articles read: 3800000
+Pass 1 progress - articles read: 3900000
+Pass 1 progress - articles read: 4000000
+Pass 1 progress - articles read: 4100000
+HTTP stream interrupted at byte 9886178059 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 1. Waiting 1000 ms...
+Resumed HTTP stream from byte 9886178059
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9903571657 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 2. Waiting 1000 ms...
+Resumed HTTP stream from byte 9903571657
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9926678881 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 3. Waiting 1000 ms...
+Resumed HTTP stream from byte 9926678881
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 4200000
+Pass 1 progress - articles read: 4300000
+Pass 1 progress - articles read: 4400000
+Pass 1 progress - articles read: 4500000
+Pass 1 progress - articles read: 4600000
+HTTP stream interrupted at byte 11044573885 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 4. Waiting 1000 ms...
+Resumed HTTP stream from byte 11044573885
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11063365482 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 5. Waiting 1000 ms...
+Resumed HTTP stream from byte 11063365482
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11087876297 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 6. Waiting 1000 ms...
+Resumed HTTP stream from byte 11087876297
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11110478842 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 7. Waiting 1000 ms...
+Resumed HTTP stream from byte 11110478842
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 4700000
+HTTP stream interrupted at byte 11135351739 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 8. Waiting 1000 ms...
+Resumed HTTP stream from byte 11135351739
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11157964538 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 9. Waiting 1000 ms...
+Resumed HTTP stream from byte 11157964538
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11182348135 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 10. Waiting 1000 ms...
+Resumed HTTP stream from byte 11182348135
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11205140808 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 11. Waiting 1000 ms...
+Resumed HTTP stream from byte 11205140808
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11230051451 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 12. Waiting 1000 ms...
+Resumed HTTP stream from byte 11230051451
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11253354374 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 13. Waiting 1000 ms...
+Resumed HTTP stream from byte 11253354374
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11277915955 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 14. Waiting 1000 ms...
+Resumed HTTP stream from byte 11277915955
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11300600022 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 15. Waiting 1000 ms...
+Resumed HTTP stream from byte 11300600022
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11325423989 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 16. Waiting 1000 ms...
+Resumed HTTP stream from byte 11325423989
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11347997176 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 17. Waiting 1000 ms...
+Resumed HTTP stream from byte 11347997176
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 4800000
+HTTP stream interrupted at byte 11372254953 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 18. Waiting 1000 ms...
+Resumed HTTP stream from byte 11372254953
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11395701890 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 19. Waiting 1000 ms...
+Resumed HTTP stream from byte 11395701890
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11419790509 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 20. Waiting 1000 ms...
+Resumed HTTP stream from byte 11419790509
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11443096248 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 21. Waiting 1000 ms...
+Resumed HTTP stream from byte 11443096248
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11467017107 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 22. Waiting 1000 ms...
+Resumed HTTP stream from byte 11467017107
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11490487810 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 23. Waiting 1000 ms...
+Resumed HTTP stream from byte 11490487810
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11514298227 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 24. Waiting 1000 ms...
+Resumed HTTP stream from byte 11514298227
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11537577404 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 25. Waiting 1000 ms...
+Resumed HTTP stream from byte 11537577404
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11561414383 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 26. Waiting 1000 ms...
+Resumed HTTP stream from byte 11561414383
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11584163344 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 27. Waiting 1000 ms...
+Resumed HTTP stream from byte 11584163344
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 4900000
+HTTP stream interrupted at byte 11608723089 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 28. Waiting 1000 ms...
+Resumed HTTP stream from byte 11608723089
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11632465004 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 29. Waiting 1000 ms...
+Resumed HTTP stream from byte 11632465004
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11656584379 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 30. Waiting 1000 ms...
+Resumed HTTP stream from byte 11656584379
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11678881018 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 31. Waiting 1000 ms...
+Resumed HTTP stream from byte 11678881018
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11704004157 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 32. Waiting 1000 ms...
+Resumed HTTP stream from byte 11704004157
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11727719510 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 33. Waiting 1000 ms...
+Resumed HTTP stream from byte 11727719510
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11751109129 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 34. Waiting 1000 ms...
+Resumed HTTP stream from byte 11751109129
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11774941914 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 35. Waiting 1000 ms...
+Resumed HTTP stream from byte 11774941914
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11797655029 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 36. Waiting 1000 ms...
+Resumed HTTP stream from byte 11797655029
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11822281878 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 37. Waiting 1000 ms...
+Resumed HTTP stream from byte 11822281878
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5000000
+HTTP stream interrupted at byte 11845753979 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 38. Waiting 1000 ms...
+Resumed HTTP stream from byte 11845753979
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11869579774 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 39. Waiting 1000 ms...
+Resumed HTTP stream from byte 11869579774
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11892291875 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 40. Waiting 1000 ms...
+Resumed HTTP stream from byte 11892291875
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11917676440 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 41. Waiting 1000 ms...
+Resumed HTTP stream from byte 11917676440
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11940455133 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 42. Waiting 1000 ms...
+Resumed HTTP stream from byte 11940455133
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11964704522 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 43. Waiting 1000 ms...
+Resumed HTTP stream from byte 11964704522
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11987467193 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 44. Waiting 1000 ms...
+Resumed HTTP stream from byte 11987467193
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12014870470 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 45. Waiting 1000 ms...
+Resumed HTTP stream from byte 12014870470
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12036822945 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 46. Waiting 1000 ms...
+Resumed HTTP stream from byte 12036822945
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12060198584 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 47. Waiting 1000 ms...
+Resumed HTTP stream from byte 12060198584
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5100000
+HTTP stream interrupted at byte 12083354737 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 48. Waiting 1000 ms...
+Resumed HTTP stream from byte 12083354737
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12106633156 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 49. Waiting 1000 ms...
+Resumed HTTP stream from byte 12106633156
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12130904913 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 50. Waiting 1000 ms...
+Resumed HTTP stream from byte 12130904913
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12155182262 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 51. Waiting 1000 ms...
+Resumed HTTP stream from byte 12155182262
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12179340781 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 52. Waiting 1000 ms...
+Resumed HTTP stream from byte 12179340781
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12201830728 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 53. Waiting 1000 ms...
+Resumed HTTP stream from byte 12201830728
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12225834069 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 54. Waiting 1000 ms...
+Resumed HTTP stream from byte 12225834069
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12250111418 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 55. Waiting 1000 ms...
+Resumed HTTP stream from byte 12250111418
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12272662237 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 56. Waiting 1000 ms...
+Resumed HTTP stream from byte 12272662237
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12296258676 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 57. Waiting 1000 ms...
+Resumed HTTP stream from byte 12296258676
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5200000
+HTTP stream interrupted at byte 12319452347 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 58. Waiting 1000 ms...
+Resumed HTTP stream from byte 12319452347
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12344767012 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 59. Waiting 1000 ms...
+Resumed HTTP stream from byte 12344767012
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12367554093 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 60. Waiting 1000 ms...
+Resumed HTTP stream from byte 12367554093
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12391476478 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 61. Waiting 1000 ms...
+Resumed HTTP stream from byte 12391476478
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12415293885 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 62. Waiting 1000 ms...
+Resumed HTTP stream from byte 12415293885
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12439916540 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 63. Waiting 1000 ms...
+Resumed HTTP stream from byte 12439916540
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12462818257 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 64. Waiting 1000 ms...
+Resumed HTTP stream from byte 12462818257
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12486176106 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 65. Waiting 1000 ms...
+Resumed HTTP stream from byte 12486176106
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12510017279 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 66. Waiting 1000 ms...
+Resumed HTTP stream from byte 12510017279
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12533531074 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 67. Waiting 1000 ms...
+Resumed HTTP stream from byte 12533531074
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5300000
+HTTP stream interrupted at byte 12557615499 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 68. Waiting 1000 ms...
+Resumed HTTP stream from byte 12557615499
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12580760852 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 69. Waiting 1000 ms...
+Resumed HTTP stream from byte 12580760852
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12603676431 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 70. Waiting 1000 ms...
+Resumed HTTP stream from byte 12603676431
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12628642620 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 71. Waiting 1000 ms...
+Resumed HTTP stream from byte 12628642620
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12651185179 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 72. Waiting 1000 ms...
+Resumed HTTP stream from byte 12651185179
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12675427204 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 73. Waiting 1000 ms...
+Resumed HTTP stream from byte 12675427204
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12699259989 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 74. Waiting 1000 ms...
+Resumed HTTP stream from byte 12699259989
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12722477700 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 75. Waiting 1000 ms...
+Resumed HTTP stream from byte 12722477700
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12745720913 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 76. Waiting 1000 ms...
+Resumed HTTP stream from byte 12745720913
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12769872068 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 77. Waiting 1000 ms...
+Resumed HTTP stream from byte 12769872068
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5400000
+HTTP stream interrupted at byte 12792928527 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 78. Waiting 1000 ms...
+Resumed HTTP stream from byte 12792928527
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12817161268 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 79. Waiting 1000 ms...
+Resumed HTTP stream from byte 12817161268
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12840187535 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 80. Waiting 1000 ms...
+Resumed HTTP stream from byte 12840187535
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12864133312 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 81. Waiting 1000 ms...
+Resumed HTTP stream from byte 12864133312
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12887934787 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 82. Waiting 1000 ms...
+Resumed HTTP stream from byte 12887934787
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12911093992 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 83. Waiting 1000 ms...
+Resumed HTTP stream from byte 12911093992
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12935614347 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 84. Waiting 1000 ms...
+Resumed HTTP stream from byte 12935614347
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12958615204 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 85. Waiting 1000 ms...
+Resumed HTTP stream from byte 12958615204
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 12983537413 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 86. Waiting 1000 ms...
+Resumed HTTP stream from byte 12983537413
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13006816590 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 87. Waiting 1000 ms...
+Resumed HTTP stream from byte 13006816590
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5500000
+HTTP stream interrupted at byte 13029705479 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 88. Waiting 1000 ms...
+Resumed HTTP stream from byte 13029705479
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13053920630 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 89. Waiting 1000 ms...
+Resumed HTTP stream from byte 13053920630
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13078214755 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 90. Waiting 1000 ms...
+Resumed HTTP stream from byte 13078214755
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13101324400 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 91. Waiting 1000 ms...
+Resumed HTTP stream from byte 13101324400
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13124175031 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 92. Waiting 1000 ms...
+Resumed HTTP stream from byte 13124175031
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13149271608 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 93. Waiting 1000 ms...
+Resumed HTTP stream from byte 13149271608
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13171938129 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 94. Waiting 1000 ms...
+Resumed HTTP stream from byte 13171938129
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13195150682 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 95. Waiting 1000 ms...
+Resumed HTTP stream from byte 13195150682
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13219320011 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 96. Waiting 1000 ms...
+Resumed HTTP stream from byte 13219320011
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13242272468 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 97. Waiting 1000 ms...
+Resumed HTTP stream from byte 13242272468
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5600000
+HTTP stream interrupted at byte 13267384423 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 98. Waiting 1000 ms...
+Resumed HTTP stream from byte 13267384423
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13290239888 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 99. Waiting 1000 ms...
+Resumed HTTP stream from byte 13290239888
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13313392743 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 100. Waiting 1000 ms...
+Resumed HTTP stream from byte 13313392743
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13337944196 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 101. Waiting 1000 ms...
+Resumed HTTP stream from byte 13337944196
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13360520305 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 102. Waiting 1000 ms...
+Resumed HTTP stream from byte 13360520305
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13384760418 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 103. Waiting 1000 ms...
+Resumed HTTP stream from byte 13384760418
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13408228965 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 104. Waiting 1000 ms...
+Resumed HTTP stream from byte 13408228965
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13432551050 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 105. Waiting 1000 ms...
+Resumed HTTP stream from byte 13432551050
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13455752323 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 106. Waiting 1000 ms...
+Resumed HTTP stream from byte 13455752323
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13478697506 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 107. Waiting 1000 ms...
+Resumed HTTP stream from byte 13478697506
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5700000
+HTTP stream interrupted at byte 13503145539 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 108. Waiting 1000 ms...
+Resumed HTTP stream from byte 13503145539
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13525877468 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 109. Waiting 1000 ms...
+Resumed HTTP stream from byte 13525877468
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13550177313 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 110. Waiting 1000 ms...
+Resumed HTTP stream from byte 13550177313
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13573423962 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 111. Waiting 1000 ms...
+Resumed HTTP stream from byte 13573423962
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13597968329 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 112. Waiting 1000 ms...
+Resumed HTTP stream from byte 13597968329
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13622430214 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 113. Waiting 1000 ms...
+Resumed HTTP stream from byte 13622430214
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13645372473 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 114. Waiting 1000 ms...
+Resumed HTTP stream from byte 13645372473
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13669534890 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 115. Waiting 1000 ms...
+Resumed HTTP stream from byte 13669534890
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13691660599 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 116. Waiting 1000 ms...
+Resumed HTTP stream from byte 13691660599
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13716947304 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 117. Waiting 1000 ms...
+Resumed HTTP stream from byte 13716947304
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5800000
+HTTP stream interrupted at byte 13740852785 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 118. Waiting 1000 ms...
+Resumed HTTP stream from byte 13740852785
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13764850534 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 119. Waiting 1000 ms...
+Resumed HTTP stream from byte 13764850534
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13787907079 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 120. Waiting 1000 ms...
+Resumed HTTP stream from byte 13787907079
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13811623830 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 121. Waiting 1000 ms...
+Resumed HTTP stream from byte 13811623830
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13835021837 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 122. Waiting 1000 ms...
+Resumed HTTP stream from byte 13835021837
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13859124436 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 123. Waiting 1000 ms...
+Resumed HTTP stream from byte 13859124436
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13882277793 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 124. Waiting 1000 ms...
+Resumed HTTP stream from byte 13882277793
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13905617212 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 125. Waiting 1000 ms...
+Resumed HTTP stream from byte 13905617212
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13930341921 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 126. Waiting 1000 ms...
+Resumed HTTP stream from byte 13930341921
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 13953811226 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 127. Waiting 1000 ms...
+Resumed HTTP stream from byte 13953811226
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 5900000
+HTTP stream interrupted at byte 13976332313 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 128. Waiting 1000 ms...
+Resumed HTTP stream from byte 13976332313
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14000460204 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 129. Waiting 1000 ms...
+Resumed HTTP stream from byte 14000460204
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14023893417 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 130. Waiting 1000 ms...
+Resumed HTTP stream from byte 14023893417
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14048051974 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 131. Waiting 1000 ms...
+Resumed HTTP stream from byte 14048051974
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14072919475 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 132. Waiting 1000 ms...
+Resumed HTTP stream from byte 14072919475
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14096248980 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 133. Waiting 1000 ms...
+Resumed HTTP stream from byte 14096248980
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14119296729 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 134. Waiting 1000 ms...
+Resumed HTTP stream from byte 14119296729
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14142775062 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 135. Waiting 1000 ms...
+Resumed HTTP stream from byte 14142775062
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14166631513 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 136. Waiting 1000 ms...
+Resumed HTTP stream from byte 14166631513
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 14190046372 with SocketException: Connection reset. Consecutive retry 1/50, total retries for this stream 137. Waiting 1000 ms...
+Resumed HTTP stream from byte 14190046372
+HTTP stream recovered. Consecutive retries reset to 0.
+Pass 1 progress - articles read: 6000000
+Pass 2/2: loading CITES relationships...
+Opening resumable remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+HTTP stream interrupted at byte 3886169 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 1. Waiting 1000 ms...
+Resumed HTTP stream from byte 3886169
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6648301 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 2. Waiting 1000 ms...
+Resumed HTTP stream from byte 6648301
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10718961 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 3. Waiting 1000 ms...
+Resumed HTTP stream from byte 10718961
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 15801772 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 4. Waiting 1000 ms...
+Resumed HTTP stream from byte 15801772
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 720187949 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 5. Waiting 1000 ms...
+Resumed HTTP stream from byte 720187949
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 1729638695 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 6. Waiting 1000 ms...
+Resumed HTTP stream from byte 1729638695
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 3084282202 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 7. Waiting 1000 ms...
+Resumed HTTP stream from byte 3084282202
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 4617708939 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 8. Waiting 1000 ms...
+Resumed HTTP stream from byte 4617708939
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 4978057100 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 9. Waiting 1000 ms...
+Resumed HTTP stream from byte 4978057100
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 5306438593 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 10. Waiting 1000 ms...
+Resumed HTTP stream from byte 5306438593
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 5435240208 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 11. Waiting 1000 ms...
+Resumed HTTP stream from byte 5435240208
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 5853880775 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 12. Waiting 1000 ms...
+Resumed HTTP stream from byte 5853880775
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 5978858860 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 13. Waiting 1000 ms...
+Resumed HTTP stream from byte 5978858860
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6097485832 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 14. Waiting 1000 ms...
+Resumed HTTP stream from byte 6097485832
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6215062906 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 15. Waiting 1000 ms...
+Resumed HTTP stream from byte 6215062906
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6323269186 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 16. Waiting 1000 ms...
+Resumed HTTP stream from byte 6323269186
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6426832708 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 17. Waiting 1000 ms...
+Resumed HTTP stream from byte 6426832708
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6532314286 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 18. Waiting 1000 ms...
+Resumed HTTP stream from byte 6532314286
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6630928888 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 19. Waiting 1000 ms...
+Resumed HTTP stream from byte 6630928888
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6813897412 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 20. Waiting 1000 ms...
+Resumed HTTP stream from byte 6813897412
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6903880762 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 21. Waiting 1000 ms...
+Resumed HTTP stream from byte 6903880762
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 6991449766 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 22. Waiting 1000 ms...
+Resumed HTTP stream from byte 6991449766
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7154740042 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 23. Waiting 1000 ms...
+Resumed HTTP stream from byte 7154740042
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7234466266 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 24. Waiting 1000 ms...
+Resumed HTTP stream from byte 7234466266
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7307961604 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 25. Waiting 1000 ms...
+Resumed HTTP stream from byte 7307961604
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7385747404 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 26. Waiting 1000 ms...
+Resumed HTTP stream from byte 7385747404
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7459061002 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 27. Waiting 1000 ms...
+Resumed HTTP stream from byte 7459061002
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7529142424 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 28. Waiting 1000 ms...
+Resumed HTTP stream from byte 7529142424
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7593631846 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 29. Waiting 1000 ms...
+Resumed HTTP stream from byte 7593631846
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7651282252 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 30. Waiting 1000 ms...
+Resumed HTTP stream from byte 7651282252
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7709816194 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 31. Waiting 1000 ms...
+Resumed HTTP stream from byte 7709816194
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7712116984 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 32. Waiting 1000 ms...
+Resumed HTTP stream from byte 7712116984
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7765985800 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 33. Waiting 1000 ms...
+Resumed HTTP stream from byte 7765985800
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7823060230 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 34. Waiting 1000 ms...
+Resumed HTTP stream from byte 7823060230
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7891273924 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 35. Waiting 1000 ms...
+Resumed HTTP stream from byte 7891273924
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7928660320 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 36. Waiting 1000 ms...
+Resumed HTTP stream from byte 7928660320
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 7952386858 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 37. Waiting 1000 ms...
+Resumed HTTP stream from byte 7952386858
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8011164052 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 38. Waiting 1000 ms...
+Resumed HTTP stream from byte 8011164052
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8074543462 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 39. Waiting 1000 ms...
+Resumed HTTP stream from byte 8074543462
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8134075576 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 40. Waiting 1000 ms...
+Resumed HTTP stream from byte 8134075576
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8187280342 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 41. Waiting 1000 ms...
+Resumed HTTP stream from byte 8187280342
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8192335192 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 42. Waiting 1000 ms...
+Resumed HTTP stream from byte 8192335192
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8251976350 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 43. Waiting 1000 ms...
+Resumed HTTP stream from byte 8251976350
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8304956038 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 44. Waiting 1000 ms...
+Resumed HTTP stream from byte 8304956038
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8356150480 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 45. Waiting 1000 ms...
+Resumed HTTP stream from byte 8356150480
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8394258244 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 46. Waiting 1000 ms...
+Resumed HTTP stream from byte 8394258244
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8407399126 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 47. Waiting 1000 ms...
+Resumed HTTP stream from byte 8407399126
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8461221808 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 48. Waiting 1000 ms...
+Resumed HTTP stream from byte 8461221808
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8513610316 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 49. Waiting 1000 ms...
+Resumed HTTP stream from byte 8513610316
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8566399876 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 50. Waiting 1000 ms...
+Resumed HTTP stream from byte 8566399876
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8619227182 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 51. Waiting 1000 ms...
+Resumed HTTP stream from byte 8619227182
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8674953940 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 52. Waiting 1000 ms...
+Resumed HTTP stream from byte 8674953940
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8725921906 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 53. Waiting 1000 ms...
+Resumed HTTP stream from byte 8725921906
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8776666192 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 54. Waiting 1000 ms...
+Resumed HTTP stream from byte 8776666192
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8827237126 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 55. Waiting 1000 ms...
+Resumed HTTP stream from byte 8827237126
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8877331342 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 56. Waiting 1000 ms...
+Resumed HTTP stream from byte 8877331342
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8879567824 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 57. Waiting 1000 ms...
+Resumed HTTP stream from byte 8879567824
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8929386634 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 58. Waiting 1000 ms...
+Resumed HTTP stream from byte 8929386634
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 8977161568 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 59. Waiting 1000 ms...
+Resumed HTTP stream from byte 8977161568
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9028221388 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 60. Waiting 1000 ms...
+Resumed HTTP stream from byte 9028221388
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9077855662 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 61. Waiting 1000 ms...
+Resumed HTTP stream from byte 9077855662
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9125153878 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 62. Waiting 1000 ms...
+Resumed HTTP stream from byte 9125153878
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9169688248 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 63. Waiting 1000 ms...
+Resumed HTTP stream from byte 9169688248
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9215311660 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 64. Waiting 1000 ms...
+Resumed HTTP stream from byte 9215311660
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9260835154 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 65. Waiting 1000 ms...
+Resumed HTTP stream from byte 9260835154
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9308501044 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 66. Waiting 1000 ms...
+Resumed HTTP stream from byte 9308501044
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9309373078 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 67. Waiting 1000 ms...
+Resumed HTTP stream from byte 9309373078
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9355522138 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 68. Waiting 1000 ms...
+Resumed HTTP stream from byte 9355522138
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9356757652 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 69. Waiting 1000 ms...
+Resumed HTTP stream from byte 9356757652
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9402713788 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 70. Waiting 1000 ms...
+Resumed HTTP stream from byte 9402713788
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9450028372 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 71. Waiting 1000 ms...
+Resumed HTTP stream from byte 9450028372
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9495208618 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 72. Waiting 1000 ms...
+Resumed HTTP stream from byte 9495208618
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9541339790 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 73. Waiting 1000 ms...
+Resumed HTTP stream from byte 9541339790
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9542653592 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 74. Waiting 1000 ms...
+Resumed HTTP stream from byte 9542653592
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9546447446 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 75. Waiting 1000 ms...
+Resumed HTTP stream from byte 9546447446
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9549065582 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 76. Waiting 1000 ms...
+Resumed HTTP stream from byte 9549065582
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9551764802 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 77. Waiting 1000 ms...
+Resumed HTTP stream from byte 9551764802
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9554701682 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 78. Waiting 1000 ms...
+Resumed HTTP stream from byte 9554701682
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9556191632 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 79. Waiting 1000 ms...
+Resumed HTTP stream from byte 9556191632
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9558342836 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 80. Waiting 1000 ms...
+Resumed HTTP stream from byte 9558342836
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9559658036 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 81. Waiting 1000 ms...
+Resumed HTTP stream from byte 9559658036
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9561519854 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 82. Waiting 1000 ms...
+Resumed HTTP stream from byte 9561519854
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9564108632 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 83. Waiting 1000 ms...
+Resumed HTTP stream from byte 9564108632
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9567009164 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 84. Waiting 1000 ms...
+Resumed HTTP stream from byte 9567009164
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9569676230 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 85. Waiting 1000 ms...
+Resumed HTTP stream from byte 9569676230
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9571617734 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 86. Waiting 1000 ms...
+Resumed HTTP stream from byte 9571617734
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9573302006 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 87. Waiting 1000 ms...
+Resumed HTTP stream from byte 9573302006
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9575142854 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 88. Waiting 1000 ms...
+Resumed HTTP stream from byte 9575142854
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9576616028 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 89. Waiting 1000 ms...
+Resumed HTTP stream from byte 9576616028
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9578842724 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 90. Waiting 1000 ms...
+Resumed HTTP stream from byte 9578842724
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9581631416 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 91. Waiting 1000 ms...
+Resumed HTTP stream from byte 9581631416
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9584386556 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 92. Waiting 1000 ms...
+Resumed HTTP stream from byte 9584386556
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9587138900 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 93. Waiting 1000 ms...
+Resumed HTTP stream from byte 9587138900
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9589147508 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 94. Waiting 1000 ms...
+Resumed HTTP stream from byte 9589147508
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9590672408 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 95. Waiting 1000 ms...
+Resumed HTTP stream from byte 9590672408
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9592405610 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 96. Waiting 1000 ms...
+Resumed HTTP stream from byte 9592405610
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9594189140 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 97. Waiting 1000 ms...
+Resumed HTTP stream from byte 9594189140
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9596702426 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 98. Waiting 1000 ms...
+Resumed HTTP stream from byte 9596702426
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9599616938 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 99. Waiting 1000 ms...
+Resumed HTTP stream from byte 9599616938
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9602742548 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 100. Waiting 1000 ms...
+Resumed HTTP stream from byte 9602742548
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9604575008 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 101. Waiting 1000 ms...
+Resumed HTTP stream from byte 9604575008
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9606547268 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 102. Waiting 1000 ms...
+Resumed HTTP stream from byte 9606547268
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9608195192 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 103. Waiting 1000 ms...
+Resumed HTTP stream from byte 9608195192
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9609799778 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 104. Waiting 1000 ms...
+Resumed HTTP stream from byte 9609799778
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9611980340 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 105. Waiting 1000 ms...
+Resumed HTTP stream from byte 9611980340
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9614591486 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 106. Waiting 1000 ms...
+Resumed HTTP stream from byte 9614591486
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9617181662 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 107. Waiting 1000 ms...
+Resumed HTTP stream from byte 9617181662
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9619931210 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 108. Waiting 1000 ms...
+Resumed HTTP stream from byte 9619931210
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9621964982 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 109. Waiting 1000 ms...
+Resumed HTTP stream from byte 9621964982
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9623428370 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 110. Waiting 1000 ms...
+Resumed HTTP stream from byte 9623428370
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9625112642 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 111. Waiting 1000 ms...
+Resumed HTTP stream from byte 9625112642
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9627091892 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 112. Waiting 1000 ms...
+Resumed HTTP stream from byte 9627091892
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9628623782 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 113. Waiting 1000 ms...
+Resumed HTTP stream from byte 9628623782
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9631219550 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 114. Waiting 1000 ms...
+Resumed HTTP stream from byte 9631219550
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9634255688 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 115. Waiting 1000 ms...
+Resumed HTTP stream from byte 9634255688
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9636922754 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 116. Waiting 1000 ms...
+Resumed HTTP stream from byte 9636922754
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9638556698 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 117. Waiting 1000 ms...
+Resumed HTTP stream from byte 9638556698
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9640661768 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 118. Waiting 1000 ms...
+Resumed HTTP stream from byte 9640661768
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9642238394 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 119. Waiting 1000 ms...
+Resumed HTTP stream from byte 9642238394
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9643779030 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 120. Waiting 1000 ms...
+Resumed HTTP stream from byte 9643779030
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9645640848 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 121. Waiting 1000 ms...
+Resumed HTTP stream from byte 9645640848
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9648783040 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 122. Waiting 1000 ms...
+Resumed HTTP stream from byte 9648783040
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9651355042 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 123. Waiting 1000 ms...
+Resumed HTTP stream from byte 9651355042
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9654621850 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 124. Waiting 1000 ms...
+Resumed HTTP stream from byte 9654621850
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9655720360 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 125. Waiting 1000 ms...
+Resumed HTTP stream from byte 9655720360
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9657751336 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 126. Waiting 1000 ms...
+Resumed HTTP stream from byte 9657751336
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9659438404 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 127. Waiting 1000 ms...
+Resumed HTTP stream from byte 9659438404
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9661270592 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 128. Waiting 1000 ms...
+Resumed HTTP stream from byte 9661270592
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9663263822 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 129. Waiting 1000 ms...
+Resumed HTTP stream from byte 9663263822
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9666629888 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 130. Waiting 1000 ms...
+Resumed HTTP stream from byte 9666629888
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9669317924 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 131. Waiting 1000 ms...
+Resumed HTTP stream from byte 9669317924
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9671450954 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 132. Waiting 1000 ms...
+Resumed HTTP stream from byte 9671450954
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9673500104 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 133. Waiting 1000 ms...
+Resumed HTTP stream from byte 9673500104
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9675034790 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 134. Waiting 1000 ms...
+Resumed HTTP stream from byte 9675034790
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9676974896 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 135. Waiting 1000 ms...
+Resumed HTTP stream from byte 9676974896
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9678341822 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 136. Waiting 1000 ms...
+Resumed HTTP stream from byte 9678341822
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9680741870 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 137. Waiting 1000 ms...
+Resumed HTTP stream from byte 9680741870
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9683597666 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 138. Waiting 1000 ms...
+Resumed HTTP stream from byte 9683597666
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9686650580 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 139. Waiting 1000 ms...
+Resumed HTTP stream from byte 9686650580
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9688706720 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 140. Waiting 1000 ms...
+Resumed HTTP stream from byte 9688706720
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9691046654 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 141. Waiting 1000 ms...
+Resumed HTTP stream from byte 9691046654
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9692146562 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 142. Waiting 1000 ms...
+Resumed HTTP stream from byte 9692146562
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9693826640 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 143. Waiting 1000 ms...
+Resumed HTTP stream from byte 9693826640
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9695769542 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 144. Waiting 1000 ms...
+Resumed HTTP stream from byte 9695769542
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9698647706 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 145. Waiting 1000 ms...
+Resumed HTTP stream from byte 9698647706
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9701338538 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 146. Waiting 1000 ms...
+Resumed HTTP stream from byte 9701338538
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9704712992 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 147. Waiting 1000 ms...
+Resumed HTTP stream from byte 9704712992
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9706039376 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 148. Waiting 1000 ms...
+Resumed HTTP stream from byte 9706039376
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9708162620 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 149. Waiting 1000 ms...
+Resumed HTTP stream from byte 9708162620
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9709493198 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 150. Waiting 1000 ms...
+Resumed HTTP stream from byte 9709493198
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9711218012 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 151. Waiting 1000 ms...
+Resumed HTTP stream from byte 9711218012
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9713843138 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 152. Waiting 1000 ms...
+Resumed HTTP stream from byte 9713843138
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9716473856 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 153. Waiting 1000 ms...
+Resumed HTTP stream from byte 9716473856
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9719324060 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 154. Waiting 1000 ms...
+Resumed HTTP stream from byte 9719324060
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9721550756 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 155. Waiting 1000 ms...
+Resumed HTTP stream from byte 9721550756
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9723401390 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 156. Waiting 1000 ms...
+Resumed HTTP stream from byte 9723401390
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9725159756 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 157. Waiting 1000 ms...
+Resumed HTTP stream from byte 9725159756
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9726909734 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 158. Waiting 1000 ms...
+Resumed HTTP stream from byte 9726909734
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9728547872 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 159. Waiting 1000 ms...
+Resumed HTTP stream from byte 9728547872
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9731437220 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 160. Waiting 1000 ms...
+Resumed HTTP stream from byte 9731437220
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9734204942 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 161. Waiting 1000 ms...
+Resumed HTTP stream from byte 9734204942
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9736943306 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 162. Waiting 1000 ms...
+Resumed HTTP stream from byte 9736943306
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9738880616 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 163. Waiting 1000 ms...
+Resumed HTTP stream from byte 9738880616
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9740759210 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 164. Waiting 1000 ms...
+Resumed HTTP stream from byte 9740759210
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9742435094 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 165. Waiting 1000 ms...
+Resumed HTTP stream from byte 9742435094
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9744041078 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 166. Waiting 1000 ms...
+Resumed HTTP stream from byte 9744041078
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9745893110 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 167. Waiting 1000 ms...
+Resumed HTTP stream from byte 9745893110
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9749351444 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 168. Waiting 1000 ms...
+Resumed HTTP stream from byte 9749351444
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9767964098 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 169. Waiting 1000 ms...
+Resumed HTTP stream from byte 9767964098
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9788050244 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 170. Waiting 1000 ms...
+Resumed HTTP stream from byte 9788050244
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9789724730 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 171. Waiting 1000 ms...
+Resumed HTTP stream from byte 9789724730
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9791590742 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 172. Waiting 1000 ms...
+Resumed HTTP stream from byte 9791590742
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9829804188 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 173. Waiting 1000 ms...
+Resumed HTTP stream from byte 9829804188
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9832738272 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 174. Waiting 1000 ms...
+Resumed HTTP stream from byte 9832738272
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9865226076 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 175. Waiting 1000 ms...
+Resumed HTTP stream from byte 9865226076
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9872528910 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 176. Waiting 1000 ms...
+Resumed HTTP stream from byte 9872528910
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9873908418 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 177. Waiting 1000 ms...
+Resumed HTTP stream from byte 9873908418
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9898659690 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 178. Waiting 1000 ms...
+Resumed HTTP stream from byte 9898659690
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9912835092 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 179. Waiting 1000 ms...
+Resumed HTTP stream from byte 9912835092
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9915497964 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 180. Waiting 1000 ms...
+Resumed HTTP stream from byte 9915497964
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9933502488 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 181. Waiting 1000 ms...
+Resumed HTTP stream from byte 9933502488
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9936056316 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 182. Waiting 1000 ms...
+Resumed HTTP stream from byte 9936056316
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9940150740 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 183. Waiting 1000 ms...
+Resumed HTTP stream from byte 9940150740
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9945395718 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 184. Waiting 1000 ms...
+Resumed HTTP stream from byte 9945395718
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9947751030 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 185. Waiting 1000 ms...
+Resumed HTTP stream from byte 9947751030
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9950610662 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 186. Waiting 1000 ms...
+Resumed HTTP stream from byte 9950610662
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9953558726 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 187. Waiting 1000 ms...
+Resumed HTTP stream from byte 9953558726
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9965351936 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 188. Waiting 1000 ms...
+Resumed HTTP stream from byte 9965351936
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9983592722 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 189. Waiting 1000 ms...
+Resumed HTTP stream from byte 9983592722
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9986168918 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 190. Waiting 1000 ms...
+Resumed HTTP stream from byte 9986168918
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 9998293454 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 191. Waiting 1000 ms...
+Resumed HTTP stream from byte 9998293454
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10005733292 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 192. Waiting 1000 ms...
+Resumed HTTP stream from byte 10005733292
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10015879657 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 193. Waiting 1000 ms...
+Resumed HTTP stream from byte 10015879657
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10021419612 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 194. Waiting 1000 ms...
+Resumed HTTP stream from byte 10021419612
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10022622971 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 195. Waiting 1000 ms...
+Resumed HTTP stream from byte 10022622971
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10060989364 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 196. Waiting 1000 ms...
+Resumed HTTP stream from byte 10060989364
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10062491895 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 197. Waiting 1000 ms...
+Resumed HTTP stream from byte 10062491895
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10100415726 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 198. Waiting 1000 ms...
+Resumed HTTP stream from byte 10100415726
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10102965359 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 199. Waiting 1000 ms...
+Resumed HTTP stream from byte 10102965359
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10143986554 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 200. Waiting 1000 ms...
+Resumed HTTP stream from byte 10143986554
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10145001183 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 201. Waiting 1000 ms...
+Resumed HTTP stream from byte 10145001183
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10167852572 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 202. Waiting 1000 ms...
+Resumed HTTP stream from byte 10167852572
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10185648793 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 203. Waiting 1000 ms...
+Resumed HTTP stream from byte 10185648793
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10188672348 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 204. Waiting 1000 ms...
+Resumed HTTP stream from byte 10188672348
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10215131975 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 205. Waiting 1000 ms...
+Resumed HTTP stream from byte 10215131975
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10226943358 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 206. Waiting 1000 ms...
+Resumed HTTP stream from byte 10226943358
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10228219413 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 207. Waiting 1000 ms...
+Resumed HTTP stream from byte 10228219413
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10250638820 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 208. Waiting 1000 ms...
+Resumed HTTP stream from byte 10250638820
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10267285885 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 209. Waiting 1000 ms...
+Resumed HTTP stream from byte 10267285885
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10270281480 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 210. Waiting 1000 ms...
+Resumed HTTP stream from byte 10270281480
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10308941295 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 211. Waiting 1000 ms...
+Resumed HTTP stream from byte 10308941295
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10310221544 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 212. Waiting 1000 ms...
+Resumed HTTP stream from byte 10310221544
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10346976043 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 213. Waiting 1000 ms...
+Resumed HTTP stream from byte 10346976043
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10349304792 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 214. Waiting 1000 ms...
+Resumed HTTP stream from byte 10349304792
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10374257375 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 215. Waiting 1000 ms...
+Resumed HTTP stream from byte 10374257375
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10381856584 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 216. Waiting 1000 ms...
+Resumed HTTP stream from byte 10381856584
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10384878741 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 217. Waiting 1000 ms...
+Resumed HTTP stream from byte 10384878741
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10387218674 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 218. Waiting 1000 ms...
+Resumed HTTP stream from byte 10387218674
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10416224059 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 219. Waiting 1000 ms...
+Resumed HTTP stream from byte 10416224059
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10424873166 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 220. Waiting 1000 ms...
+Resumed HTTP stream from byte 10424873166
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10448643041 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 221. Waiting 1000 ms...
+Resumed HTTP stream from byte 10448643041
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10460521528 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 222. Waiting 1000 ms...
+Resumed HTTP stream from byte 10460521528
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10463339577 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 223. Waiting 1000 ms...
+Resumed HTTP stream from byte 10463339577
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10478265704 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 224. Waiting 1000 ms...
+Resumed HTTP stream from byte 10478265704
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10490820823 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 225. Waiting 1000 ms...
+Resumed HTTP stream from byte 10490820823
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10493057304 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 226. Waiting 1000 ms...
+Resumed HTTP stream from byte 10493057304
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10495797065 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 227. Waiting 1000 ms...
+Resumed HTTP stream from byte 10495797065
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10500913426 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 228. Waiting 1000 ms...
+Resumed HTTP stream from byte 10500913426
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10502718969 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 229. Waiting 1000 ms...
+Resumed HTTP stream from byte 10502718969
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10506016532 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 230. Waiting 1000 ms...
+Resumed HTTP stream from byte 10506016532
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10507674241 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 231. Waiting 1000 ms...
+Resumed HTTP stream from byte 10507674241
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10510970406 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 232. Waiting 1000 ms...
+Resumed HTTP stream from byte 10510970406
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10516233557 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 233. Waiting 1000 ms...
+Resumed HTTP stream from byte 10516233557
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10519701676 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 234. Waiting 1000 ms...
+Resumed HTTP stream from byte 10519701676
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10521283893 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 235. Waiting 1000 ms...
+Resumed HTTP stream from byte 10521283893
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10523024084 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 236. Waiting 1000 ms...
+Resumed HTTP stream from byte 10523024084
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10525775029 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 237. Waiting 1000 ms...
+Resumed HTTP stream from byte 10525775029
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10528946772 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 238. Waiting 1000 ms...
+Resumed HTTP stream from byte 10528946772
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10533484361 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 239. Waiting 1000 ms...
+Resumed HTTP stream from byte 10533484361
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10535167234 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 240. Waiting 1000 ms...
+Resumed HTTP stream from byte 10535167234
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10538782143 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 241. Waiting 1000 ms...
+Resumed HTTP stream from byte 10538782143
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10541440820 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 242. Waiting 1000 ms...
+Resumed HTTP stream from byte 10541440820
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10544074333 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 243. Waiting 1000 ms...
+Resumed HTTP stream from byte 10544074333
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10552522734 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 244. Waiting 1000 ms...
+Resumed HTTP stream from byte 10552522734
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10556365517 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 245. Waiting 1000 ms...
+Resumed HTTP stream from byte 10556365517
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10558888588 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 246. Waiting 1000 ms...
+Resumed HTTP stream from byte 10558888588
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10561892571 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 247. Waiting 1000 ms...
+Resumed HTTP stream from byte 10561892571
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10563803318 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 248. Waiting 1000 ms...
+Resumed HTTP stream from byte 10563803318
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10565837089 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 249. Waiting 1000 ms...
+Resumed HTTP stream from byte 10565837089
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10567464042 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 250. Waiting 1000 ms...
+Resumed HTTP stream from byte 10567464042
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10573803653 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 251. Waiting 1000 ms...
+Resumed HTTP stream from byte 10573803653
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10576666438 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 252. Waiting 1000 ms...
+Resumed HTTP stream from byte 10576666438
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10586066271 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 253. Waiting 1000 ms...
+Resumed HTTP stream from byte 10586066271
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10588803236 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 254. Waiting 1000 ms...
+Resumed HTTP stream from byte 10588803236
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10596405241 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 255. Waiting 1000 ms...
+Resumed HTTP stream from byte 10596405241
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10597691082 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 256. Waiting 1000 ms...
+Resumed HTTP stream from byte 10597691082
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10599449447 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 257. Waiting 1000 ms...
+Resumed HTTP stream from byte 10599449447
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10600915630 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 258. Waiting 1000 ms...
+Resumed HTTP stream from byte 10600915630
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10603978329 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 259. Waiting 1000 ms...
+Resumed HTTP stream from byte 10603978329
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10624363646 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 260. Waiting 1000 ms...
+Resumed HTTP stream from byte 10624363646
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10633756489 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 261. Waiting 1000 ms...
+Resumed HTTP stream from byte 10633756489
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10639857042 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 262. Waiting 1000 ms...
+Resumed HTTP stream from byte 10639857042
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10660956737 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 263. Waiting 1000 ms...
+Resumed HTTP stream from byte 10660956737
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10667020942 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 264. Waiting 1000 ms...
+Resumed HTTP stream from byte 10667020942
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10677873297 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 265. Waiting 1000 ms...
+Resumed HTTP stream from byte 10677873297
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10679173118 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 266. Waiting 1000 ms...
+Resumed HTTP stream from byte 10679173118
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10696902235 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 267. Waiting 1000 ms...
+Resumed HTTP stream from byte 10696902235
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10706645976 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 268. Waiting 1000 ms...
+Resumed HTTP stream from byte 10706645976
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10709993867 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 269. Waiting 1000 ms...
+Resumed HTTP stream from byte 10709993867
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10711293688 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 270. Waiting 1000 ms...
+Resumed HTTP stream from byte 10711293688
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10714423491 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 271. Waiting 1000 ms...
+Resumed HTTP stream from byte 10714423491
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10730324024 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 272. Waiting 1000 ms...
+Resumed HTTP stream from byte 10730324024
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10744925815 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 273. Waiting 1000 ms...
+Resumed HTTP stream from byte 10744925815
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10747409396 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 274. Waiting 1000 ms...
+Resumed HTTP stream from byte 10747409396
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10752534145 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 275. Waiting 1000 ms...
+Resumed HTTP stream from byte 10752534145
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10754003124 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 276. Waiting 1000 ms...
+Resumed HTTP stream from byte 10754003124
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10777873655 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 277. Waiting 1000 ms...
+Resumed HTTP stream from byte 10777873655
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10787943130 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 278. Waiting 1000 ms...
+Resumed HTTP stream from byte 10787943130
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10789208001 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 279. Waiting 1000 ms...
+Resumed HTTP stream from byte 10789208001
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10806925934 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 280. Waiting 1000 ms...
+Resumed HTTP stream from byte 10806925934
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10814852275 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 281. Waiting 1000 ms...
+Resumed HTTP stream from byte 10814852275
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10818467184 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 282. Waiting 1000 ms...
+Resumed HTTP stream from byte 10818467184
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10821657101 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 283. Waiting 1000 ms...
+Resumed HTTP stream from byte 10821657101
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10824396862 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 284. Waiting 1000 ms...
+Resumed HTTP stream from byte 10824396862
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10827259647 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 285. Waiting 1000 ms...
+Resumed HTTP stream from byte 10827259647
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10829598182 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 286. Waiting 1000 ms...
+Resumed HTTP stream from byte 10829598182
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10831331383 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 287. Waiting 1000 ms...
+Resumed HTTP stream from byte 10831331383
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10836656704 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 288. Waiting 1000 ms...
+Resumed HTTP stream from byte 10836656704
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10839738975 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 289. Waiting 1000 ms...
+Resumed HTTP stream from byte 10839738975
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10844609288 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 290. Waiting 1000 ms...
+Resumed HTTP stream from byte 10844609288
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10854706723 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 291. Waiting 1000 ms...
+Resumed HTTP stream from byte 10854706723
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10857405942 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 292. Waiting 1000 ms...
+Resumed HTTP stream from byte 10857405942
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10865493053 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 293. Waiting 1000 ms...
+Resumed HTTP stream from byte 10865493053
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10866802660 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 294. Waiting 1000 ms...
+Resumed HTTP stream from byte 10866802660
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10885373373 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 295. Waiting 1000 ms...
+Resumed HTTP stream from byte 10885373373
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10890569420 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 296. Waiting 1000 ms...
+Resumed HTTP stream from byte 10890569420
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10896414139 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 297. Waiting 1000 ms...
+Resumed HTTP stream from byte 10896414139
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10902953664 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 298. Waiting 1000 ms...
+Resumed HTTP stream from byte 10902953664
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10905601157 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 299. Waiting 1000 ms...
+Resumed HTTP stream from byte 10905601157
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10917416734 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 300. Waiting 1000 ms...
+Resumed HTTP stream from byte 10917416734
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10926612459 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 301. Waiting 1000 ms...
+Resumed HTTP stream from byte 10926612459
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10929977126 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 302. Waiting 1000 ms...
+Resumed HTTP stream from byte 10929977126
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10932633007 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 303. Waiting 1000 ms...
+Resumed HTTP stream from byte 10932633007
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10935295878 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 304. Waiting 1000 ms...
+Resumed HTTP stream from byte 10935295878
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10937817551 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 305. Waiting 1000 ms...
+Resumed HTTP stream from byte 10937817551
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10940290294 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 306. Waiting 1000 ms...
+Resumed HTTP stream from byte 10940290294
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10943439669 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 307. Waiting 1000 ms...
+Resumed HTTP stream from byte 10943439669
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10953162440 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 308. Waiting 1000 ms...
+Resumed HTTP stream from byte 10953162440
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10965201697 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 309. Waiting 1000 ms...
+Resumed HTTP stream from byte 10965201697
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10972336770 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 310. Waiting 1000 ms...
+Resumed HTTP stream from byte 10972336770
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10973688317 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 311. Waiting 1000 ms...
+Resumed HTTP stream from byte 10973688317
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10975743058 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 312. Waiting 1000 ms...
+Resumed HTTP stream from byte 10975743058
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10995788661 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 313. Waiting 1000 ms...
+Resumed HTTP stream from byte 10995788661
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 10998438950 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 314. Waiting 1000 ms...
+Resumed HTTP stream from byte 10998438950
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11007671023 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 315. Waiting 1000 ms...
+Resumed HTTP stream from byte 11007671023
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11009441970 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 316. Waiting 1000 ms...
+Resumed HTTP stream from byte 11009441970
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11012806637 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 317. Waiting 1000 ms...
+Resumed HTTP stream from byte 11012806637
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11035165930 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 318. Waiting 1000 ms...
+Resumed HTTP stream from byte 11035165930
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11038211853 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 319. Waiting 1000 ms...
+Resumed HTTP stream from byte 11038211853
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11040065282 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 320. Waiting 1000 ms...
+Resumed HTTP stream from byte 11040065282
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11043063673 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 321. Waiting 1000 ms...
+Resumed HTTP stream from byte 11043063673
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11045746116 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 322. Waiting 1000 ms...
+Resumed HTTP stream from byte 11045746116
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11058336185 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 323. Waiting 1000 ms...
+Resumed HTTP stream from byte 11058336185
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11061056554 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 324. Waiting 1000 ms...
+Resumed HTTP stream from byte 11061056554
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11069022039 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 325. Waiting 1000 ms...
+Resumed HTTP stream from byte 11069022039
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11073180770 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 326. Waiting 1000 ms...
+Resumed HTTP stream from byte 11073180770
+HTTP stream recovered. Consecutive retries reset to 0.
+HTTP stream interrupted at byte 11075914939 with IOException: Premature EOF. Consecutive retry 1/50, total retries for this stream 327. Waiting 1000 ms...
+Resumed HTTP stream from byte 11075914939
+HTTP stream recovered. Consecutive retries reset to 0.
