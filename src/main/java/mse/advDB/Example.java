@@ -15,6 +15,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
@@ -45,6 +46,7 @@ public class Example {
 
         int maxArticles = Integer.parseInt(getenv("MAX_ARTICLES", "10000"));
         int batchSize = Integer.parseInt(getenv("BATCH_SIZE", "500"));
+        int apocBatchSize = batchSize / 10; // ajuster la taille des lots pour APOC si nécessaire
 
         Instant start = Instant.now();
 
@@ -54,7 +56,7 @@ public class Example {
         System.out.println("Neo4j IP: " + neo4jIp);
         System.out.println("Max articles to read: " + maxArticles);
         System.out.println("Batch size: " + batchSize);
-
+        System.out.println("APOC batch size: " + apocBatchSize);
         Driver driver = GraphDatabase.driver(
                 "bolt://" + neo4jIp + ":7687",
                 AuthTokens.basic(NEO4J_USER, NEO4J_PASSWORD)
@@ -66,10 +68,10 @@ public class Example {
             createConstraints(session);
 
             System.out.println("Pass 1/2: loading ARTICLE, AUTHOR and AUTHORED...");
-            long inputArticles = loadArticlesAndAuthors(session, jsonPath, maxArticles, batchSize);
+            long inputArticles = loadArticlesAndAuthors(session, jsonPath, maxArticles, batchSize, apocBatchSize);
 
             System.out.println("Pass 2/2: loading CITES relationships...");
-            loadCitations(session, jsonPath, maxArticles, batchSize);
+            loadCitations(session, jsonPath, maxArticles, batchSize, apocBatchSize);
 
             long articleCount = count(session, "MATCH (a:ARTICLE) RETURN count(a) AS c");
             long authorCount = count(session, "MATCH (a:AUTHOR) RETURN count(a) AS c");
@@ -134,7 +136,8 @@ public class Example {
             Session session,
             String jsonPath,
             int maxArticles,
-            int batchSize
+            int batchSize,
+            int apocBatchSize
     ) throws IOException {
 
         ArrayList<Map<String, Object>> articleBatch = new ArrayList<>();
@@ -194,8 +197,8 @@ public class Example {
 
                 if (articleBatch.size() >= batchSize) {
                     flushArticles(session, articleBatch);
-                    flushAuthors(session, authorBatch);
-                    flushAuthored(session, authoredBatch);
+                    flushAuthors(session, authorBatch, apocBatchSize);
+                    flushAuthored(session, authoredBatch, apocBatchSize);
 
                     if (articlesRead % (batchSize * 10L) == 0) {
                         System.out.println("Pass 1 progress - articles read: " + articlesRead);
@@ -205,8 +208,8 @@ public class Example {
         }
 
         flushArticles(session, articleBatch);
-        flushAuthors(session, authorBatch);
-        flushAuthored(session, authoredBatch);
+        flushAuthors(session, authorBatch, apocBatchSize);
+        flushAuthored(session, authoredBatch, apocBatchSize);
 
         return articlesRead;
     }
@@ -215,7 +218,8 @@ public class Example {
             Session session,
             String jsonPath,
             int maxArticles,
-            int batchSize
+            int batchSize,
+            int apocBatchSize
     ) throws IOException {
 
         ArrayList<Map<String, Object>> citationBatch = new ArrayList<>();
@@ -257,7 +261,7 @@ public class Example {
                 articlesRead++;
 
                 if (citationBatch.size() >= batchSize) {
-                    flushCitations(session, citationBatch);
+                    flushCitations(session, citationBatch, apocBatchSize);
 
                     if (articlesRead % (batchSize * 10L) == 0) {
                         System.out.println("Pass 2 progress - articles read: " + articlesRead);
@@ -266,7 +270,7 @@ public class Example {
             }
         }
 
-        flushCitations(session, citationBatch);
+        flushCitations(session, citationBatch, apocBatchSize);
     }
 
     private static void flushArticles(Session session, ArrayList<Map<String, Object>> rows) {
@@ -287,63 +291,76 @@ public class Example {
         rows.clear();
     }
 
-    private static void flushAuthors(Session session, ArrayList<Map<String, Object>> rows) {
-        if (rows.isEmpty()) {
-            return;
-        }
 
-        session.writeTransaction(tx -> {
-            tx.run(
-                    "UNWIND $rows AS row " +
-                    "MERGE (a:AUTHOR {_id: row.id}) " +
-                    "ON CREATE SET a.name = row.name ",
-                    parameters("rows", rows)
+    private static void flushArticles(Session session, List<Map<String, Object>> rows, int apocBatchSize) {
+        if (rows.isEmpty()) return;
+
+        session.run(
+                "CALL apoc.periodic.iterate(" +
+                "  'UNWIND $rows AS row RETURN row'," +
+                "  'CREATE (a:ARTICLE {_id: row.id, title: row.title})'," +
+                "  {batchSize: $apocBatchSize, parallel: true, params: {rows: $rows}}"
+                + ")",
+                parameters("rows", rows, "apocBatchSize", apocBatchSize)
             ).consume();
-
-            return null;
-        });
 
         rows.clear();
     }
 
-    private static void flushAuthored(Session session, ArrayList<Map<String, Object>> rows) {
+    private static void flushAuthors(Session session, ArrayList<Map<String, Object>> rows, int apocBatchSize) {
         if (rows.isEmpty()) {
             return;
         }
 
-        session.writeTransaction(tx -> {
-            tx.run(
-                    "UNWIND $rows AS row " +
-                            "WITH DISTINCT row.authorId AS authorId, row.articleId AS articleId " +
-                            "MATCH (author:AUTHOR {_id: authorId}) " +
-                            "MATCH (article:ARTICLE {_id: articleId}) " +
-                            "CREATE (author)-[:AUTHORED]->(article)",
-                    parameters("rows", rows)
+        session.run(
+                "CALL apoc.periodic.iterate(" +
+                    "  'UNWIND $rows AS row RETURN row'," +
+                    "  'MERGE (a:AUTHOR {_id: row.id})" +
+                    "   ON CREATE SET a.name = row.name'," +
+                    "  {batchSize: $apocBatchSize, parallel: false, params: {rows: $rows}}"
+                + ")",
+                parameters("rows", rows, "apocBatchSize", apocBatchSize)
             ).consume();
-
-            return null;
-        });
 
         rows.clear();
     }
 
-    private static void flushCitations(Session session, ArrayList<Map<String, Object>> rows) {
+    private static void flushAuthored(Session session, ArrayList<Map<String, Object>> rows, int apocBatchSize) {
         if (rows.isEmpty()) {
             return;
         }
 
-        session.writeTransaction(tx -> {
-            tx.run(
-                    "UNWIND $rows AS row " +
-                            "WITH DISTINCT row.sourceId AS sourceId, row.targetId AS targetId " +
-                            "MATCH (source:ARTICLE {_id: sourceId}) " +
-                            "MATCH (target:ARTICLE {_id: targetId}) " +
-                            "CREATE (source)-[:CITES]->(target)",
-                    parameters("rows", rows)
+        session.run(
+                    "CALL apoc.periodic.iterate(" +
+                    "  'UNWIND $rows AS row RETURN row'," +
+                    "  'WITH DISTINCT row.authorId AS authorId, row.articleId AS articleId " +
+                    "   MATCH (author:AUTHOR {_id: authorId}) " +
+                    "   MATCH (article:ARTICLE {_id: articleId}) " +
+                    "   CREATE (author)-[:AUTHORED]->(article)'," +
+                    "  {batchSize: $apocBatchSize, parallel: true, params: {rows: $rows}}"
+                    + ")",
+                    parameters("rows", rows, "apocBatchSize", apocBatchSize)
             ).consume();
 
-            return null;
-        });
+        rows.clear();
+    }
+
+    private static void flushCitations(Session session, ArrayList<Map<String, Object>> rows, int apocBatchSize) {
+        if (rows.isEmpty()) {
+            return;
+        }
+
+        session.run(
+                    "CALL apoc.periodic.iterate(" +
+                    "  'UNWIND $rows AS row RETURN row'," +
+                    "  'WITH DISTINCT row.sourceId AS sourceId, row.targetId AS targetId " +
+                    "   MATCH (source:ARTICLE {_id: sourceId}) " +
+                    "   MATCH (target:ARTICLE {_id: targetId}) " +
+                    "   CREATE (source)-[:CITES]->(target)'," +
+                    "  {batchSize: $apocBatchSize, parallel: true, params: {rows: $rows}}"
+                    + ")",
+                    parameters("rows", rows, "apocBatchSize", apocBatchSize)
+            ).consume();   
 
         rows.clear();
     }
