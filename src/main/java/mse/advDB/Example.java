@@ -1,22 +1,11 @@
 package mse.advDB;
 
-import jakarta.json.Json;
-import jakarta.json.JsonArray;
-import jakarta.json.JsonObject;
-import jakarta.json.JsonReader;
-
-import org.neo4j.driver.AuthTokens;
-import org.neo4j.driver.Driver;
-import org.neo4j.driver.GraphDatabase;
-import org.neo4j.driver.Result;
-import org.neo4j.driver.Session;
-
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringReader;
-import java.io.ByteArrayOutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -29,10 +18,18 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
-import java.util.HashSet;
-import java.util.Set;
 
+import org.neo4j.driver.AuthTokens;
+import org.neo4j.driver.Driver;
+import org.neo4j.driver.GraphDatabase;
+import org.neo4j.driver.Result;
+import org.neo4j.driver.Session;
 import static org.neo4j.driver.Values.parameters;
+
+import jakarta.json.Json;
+import jakarta.json.JsonArray;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
 
 public class Example {
 
@@ -46,7 +43,7 @@ public class Example {
         String jsonPath = getenv("JSON_FILE", "/file.jsonl");
         String neo4jIp = getenv("NEO4J_IP", "localhost");
 
-        int maxArticles = Integer.parseInt(getenv("MAX_NODES", "10000"));
+        int maxArticles = Integer.parseInt(getenv("MAX_ARTICLES", "10000"));
         int batchSize = Integer.parseInt(getenv("BATCH_SIZE", "500"));
 
         Instant start = Instant.now();
@@ -143,7 +140,6 @@ public class Example {
         ArrayList<Map<String, Object>> articleBatch = new ArrayList<>();
         ArrayList<Map<String, Object>> authorBatch = new ArrayList<>();
         ArrayList<Map<String, Object>> authoredBatch = new ArrayList<>();
-        Set<String> seenAuthorIds = new HashSet<>();
 
         long articlesRead = 0;
 
@@ -182,12 +178,10 @@ public class Example {
                             continue;
                         }
 
-                        if (seenAuthorIds.add(authorId)) {
-                            Map<String, Object> authorRow = new HashMap<>();
-                            authorRow.put("id", authorId);
-                            authorRow.put("name", authorName);
-                            authorBatch.add(authorRow);
-                        }
+                        Map<String, Object> authorRow = new HashMap<>();
+                        authorRow.put("id", authorId);
+                        authorRow.put("name", authorName);
+                        authorBatch.add(authorRow);
 
                         Map<String, Object> authoredRow = new HashMap<>();
                         authoredRow.put("authorId", authorId);
@@ -301,7 +295,8 @@ public class Example {
         session.writeTransaction(tx -> {
             tx.run(
                     "UNWIND $rows AS row " +
-                            "CREATE (a:AUTHOR {_id: row.id, name: row.name})",
+                    "MERGE (a:AUTHOR {_id: row.id}) " +
+                    "ON CREATE SET a.name = row.name ",
                     parameters("rows", rows)
             ).consume();
 

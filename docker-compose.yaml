@@ -28,7 +28,7 @@ services:
       - $PWD/dblpExample.jsonl:/file.jsonl
     environment:
       - JSON_FILE=http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
-      - MAX_NODES=6000000
+      - MAX_ARTICLES=6000000
       - BATCH_SIZE=5000
       - NEO4J_IP=172.24.0.10 # must be the same as above
     deploy:
