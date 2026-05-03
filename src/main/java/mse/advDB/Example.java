@@ -196,7 +196,7 @@ public class Example {
                 articlesRead++;
 
                 if (articleBatch.size() >= batchSize) {
-                    flushArticles(session, articleBatch);
+                    flushArticles(session, articleBatch, apocBatchSize);
                     flushAuthors(session, authorBatch, apocBatchSize);
                     flushAuthored(session, authoredBatch, apocBatchSize);
 
@@ -207,7 +207,7 @@ public class Example {
             }
         }
 
-        flushArticles(session, articleBatch);
+        flushArticles(session, articleBatch, apocBatchSize);
         flushAuthors(session, authorBatch, apocBatchSize);
         flushAuthored(session, authoredBatch, apocBatchSize);
 
@@ -273,25 +273,6 @@ public class Example {
         flushCitations(session, citationBatch, apocBatchSize);
     }
 
-    private static void flushArticles(Session session, ArrayList<Map<String, Object>> rows) {
-        if (rows.isEmpty()) {
-            return;
-        }
-
-        session.writeTransaction(tx -> {
-            tx.run(
-                    "UNWIND $rows AS row " +
-                            "CREATE (a:ARTICLE {_id: row.id, title: row.title})",
-                    parameters("rows", rows)
-            ).consume();
-
-            return null;
-        });
-
-        rows.clear();
-    }
-
-
     private static void flushArticles(Session session, List<Map<String, Object>> rows, int apocBatchSize) {
         if (rows.isEmpty()) return;
 
@@ -312,15 +293,15 @@ public class Example {
             return;
         }
 
-        session.run(
-                "CALL apoc.periodic.iterate(" +
-                    "  'UNWIND $rows AS row RETURN row'," +
-                    "  'MERGE (a:AUTHOR {_id: row.id})" +
-                    "   ON CREATE SET a.name = row.name'," +
-                    "  {batchSize: $apocBatchSize, parallel: false, params: {rows: $rows}}"
-                + ")",
-                parameters("rows", rows, "apocBatchSize", apocBatchSize)
+        session.writeTransaction(tx -> {
+            tx.run(
+                "UNWIND $rows AS row " +
+                "MERGE (a:AUTHOR {_id: row.id}) " +
+                "ON CREATE SET a.name = row.name",
+                parameters("rows", rows)
             ).consume();
+            return null;
+        });
 
         rows.clear();
     }
