@@ -1,6 +1,6 @@
 services:
   db:
-    image: neo4j:4.4.15-community
+    image: neo4j:community
     ports:
       - "7474:7474"
       - "7687:7687"
@@ -12,8 +12,7 @@ services:
       - $PWD/neo4j_mount/logs:/logs
       - $PWD/neo4j_mount/conf:/conf
     environment:
-      - NEO4J_AUTH=neo4j/test
-      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_AUTH=neo4j/test1234
     deploy:
       resources:
         limits:
@@ -26,12 +25,14 @@ services:
     networks:
       - internal
     volumes:
-      - $PWD/dblpExample.jsonl:/file.jsonl
+      - $PWD/dblpExample.jsonl:/file.jsonl:ro
     environment:
       - JSON_FILE=http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
       - MAX_ARTICLES=6000000
       - BATCH_SIZE=5000
       - NEO4J_IP=172.24.0.10 # must be the same as above
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=test1234
     deploy:
       resources:
         limits:
