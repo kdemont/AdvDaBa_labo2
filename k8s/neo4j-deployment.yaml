@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: neo4j
-          image: neo4j:4.4.15-community
+          image: neo4j:community
           ports:
             - containerPort: 7474
               name: browser
@@ -22,7 +22,7 @@ spec:
               name: bolt
           env:
             - name: NEO4J_AUTH
-              value: "neo4j/test"
+              value: "neo4j/test1234"
             - name: NEO4J_dbms_memory_heap_initial__size
               value: "1G"
             - name: NEO4J_dbms_memory_heap_max__size

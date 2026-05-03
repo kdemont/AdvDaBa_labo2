@@ -12,12 +12,12 @@ spec:
       restartPolicy: Never
       containers:
         - name: dblp-loader
-          image: ghcr.io/florian-devenes/adbd-neo4j-loader:v4
+          image: kdemont/neo4jtp:latest
           imagePullPolicy: Always
           env:
             - name: JSON_FILE
               value: "http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl"
-            - name: MAX_NODES
+            - name: MAX_ARTICLES
               value: "6000000"
             - name: BATCH_SIZE
               value: "10000"
