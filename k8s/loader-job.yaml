@@ -23,6 +23,10 @@ spec:
               value: "10000"
             - name: NEO4J_IP
               value: "neo4j"
+            - name: NEO4J_USER
+              value: "neo4j"
+            - name: NEO4J_PASSWORD
+              value: "test"
           resources:
             requests:
               memory: "3Gi"

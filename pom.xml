@@ -96,7 +96,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>mse.advDB.Example</mainClass>
+                    <mainClass>mse.advDB.DBLPLoader</mainClass>
                 </configuration>
             </plugin>
         </plugins>

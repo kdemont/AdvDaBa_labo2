@@ -31,10 +31,23 @@ import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonReader;
 
-public class Example {
+/**
+ * Utility for loading DBLP JSONL data into a Neo4j instance.
+ *
+ * This class performs two passes over a JSONL input stream or file:
+ *  - Pass 1: create ARTICLE and AUTHOR nodes and AUTHORED relationships
+ *  - Pass 2: create CITES relationships between ARTICLE nodes
+ *
+ * The loader supports reading from local files and from remote HTTP(s) resources
+ * using a range-based chunked reader implemented by the nested
+ * `ChunkedHttpInputStream` class. Batch sizes and other parameters are
+ * configurable via environment variables (see `getenv` usage).
+ * 
+ * @author Demont Kilian
+ * @author Devènes Florian 
+ */
+public class DBLPLoader {
 
-    private static final String NEO4J_USER = "neo4j";
-    private static final String NEO4J_PASSWORD = "test";
     private static final AtomicLong HTTP_RETRY_WAIT_MS = new AtomicLong(0);
     private static final AtomicLong HTTP_RETRY_COUNT = new AtomicLong(0);
     private static final AtomicLong HTTP_CHUNK_COUNT = new AtomicLong(0);
@@ -42,6 +55,8 @@ public class Example {
     public static void main(String[] args) throws Exception {
         String jsonPath = getenv("JSON_FILE", "/file.jsonl");
         String neo4jIp = getenv("NEO4J_IP", "localhost");
+        String neo4jUser = getenv("NEO4J_USER", "neo4j");
+        String neo4Password = getenv("NEO4J_PASSWORD", "test");
 
         int maxArticles = Integer.parseInt(getenv("MAX_ARTICLES", "10000"));
         int batchSize = Integer.parseInt(getenv("BATCH_SIZE", "500"));
@@ -57,7 +72,7 @@ public class Example {
 
         Driver driver = GraphDatabase.driver(
                 "bolt://" + neo4jIp + ":7687",
-                AuthTokens.basic(NEO4J_USER, NEO4J_PASSWORD)
+                AuthTokens.basic(neo4jUser, neo4Password)
         );
 
         waitForNeo4j(driver);
@@ -101,6 +116,8 @@ public class Example {
     }
 
     private static void waitForNeo4j(Driver driver) throws InterruptedException {
+        // Poll until the Neo4j server is reachable. This prevents the loader
+        // from failing immediately when started before the DB is ready.
         boolean connected = false;
 
         while (!connected) {
@@ -111,18 +128,21 @@ public class Example {
                 connected = true;
                 System.out.println("Connected to Neo4j.");
             } catch (Exception e) {
+                // Keep polling silently; connectivity will be rechecked.
                 System.out.println("Neo4j not ready yet.");
             }
         }
     }
 
     private static void createConstraints(Session session) {
+        // Ensure uniqueness constraints exist to allow MERGE/CREATE to behave
+        // deterministically and to avoid duplicate nodes for the same entity.
         session.writeTransaction(tx -> {
             tx.run("CREATE CONSTRAINT article_id IF NOT EXISTS " +
-                    "FOR (a:ARTICLE) REQUIRE a._id IS UNIQUE").consume();
+                "FOR (a:ARTICLE) REQUIRE a._id IS UNIQUE").consume();
 
             tx.run("CREATE CONSTRAINT author_id IF NOT EXISTS " +
-                    "FOR (a:AUTHOR) REQUIRE a._id IS UNIQUE").consume();
+                "FOR (a:AUTHOR) REQUIRE a._id IS UNIQUE").consume();
 
             return null;
         });
@@ -143,6 +163,7 @@ public class Example {
 
         long articlesRead = 0;
 
+        // Read the JSONL input line-by-line. Each line describes one article.
         try (BufferedReader br = openReader(jsonPath)) {
             String line;
 
@@ -155,6 +176,7 @@ public class Example {
                 String articleId = getString(article, "id");
 
                 if (articleId.isEmpty()) {
+                    // Skip malformed or untitled entries.
                     continue;
                 }
 
@@ -165,6 +187,8 @@ public class Example {
                 articleRow.put("title", title);
                 articleBatch.add(articleRow);
 
+                // Process authors if present and add AUTHOR nodes and
+                // AUTHORED relationships in batches.
                 if (article.containsKey("authors") && !article.isNull("authors")) {
                     JsonArray authors = article.getJsonArray("authors");
 
@@ -192,6 +216,7 @@ public class Example {
 
                 articlesRead++;
 
+                // Flush in batches to avoid large transactions and reduce memory.
                 if (articleBatch.size() >= batchSize) {
                     flushArticles(session, articleBatch);
                     flushAuthors(session, authorBatch);
@@ -204,6 +229,7 @@ public class Example {
             }
         }
 
+        // Final flush for any remaining rows.
         flushArticles(session, articleBatch);
         flushAuthors(session, authorBatch);
         flushAuthored(session, authoredBatch);
@@ -222,6 +248,8 @@ public class Example {
 
         long articlesRead = 0;
 
+        // Second pass: collect reference pairs and create CITES relationships
+        // in batches to keep transactions small.
         try (BufferedReader br = openReader(jsonPath)) {
             String line;
 
@@ -356,6 +384,8 @@ public class Example {
     }
 
     private static JsonObject parseJsonObject(String line) {
+        // Parse a single JSON object from a JSONL line. Using a try-with-resources
+        // ensures the reader is closed promptly.
         try (JsonReader reader = Json.createReader(new StringReader(line))) {
             return reader.readObject();
         }
@@ -433,6 +463,11 @@ public class Example {
         private boolean eof = false;
         private boolean closed = false;
 
+        /**
+         * Create a chunked HTTP stream for reading a remote file using HTTP Range
+         * requests. The chunk size can be configured with the
+         * `HTTP_CHUNK_SIZE_MB` environment variable.
+         */
         ChunkedHttpInputStream(String source) {
             this.source = source;
 
@@ -514,6 +549,9 @@ public class Example {
                     consecutiveRetries = 0;
                     return;
                 } catch (IOException exception) {
+                    // If a chunk fetch fails we attempt an exponential-ish backoff
+                    // with limited retries. `retryAfterFailure` throws if the
+                    // retry limit is reached.
                     retryAfterFailure(exception);
                 }
             }
@@ -539,6 +577,8 @@ public class Example {
             try {
                 int responseCode = connection.getResponseCode();
 
+                // 416 means the requested range is not satisfiable (we reached
+                // the end of the file) — return an empty chunk to signal EOF.
                 if (responseCode == 416) {
                     return new byte[0];
                 }
@@ -557,7 +597,7 @@ public class Example {
                 long expectedContentLength = connection.getContentLengthLong();
 
                 try (InputStream input = connection.getInputStream();
-                    ByteArrayOutputStream output = new ByteArrayOutputStream(chunkSizeBytes)) {
+                     ByteArrayOutputStream output = new ByteArrayOutputStream(chunkSizeBytes)) {
 
                     byte[] tmp = new byte[64 * 1024];
                     int read;
@@ -568,6 +608,9 @@ public class Example {
 
                     byte[] data = output.toByteArray();
 
+                    // If server reported a content length, verify we received
+                    // the full chunk; otherwise treat a shorter read as an error
+                    // that will trigger the retry logic.
                     if (expectedContentLength > 0 && data.length < expectedContentLength) {
                         throw new IOException(
                                 "Incomplete HTTP chunk at byte "
@@ -601,6 +644,7 @@ public class Example {
                     );
                 }
 
+                // Update retry counters and record metrics for diagnostics.
                 consecutiveRetries++;
                 totalRetries++;
 
@@ -628,6 +672,7 @@ public class Example {
                 );
 
                 try {
+                    // Sleep before attempting to fetch the same chunk again.
                     Thread.sleep(sleepMs);
                     return;
                 } catch (InterruptedException interruptedException) {
