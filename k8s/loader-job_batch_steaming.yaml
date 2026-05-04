@@ -24,7 +24,7 @@ spec:
             - name: HTTP_CHUNK_SIZE_MB
               value: "16"
             - name: NEO4J_IP
-              value: "neo4j"
+              value: "neo4j-svc"
           resources:
             requests:
               memory: "3Gi"

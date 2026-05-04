@@ -22,7 +22,7 @@ spec:
             - name: BATCH_SIZE
               value: "10000"
             - name: NEO4J_IP
-              value: "neo4j"
+              value: "neo4j-svc"
           resources:
             requests:
               memory: "3Gi"

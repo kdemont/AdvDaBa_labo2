@@ -541,7 +541,7 @@ kubectl logs -f job/dblp-loader --tail=80
 Ouvrir un port-forward :
 
 ```bash
-kubectl port-forward svc/neo4j 7474:7474 7687:7687
+kubectl port-forward svc/neo4j-svc 7474:7474 7687:7687
 ```
 
 Puis ouvrir Neo4j Browser :

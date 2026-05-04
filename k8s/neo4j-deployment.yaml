@@ -17,7 +17,6 @@ spec:
           image: neo4j:community
           ports:
             - containerPort: 7474
-              name: browser
             - containerPort: 7687
               name: bolt
           env:
@@ -34,6 +33,7 @@ spec:
           volumeMounts:
             - name: neo4j-data
               mountPath: /data
+
           resources:
             requests:
               memory: "3Gi"
@@ -41,6 +41,7 @@ spec:
             limits:
               memory: "3Gi"
               cpu: "2"
+
       volumes:
         - name: neo4j-data
           persistentVolumeClaim:
