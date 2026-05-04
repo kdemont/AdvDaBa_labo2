@@ -1,0 +1,38 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dblp-loader
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        app: dblp-loader
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: dblp-loader
+          image: ghcr.io/florian-devenes/adbd-neo4j-loader:v5
+          imagePullPolicy: Always
+          env:
+            - name: JSON_FILE
+              value: "http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl"
+            - name: MAX_NODES
+              value: "6000000"
+            - name: BATCH_SIZE
+              value: "10000"
+            - name: HTTP_CHUNK_SIZE_MB
+              value: "16"
+            - name: NEO4J_IP
+              value: "neo4j"
+            - name: NEO4J_USER
+              value: "neo4j"
+            - name: NEO4J_PASSWORD
+              value: "test"
+          resources:
+            requests:
+              memory: "3Gi"
+              cpu: "1"
+            limits:
+              memory: "3Gi"
+              cpu: "2"

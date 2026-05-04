@@ -1,2 +1,13 @@
 data/
 target/
+neo4j_mount/
+*.json
+*.jsonl
+*.zip
+target/
+build/
+.idea/
+.vscode/
+.env
+
+local.yaml

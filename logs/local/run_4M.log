@@ -1,0 +1,555 @@
+ Network advdaba_labo2_internal  Creating
+ Network advdaba_labo2_internal  Created
+ Container advdaba_labo2-db-1  Creating
+ Container advdaba_labo2-db-1  Created
+ Container advdaba_labo2-app-1  Creating
+ Container advdaba_labo2-app-1  Created
+Attaching to app-1, db-1
+app-1  | [INFO] Scanning for projects...
+app-1  | [WARNING] 
+app-1  | [WARNING] Some problems were encountered while building the effective model for icosys:advDB:jar:1.0-SNAPSHOT
+app-1  | [WARNING] 'dependencies.dependency.version' for org.junit.jupiter:junit-jupiter:jar is either LATEST or RELEASE (both of them are being deprecated) @ line 45, column 22
+app-1  | [WARNING] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 95, column 21
+app-1  | [WARNING] 
+app-1  | [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+app-1  | [WARNING] 
+app-1  | [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+app-1  | [WARNING] 
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+db-1   | Warning: Folder mounted to "/logs" is not writable from inside container. Changing folder owner to neo4j.
+db-1   | Warning: Folder mounted to "/data" is not writable from inside container. Changing folder owner to neo4j.
+app-1  | Progress (1): 4.6 kBProgress (2): 4.6 kB | 3.1 kBProgress (2): 9.7 kB | 3.1 kBProgress (2): 14 kB | 3.1 kB Progress (2): 14 kB | 7.7 kBProgress (2): 14 kB | 12 kB Progress (2): 14 kB | 17 kBProgress (2): 14 kB | 20 kBProgress (2): 14 kB | 21 kB                           Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 32 kB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 43 kB/s)
+app-1  | [INFO] 
+app-1  | [INFO] ----------------------------< icosys:advDB >----------------------------
+app-1  | [INFO] Building advDB 1.0-SNAPSHOT
+app-1  | [INFO]   from pom.xml
+app-1  | [INFO] --------------------------------[ jar ]---------------------------------
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar
+app-1  | Progress (1): 0.9/6.4 kBProgress (1): 2.3/6.4 kBProgress (1): 3.6/6.4 kBProgress (1): 5.0/6.4 kBProgress (1): 6.4/6.4 kBProgress (1): 6.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter/6.1.0-RC1/junit-jupiter-6.1.0-RC1.jar (6.4 kB at 149 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+app-1  | Progress (1): 0.9/312 kBProgress (2): 0.9/312 kB | 0.9/14 kBProgress (2): 2.3/312 kB | 0.9/14 kBProgress (2): 2.3/312 kB | 2.3/14 kBProgress (2): 3.6/312 kB | 2.3/14 kBProgress (2): 3.6/312 kB | 3.6/14 kBProgress (2): 5.0/312 kB | 3.6/14 kBProgress (2): 5.0/312 kB | 5.0/14 kBProgress (2): 6.4/312 kB | 5.0/14 kBProgress (2): 6.4/312 kB | 6.4/14 kBProgress (2): 7.7/312 kB | 6.4/14 kBProgress (2): 7.7/312 kB | 7.7/14 kBProgress (2): 7.7/312 kB | 9.1/14 kBProgress (2): 9.1/312 kB | 9.1/14 kBProgress (2): 10/312 kB | 9.1/14 kB Progress (2): 10/312 kB | 10/14 kB Progress (2): 10/312 kB | 12/14 kBProgress (2): 12/312 kB | 12/14 kBProgress (2): 12/312 kB | 12/14 kBProgress (2): 12/312 kB | 13/14 kBProgress (2): 14/312 kB | 13/14 kBProgress (2): 14/312 kB | 14 kB   Progress (2): 15/312 kB | 14 kBProgress (2): 16/312 kB | 14 kBProgress (2): 18/312 kB | 14 kBProgress (2): 19/312 kB | 14 kBProgress (2): 21/312 kB | 14 kB                               Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 172 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar
+app-1  | Progress (1): 22/312 kBProgress (1): 23/312 kBProgress (1): 25/312 kBProgress (1): 26/312 kBProgress (1): 27/312 kBProgress (1): 29/312 kBProgress (1): 30/312 kBProgress (1): 31/312 kBProgress (1): 33/312 kBProgress (1): 34/312 kBProgress (1): 36/312 kBProgress (1): 37/312 kBProgress (1): 38/312 kBProgress (1): 40/312 kBProgress (1): 41/312 kBProgress (1): 42/312 kBProgress (1): 44/312 kBProgress (1): 45/312 kBProgress (1): 47/312 kBProgress (1): 48/312 kBProgress (1): 49/312 kBProgress (1): 51/312 kBProgress (1): 55/312 kBProgress (1): 59/312 kBProgress (1): 63/312 kBProgress (1): 68/312 kBProgress (1): 72/312 kBProgress (1): 76/312 kBProgress (1): 80/312 kBProgress (1): 84/312 kBProgress (1): 89/312 kBProgress (1): 93/312 kBProgress (1): 97/312 kBProgress (2): 97/312 kB | 0.9/6.8 kBProgress (2): 97/312 kB | 2.3/6.8 kBProgress (2): 101/312 kB | 2.3/6.8 kBProgress (2): 101/312 kB | 3.6/6.8 kBProgress (2): 101/312 kB | 5.0/6.8 kBProgress (2): 106/312 kB | 5.0/6.8 kBProgress (2): 106/312 kB | 6.4/6.8 kBProgress (2): 106/312 kB | 6.8 kB    Progress (2): 110/312 kB | 6.8 kBProgress (2): 114/312 kB | 6.8 kBProgress (2): 118/312 kB | 6.8 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 65 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar
+app-1  | Progress (1): 123/312 kBProgress (1): 127/312 kBProgress (1): 131/312 kBProgress (1): 135/312 kBProgress (1): 139/312 kBProgress (2): 139/312 kB | 0.9/3.8 kBProgress (2): 143/312 kB | 0.9/3.8 kBProgress (2): 143/312 kB | 2.3/3.8 kBProgress (3): 143/312 kB | 2.3/3.8 kB | 0.9/176 kBProgress (3): 143/312 kB | 3.6/3.8 kB | 0.9/176 kBProgress (3): 143/312 kB | 3.8 kB | 0.9/176 kB    Progress (3): 148/312 kB | 3.8 kB | 0.9/176 kBProgress (3): 152/312 kB | 3.8 kB | 0.9/176 kBProgress (3): 152/312 kB | 3.8 kB | 2.3/176 kBProgress (3): 152/312 kB | 3.8 kB | 3.6/176 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar (3.8 kB at 35 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar
+app-1  | Progress (2): 156/312 kB | 3.6/176 kBProgress (2): 156/312 kB | 5.0/176 kBProgress (2): 160/312 kB | 5.0/176 kBProgress (2): 165/312 kB | 5.0/176 kBProgress (2): 169/312 kB | 5.0/176 kBProgress (2): 169/312 kB | 6.4/176 kBProgress (2): 169/312 kB | 7.7/176 kBProgress (2): 173/312 kB | 7.7/176 kBProgress (2): 173/312 kB | 9.1/176 kBProgress (2): 173/312 kB | 10/176 kB Progress (2): 177/312 kB | 10/176 kBProgress (2): 177/312 kB | 12/176 kBProgress (2): 181/312 kB | 12/176 kBProgress (2): 181/312 kB | 13/176 kBProgress (2): 181/312 kB | 15/176 kBProgress (2): 186/312 kB | 15/176 kBProgress (2): 186/312 kB | 16/176 kBProgress (2): 186/312 kB | 17/176 kBProgress (2): 190/312 kB | 17/176 kBProgress (2): 190/312 kB | 19/176 kBProgress (2): 190/312 kB | 20/176 kBProgress (2): 194/312 kB | 20/176 kBProgress (2): 194/312 kB | 21/176 kBProgress (2): 194/312 kB | 23/176 kBProgress (2): 198/312 kB | 23/176 kBProgress (2): 198/312 kB | 24/176 kBProgress (2): 203/312 kB | 24/176 kBProgress (2): 203/312 kB | 25/176 kBProgress (2): 203/312 kB | 27/176 kBProgress (2): 207/312 kB | 27/176 kBProgress (2): 211/312 kB | 27/176 kBProgress (2): 211/312 kB | 28/176 kBProgress (2): 215/312 kB | 28/176 kBProgress (2): 215/312 kB | 30/176 kBProgress (2): 215/312 kB | 31/176 kBProgress (2): 219/312 kB | 31/176 kBProgress (2): 219/312 kB | 32/176 kBProgress (2): 219/312 kB | 34/176 kBProgress (2): 219/312 kB | 35/176 kBProgress (2): 219/312 kB | 36/176 kBProgress (2): 219/312 kB | 38/176 kBProgress (2): 219/312 kB | 39/176 kBProgress (2): 219/312 kB | 41/176 kBProgress (2): 236/312 kB | 41/176 kBProgress (2): 236/312 kB | 42/176 kBProgress (2): 236/312 kB | 43/176 kBProgress (2): 236/312 kB | 45/176 kBProgress (2): 236/312 kB | 46/176 kBProgress (2): 236/312 kB | 47/176 kBProgress (2): 236/312 kB | 49/176 kBProgress (2): 252/312 kB | 49/176 kBProgress (2): 252/312 kB | 50/176 kBProgress (2): 252/312 kB | 51/176 kBProgress (2): 252/312 kB | 53/176 kBProgress (2): 252/312 kB | 54/176 kBProgress (2): 269/312 kB | 54/176 kBProgress (2): 269/312 kB | 56/176 kBProgress (2): 274/312 kB | 56/176 kBProgress (2): 274/312 kB | 60/176 kBProgress (2): 291/312 kB | 60/176 kBProgress (2): 291/312 kB | 64/176 kBProgress (3): 291/312 kB | 64/176 kB | 0.9/303 kBProgress (3): 291/312 kB | 64/176 kB | 2.3/303 kBProgress (3): 307/312 kB | 64/176 kB | 2.3/303 kBProgress (3): 307/312 kB | 64/176 kB | 3.6/303 kBProgress (3): 312 kB | 64/176 kB | 3.6/303 kB    Progress (3): 312 kB | 68/176 kB | 3.6/303 kBProgress (3): 312 kB | 68/176 kB | 5.0/303 kBProgress (3): 312 kB | 68/176 kB | 6.4/303 kBProgress (3): 312 kB | 73/176 kB | 6.4/303 kBProgress (3): 312 kB | 73/176 kB | 7.7/303 kBProgress (3): 312 kB | 73/176 kB | 9.1/303 kBProgress (3): 312 kB | 73/176 kB | 10/303 kB Progress (3): 312 kB | 77/176 kB | 10/303 kBProgress (3): 312 kB | 77/176 kB | 12/303 kBProgress (3): 312 kB | 77/176 kB | 13/303 kBProgress (3): 312 kB | 81/176 kB | 13/303 kB                                            Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/6.1.0-RC1/junit-jupiter-api-6.1.0-RC1.jar (312 kB at 2.2 MB/s)
+app-1  | Progress (2): 81/176 kB | 15/303 kBProgress (2): 85/176 kB | 15/303 kBProgress (2): 85/176 kB | 16/303 kBProgress (2): 89/176 kB | 16/303 kBProgress (2): 89/176 kB | 17/303 kBProgress (2): 89/176 kB | 19/303 kBProgress (2): 94/176 kB | 19/303 kBProgress (2): 94/176 kB | 20/303 kBProgress (2): 98/176 kB | 20/303 kBProgress (2): 98/176 kB | 21/303 kBProgress (2): 98/176 kB | 23/303 kBProgress (2): 98/176 kB | 24/303 kBProgress (2): 102/176 kB | 24/303 kBProgress (2): 102/176 kB | 25/303 kBProgress (2): 106/176 kB | 25/303 kBProgress (2): 106/176 kB | 30/303 kBProgress (2): 111/176 kB | 30/303 kBProgress (2): 111/176 kB | 34/303 kBProgress (2): 115/176 kB | 34/303 kBProgress (3): 115/176 kB | 34/303 kB | 0.9/324 kBProgress (3): 119/176 kB | 34/303 kB | 0.9/324 kBProgress (3): 119/176 kB | 34/303 kB | 2.3/324 kBProgress (3): 123/176 kB | 34/303 kB | 2.3/324 kBProgress (3): 127/176 kB | 34/303 kB | 2.3/324 kBProgress (3): 127/176 kB | 34/303 kB | 3.6/324 kBProgress (3): 127/176 kB | 34/303 kB | 5.0/324 kBProgress (3): 127/176 kB | 34/303 kB | 6.4/324 kBProgress (4): 127/176 kB | 34/303 kB | 6.4/324 kB | 0.9/353 kBProgress (4): 127/176 kB | 38/303 kB | 6.4/324 kB | 0.9/353 kBProgress (4): 127/176 kB | 38/303 kB | 7.7/324 kB | 0.9/353 kBProgress (4): 127/176 kB | 38/303 kB | 7.7/324 kB | 2.3/353 kBProgress (4): 127/176 kB | 38/303 kB | 9.1/324 kB | 2.3/353 kBProgress (4): 127/176 kB | 38/303 kB | 9.1/324 kB | 3.6/353 kBProgress (4): 132/176 kB | 38/303 kB | 9.1/324 kB | 3.6/353 kBProgress (4): 132/176 kB | 38/303 kB | 9.1/324 kB | 5.0/353 kBProgress (4): 132/176 kB | 38/303 kB | 10/324 kB | 5.0/353 kB Progress (4): 132/176 kB | 42/303 kB | 10/324 kB | 5.0/353 kBProgress (4): 132/176 kB | 42/303 kB | 12/324 kB | 5.0/353 kBProgress (4): 132/176 kB | 42/303 kB | 13/324 kB | 5.0/353 kBProgress (4): 132/176 kB | 47/303 kB | 13/324 kB | 5.0/353 kBProgress (4): 132/176 kB | 47/303 kB | 13/324 kB | 6.4/353 kBProgress (4): 132/176 kB | 47/303 kB | 15/324 kB | 6.4/353 kBProgress (4): 136/176 kB | 47/303 kB | 15/324 kB | 6.4/353 kBProgress (4): 136/176 kB | 47/303 kB | 15/324 kB | 7.7/353 kBProgress (4): 136/176 kB | 47/303 kB | 15/324 kB | 8.2/353 kBProgress (4): 136/176 kB | 47/303 kB | 16/324 kB | 8.2/353 kBProgress (4): 136/176 kB | 47/303 kB | 17/324 kB | 8.2/353 kBProgress (4): 140/176 kB | 47/303 kB | 17/324 kB | 8.2/353 kBProgress (4): 144/176 kB | 47/303 kB | 17/324 kB | 8.2/353 kBProgress (4): 144/176 kB | 47/303 kB | 17/324 kB | 9.6/353 kBProgress (4): 144/176 kB | 47/303 kB | 19/324 kB | 9.6/353 kBProgress (4): 144/176 kB | 47/303 kB | 19/324 kB | 11/353 kB Progress (4): 144/176 kB | 47/303 kB | 19/324 kB | 12/353 kBProgress (4): 144/176 kB | 47/303 kB | 20/324 kB | 12/353 kBProgress (4): 144/176 kB | 51/303 kB | 20/324 kB | 12/353 kBProgress (4): 144/176 kB | 51/303 kB | 20/324 kB | 14/353 kBProgress (4): 144/176 kB | 55/303 kB | 20/324 kB | 14/353 kBProgress (4): 144/176 kB | 59/303 kB | 20/324 kB | 14/353 kBProgress (4): 144/176 kB | 59/303 kB | 20/324 kB | 15/353 kBProgress (4): 144/176 kB | 59/303 kB | 20/324 kB | 16/353 kBProgress (4): 144/176 kB | 59/303 kB | 20/324 kB | 18/353 kBProgress (4): 144/176 kB | 59/303 kB | 21/324 kB | 18/353 kBProgress (4): 144/176 kB | 59/303 kB | 23/324 kB | 18/353 kBProgress (4): 149/176 kB | 59/303 kB | 23/324 kB | 18/353 kBProgress (4): 149/176 kB | 59/303 kB | 23/324 kB | 19/353 kBProgress (4): 153/176 kB | 59/303 kB | 23/324 kB | 19/353 kBProgress (4): 153/176 kB | 59/303 kB | 23/324 kB | 21/353 kBProgress (4): 155/176 kB | 59/303 kB | 23/324 kB | 21/353 kBProgress (4): 155/176 kB | 59/303 kB | 23/324 kB | 22/353 kBProgress (4): 155/176 kB | 64/303 kB | 23/324 kB | 22/353 kBProgress (4): 155/176 kB | 64/303 kB | 23/324 kB | 23/353 kBProgress (4): 159/176 kB | 64/303 kB | 23/324 kB | 23/353 kBProgress (4): 159/176 kB | 68/303 kB | 23/324 kB | 23/353 kBProgress (4): 159/176 kB | 72/303 kB | 23/324 kB | 23/353 kBProgress (4): 164/176 kB | 72/303 kB | 23/324 kB | 23/353 kBProgress (4): 164/176 kB | 76/303 kB | 23/324 kB | 23/353 kBProgress (4): 164/176 kB | 80/303 kB | 23/324 kB | 23/353 kBProgress (4): 168/176 kB | 80/303 kB | 23/324 kB | 23/353 kBProgress (4): 172/176 kB | 80/303 kB | 23/324 kB | 23/353 kBProgress (4): 172/176 kB | 80/303 kB | 23/324 kB | 25/353 kBProgress (4): 176 kB | 80/303 kB | 23/324 kB | 25/353 kB    Progress (4): 176 kB | 80/303 kB | 23/324 kB | 26/353 kBProgress (4): 176 kB | 80/303 kB | 23/324 kB | 27/353 kBProgress (4): 176 kB | 80/303 kB | 23/324 kB | 29/353 kBProgress (4): 176 kB | 80/303 kB | 23/324 kB | 30/353 kBProgress (4): 176 kB | 85/303 kB | 23/324 kB | 30/353 kBProgress (4): 176 kB | 89/303 kB | 23/324 kB | 30/353 kBProgress (4): 176 kB | 89/303 kB | 23/324 kB | 31/353 kBProgress (4): 176 kB | 89/303 kB | 24/324 kB | 31/353 kBProgress (4): 176 kB | 89/303 kB | 24/324 kB | 33/353 kB                                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/6.1.0-RC1/junit-platform-commons-6.1.0-RC1.jar (176 kB at 1.1 MB/s)
+app-1  | Progress (3): 89/303 kB | 24/324 kB | 34/353 kBProgress (3): 89/303 kB | 26/324 kB | 34/353 kBProgress (3): 89/303 kB | 26/324 kB | 36/353 kBProgress (3): 89/303 kB | 27/324 kB | 36/353 kBProgress (3): 93/303 kB | 27/324 kB | 36/353 kBProgress (3): 93/303 kB | 27/324 kB | 37/353 kBProgress (3): 93/303 kB | 28/324 kB | 37/353 kBProgress (3): 93/303 kB | 28/324 kB | 38/353 kBProgress (3): 97/303 kB | 28/324 kB | 38/353 kBProgress (3): 97/303 kB | 30/324 kB | 38/353 kBProgress (3): 97/303 kB | 30/324 kB | 40/353 kBProgress (3): 97/303 kB | 31/324 kB | 40/353 kBProgress (3): 102/303 kB | 31/324 kB | 40/353 kBProgress (3): 102/303 kB | 31/324 kB | 41/353 kBProgress (3): 102/303 kB | 32/324 kB | 41/353 kBProgress (3): 102/303 kB | 34/324 kB | 41/353 kBProgress (3): 106/303 kB | 34/324 kB | 41/353 kBProgress (3): 106/303 kB | 35/324 kB | 41/353 kBProgress (3): 106/303 kB | 36/324 kB | 41/353 kBProgress (3): 106/303 kB | 38/324 kB | 41/353 kBProgress (3): 106/303 kB | 39/324 kB | 41/353 kBProgress (3): 106/303 kB | 41/324 kB | 41/353 kBProgress (3): 106/303 kB | 42/324 kB | 41/353 kBProgress (3): 106/303 kB | 43/324 kB | 41/353 kBProgress (3): 106/303 kB | 45/324 kB | 41/353 kBProgress (3): 106/303 kB | 46/324 kB | 41/353 kBProgress (3): 106/303 kB | 47/324 kB | 41/353 kBProgress (3): 110/303 kB | 47/324 kB | 41/353 kBProgress (3): 110/303 kB | 49/324 kB | 41/353 kBProgress (3): 110/303 kB | 50/324 kB | 41/353 kBProgress (3): 110/303 kB | 50/324 kB | 42/353 kBProgress (3): 114/303 kB | 50/324 kB | 42/353 kBProgress (3): 119/303 kB | 50/324 kB | 42/353 kBProgress (3): 119/303 kB | 54/324 kB | 42/353 kBProgress (3): 119/303 kB | 59/324 kB | 42/353 kBProgress (3): 119/303 kB | 63/324 kB | 42/353 kBProgress (3): 123/303 kB | 63/324 kB | 42/353 kBProgress (3): 123/303 kB | 63/324 kB | 44/353 kBProgress (3): 123/303 kB | 63/324 kB | 45/353 kBProgress (3): 123/303 kB | 67/324 kB | 45/353 kBProgress (3): 123/303 kB | 67/324 kB | 47/353 kBProgress (3): 123/303 kB | 71/324 kB | 47/353 kBProgress (3): 123/303 kB | 76/324 kB | 47/353 kBProgress (3): 123/303 kB | 80/324 kB | 47/353 kBProgress (3): 123/303 kB | 80/324 kB | 51/353 kBProgress (3): 123/303 kB | 84/324 kB | 51/353 kBProgress (3): 123/303 kB | 88/324 kB | 51/353 kBProgress (3): 127/303 kB | 88/324 kB | 51/353 kBProgress (3): 127/303 kB | 92/324 kB | 51/353 kBProgress (3): 127/303 kB | 92/324 kB | 55/353 kBProgress (3): 131/303 kB | 92/324 kB | 55/353 kBProgress (3): 131/303 kB | 97/324 kB | 55/353 kBProgress (3): 131/303 kB | 97/324 kB | 59/353 kBProgress (3): 131/303 kB | 101/324 kB | 59/353 kBProgress (3): 131/303 kB | 101/324 kB | 63/353 kBProgress (3): 135/303 kB | 101/324 kB | 63/353 kBProgress (3): 135/303 kB | 101/324 kB | 68/353 kBProgress (3): 135/303 kB | 101/324 kB | 72/353 kBProgress (3): 135/303 kB | 101/324 kB | 76/353 kBProgress (3): 135/303 kB | 101/324 kB | 80/353 kBProgress (3): 135/303 kB | 105/324 kB | 80/353 kBProgress (3): 135/303 kB | 105/324 kB | 85/353 kBProgress (3): 135/303 kB | 105/324 kB | 89/353 kBProgress (3): 135/303 kB | 109/324 kB | 89/353 kBProgress (3): 140/303 kB | 109/324 kB | 89/353 kBProgress (3): 140/303 kB | 109/324 kB | 93/353 kBProgress (3): 140/303 kB | 109/324 kB | 97/353 kBProgress (3): 144/303 kB | 109/324 kB | 97/353 kBProgress (3): 144/303 kB | 109/324 kB | 102/353 kBProgress (3): 148/303 kB | 109/324 kB | 102/353 kBProgress (3): 152/303 kB | 109/324 kB | 102/353 kBProgress (3): 152/303 kB | 114/324 kB | 102/353 kBProgress (3): 155/303 kB | 114/324 kB | 102/353 kBProgress (3): 159/303 kB | 114/324 kB | 102/353 kBProgress (3): 159/303 kB | 114/324 kB | 106/353 kBProgress (3): 159/303 kB | 118/324 kB | 106/353 kBProgress (3): 164/303 kB | 118/324 kB | 106/353 kBProgress (3): 168/303 kB | 118/324 kB | 106/353 kBProgress (3): 172/303 kB | 118/324 kB | 106/353 kBProgress (3): 172/303 kB | 122/324 kB | 106/353 kBProgress (3): 176/303 kB | 122/324 kB | 106/353 kBProgress (3): 181/303 kB | 122/324 kB | 106/353 kBProgress (3): 181/303 kB | 122/324 kB | 110/353 kBProgress (3): 185/303 kB | 122/324 kB | 110/353 kBProgress (3): 189/303 kB | 122/324 kB | 110/353 kBProgress (3): 189/303 kB | 122/324 kB | 114/353 kBProgress (3): 193/303 kB | 122/324 kB | 114/353 kBProgress (3): 193/303 kB | 122/324 kB | 115/353 kBProgress (3): 193/303 kB | 122/324 kB | 119/353 kBProgress (3): 193/303 kB | 122/324 kB | 123/353 kBProgress (3): 210/303 kB | 122/324 kB | 123/353 kBProgress (3): 210/303 kB | 122/324 kB | 127/353 kBProgress (3): 210/303 kB | 122/324 kB | 132/353 kBProgress (3): 210/303 kB | 122/324 kB | 136/353 kBProgress (3): 210/303 kB | 122/324 kB | 140/353 kBProgress (3): 210/303 kB | 122/324 kB | 144/353 kBProgress (3): 210/303 kB | 122/324 kB | 149/353 kBProgress (3): 210/303 kB | 122/324 kB | 153/353 kBProgress (3): 226/303 kB | 122/324 kB | 153/353 kBProgress (3): 226/303 kB | 126/324 kB | 153/353 kBProgress (3): 226/303 kB | 131/324 kB | 153/353 kBProgress (3): 242/303 kB | 131/324 kB | 153/353 kBProgress (3): 242/303 kB | 135/324 kB | 153/353 kBProgress (3): 242/303 kB | 139/324 kB | 153/353 kBProgress (3): 242/303 kB | 139/324 kB | 157/353 kBProgress (3): 259/303 kB | 139/324 kB | 157/353 kBProgress (3): 259/303 kB | 139/324 kB | 161/353 kBProgress (3): 259/303 kB | 143/324 kB | 161/353 kBProgress (3): 259/303 kB | 147/324 kB | 161/353 kBProgress (3): 259/303 kB | 151/324 kB | 161/353 kBProgress (3): 259/303 kB | 151/324 kB | 165/353 kBProgress (3): 259/303 kB | 151/324 kB | 170/353 kBProgress (3): 275/303 kB | 151/324 kB | 170/353 kBProgress (3): 275/303 kB | 151/324 kB | 174/353 kBProgress (3): 286/303 kB | 151/324 kB | 174/353 kBProgress (3): 286/303 kB | 156/324 kB | 174/353 kBProgress (3): 286/303 kB | 160/324 kB | 174/353 kBProgress (3): 303/303 kB | 160/324 kB | 174/353 kBProgress (3): 303/303 kB | 164/324 kB | 174/353 kBProgress (3): 303 kB | 164/324 kB | 174/353 kB    Progress (3): 303 kB | 168/324 kB | 174/353 kBProgress (3): 303 kB | 173/324 kB | 174/353 kBProgress (3): 303 kB | 177/324 kB | 174/353 kBProgress (3): 303 kB | 181/324 kB | 174/353 kB                                              Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/6.1.0-RC1/junit-jupiter-params-6.1.0-RC1.jar (303 kB at 1.6 MB/s)
+app-1  | Progress (2): 185/324 kB | 174/353 kBProgress (2): 190/324 kB | 174/353 kBProgress (2): 190/324 kB | 178/353 kBProgress (2): 194/324 kB | 178/353 kBProgress (2): 194/324 kB | 180/353 kBProgress (2): 198/324 kB | 180/353 kBProgress (2): 198/324 kB | 184/353 kBProgress (2): 202/324 kB | 184/353 kBProgress (2): 202/324 kB | 189/353 kBProgress (2): 202/324 kB | 193/353 kBProgress (2): 202/324 kB | 197/353 kBProgress (2): 202/324 kB | 201/353 kBProgress (2): 202/324 kB | 205/353 kBProgress (2): 202/324 kB | 209/353 kBProgress (2): 206/324 kB | 209/353 kBProgress (2): 206/324 kB | 226/353 kBProgress (2): 211/324 kB | 226/353 kBProgress (2): 215/324 kB | 226/353 kBProgress (2): 215/324 kB | 242/353 kBProgress (2): 219/324 kB | 242/353 kBProgress (2): 219/324 kB | 258/353 kBProgress (2): 236/324 kB | 258/353 kBProgress (2): 236/324 kB | 275/353 kBProgress (2): 252/324 kB | 275/353 kBProgress (2): 252/324 kB | 291/353 kBProgress (2): 252/324 kB | 308/353 kBProgress (2): 268/324 kB | 308/353 kBProgress (2): 270/324 kB | 308/353 kBProgress (2): 270/324 kB | 324/353 kBProgress (2): 270/324 kB | 328/353 kBProgress (2): 286/324 kB | 328/353 kBProgress (2): 286/324 kB | 344/353 kBProgress (2): 303/324 kB | 344/353 kBProgress (2): 303/324 kB | 353 kB    Progress (2): 319/324 kB | 353 kBProgress (2): 324 kB | 353 kB                                 Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/6.1.0-RC1/junit-jupiter-engine-6.1.0-RC1.jar (353 kB at 1.7 MB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/6.1.0-RC1/junit-platform-engine-6.1.0-RC1.jar (324 kB at 1.6 MB/s)
+app-1  | [INFO] 
+app-1  | [INFO] --- exec:3.6.3:java (default-cli) @ advDB ---
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom
+app-1  | Progress (1): 838 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.pom (2.2 kB at 60 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom
+app-1  | Progress (1): 752 BProgress (1): 2.3 kBProgress (1): 4.0 kBProgress (1): 9.1 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 25 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver/1.9.24/maven-resolver-1.9.24.pom (25 kB at 721 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom
+app-1  | Progress (1): 780 BProgress (1): 2.0 kBProgress (1): 6.0 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 21 kBProgress (1): 25 kBProgress (1): 27 kBProgress (1): 29 kBProgress (1): 33 kBProgress (1): 37 kBProgress (1): 40 kBProgress (1): 42 kBProgress (1): 45 kBProgress (1): 50 kBProgress (1): 53 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/45/maven-parent-45.pom (53 kB at 1.6 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom
+app-1  | Progress (1): 739 BProgress (1): 2.1 kBProgress (1): 4.0 kBProgress (1): 5.9 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 19 kBProgress (1): 22 kBProgress (1): 24 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/35/apache-35.pom (24 kB at 693 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom
+app-1  | Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.13.1/junit-bom-5.13.1.pom (5.6 kB at 188 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom
+app-1  | Progress (1): 835 BProgress (1): 2.2 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.pom (2.2 kB at 72 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+app-1  | Progress (1): 976 BProgress (1): 4.3 kBProgress (1): 7.7 kBProgress (1): 12 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 377 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+app-1  | Progress (1): 814 BProgress (1): 2.6 kBProgress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 95 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+app-1  | Progress (1): 692 BProgress (1): 2.5 kBProgress (1): 6.4 kBProgress (1): 8.9 kBProgress (1): 10 kB Progress (1): 14 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 886 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom
+app-1  | Progress (1): 921 BProgress (1): 3.4 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom (5.6 kB at 166 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom
+app-1  | Progress (1): 757 BProgress (1): 2.2 kBProgress (1): 4.0 kBProgress (1): 6.5 kBProgress (1): 9.8 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.pom (11 kB at 285 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom
+app-1  | Progress (1): 700 BProgress (1): 1.9 kBProgress (1): 3.2 kBProgress (1): 4.7 kBProgress (1): 6.8 kBProgress (1): 9.4 kBProgress (1): 11 kB Progress (1): 14 kBProgress (1): 16 kBProgress (1): 19 kBProgress (1): 21 kBProgress (1): 23 kBProgress (1): 25 kBProgress (1): 29 kBProgress (1): 32 kBProgress (1): 32 kBProgress (1): 36 kBProgress (1): 41 kBProgress (1): 44 kBProgress (1): 46 kBProgress (1): 50 kBProgress (1): 52 kBProgress (1): 55 kBProgress (1): 58 kBProgress (1): 60 kBProgress (1): 63 kBProgress (1): 67 kBProgress (1): 70 kBProgress (1): 73 kBProgress (1): 75 kBProgress (1): 77 kBProgress (1): 79 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/93/commons-parent-93.pom (79 kB at 1.3 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom
+app-1  | Progress (1): 908 BProgress (1): 4.1 kBProgress (1): 5.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.14.1/junit-bom-5.14.1.pom (5.7 kB at 202 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom
+app-1  | Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.pom (2.4 kB at 72 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
+app-1  | Progress (1): 709 BProgress (1): 2.1 kBProgress (1): 3.6 kBProgress (1): 5.7 kBProgress (1): 8.1 kBProgress (1): 11 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom (11 kB at 364 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom
+app-1  | Progress (1): 1.1 kBProgress (1): 2.8 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.pom (2.8 kB at 90 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom
+app-1  | Progress (1): 1.1 kBProgress (1): 2.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.pom (2.6 kB at 84 kB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar
+app-1  | Progress (1): 7.7/196 kBProgress (1): 12/196 kB Progress (1): 29/196 kBProgress (1): 45/196 kBProgress (1): 61/196 kBProgress (1): 78/196 kBProgress (1): 94/196 kBProgress (1): 111/196 kBProgress (1): 127/196 kBProgress (1): 143/196 kBProgress (1): 160/196 kBProgress (1): 176/196 kBProgress (1): 193/196 kBProgress (1): 196 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-util/1.9.24/maven-resolver-util-1.9.24.jar (196 kB at 4.4 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar
+app-1  | Progress (1): 7.7/157 kBProgress (1): 16/157 kB Progress (1): 24/157 kBProgress (1): 40/157 kBProgress (1): 57/157 kBProgress (2): 57/157 kB | 7.7/193 kBProgress (2): 57/157 kB | 8.2/193 kBProgress (2): 73/157 kB | 8.2/193 kBProgress (2): 73/157 kB | 25/193 kB Progress (2): 90/157 kB | 25/193 kBProgress (2): 90/157 kB | 41/193 kBProgress (2): 90/157 kB | 57/193 kBProgress (2): 106/157 kB | 57/193 kBProgress (2): 106/157 kB | 74/193 kBProgress (2): 122/157 kB | 74/193 kBProgress (2): 122/157 kB | 90/193 kBProgress (2): 139/157 kB | 90/193 kBProgress (2): 155/157 kB | 90/193 kBProgress (2): 157 kB | 90/193 kB    Progress (3): 157 kB | 90/193 kB | 3.8/126 kBProgress (3): 157 kB | 90/193 kB | 8.0/126 kBProgress (3): 157 kB | 90/193 kB | 11/126 kB                                             Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/resolver/maven-resolver-api/1.9.24/maven-resolver-api-1.9.24.jar (157 kB at 2.7 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar
+app-1  | Progress (2): 90/193 kB | 16/126 kBProgress (2): 90/193 kB | 20/126 kBProgress (2): 90/193 kB | 24/126 kBProgress (2): 90/193 kB | 28/126 kBProgress (2): 106/193 kB | 28/126 kBProgress (2): 106/193 kB | 33/126 kBProgress (2): 106/193 kB | 37/126 kBProgress (2): 106/193 kB | 41/126 kBProgress (2): 106/193 kB | 45/126 kBProgress (2): 123/193 kB | 45/126 kBProgress (2): 123/193 kB | 62/126 kBProgress (2): 139/193 kB | 62/126 kBProgress (2): 156/193 kB | 62/126 kBProgress (2): 172/193 kB | 62/126 kBProgress (2): 172/193 kB | 78/126 kBProgress (2): 172/193 kB | 94/126 kBProgress (2): 172/193 kB | 111/126 kBProgress (2): 188/193 kB | 111/126 kBProgress (3): 188/193 kB | 111/126 kB | 7.7/94 kBProgress (3): 188/193 kB | 111/126 kB | 16/94 kB Progress (3): 193 kB | 111/126 kB | 16/94 kB    Progress (3): 193 kB | 126 kB | 16/94 kB    Progress (3): 193 kB | 126 kB | 32/94 kB                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.9.1/asm-9.9.1.jar (126 kB at 1.7 MB/s)
+app-1  | Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 2.6 MB/s)
+app-1  | Progress (1): 49/94 kBProgress (2): 49/94 kB | 7.7/69 kBProgress (2): 49/94 kB | 12/69 kB Progress (2): 49/94 kB | 29/69 kBProgress (2): 49/94 kB | 45/69 kBProgress (2): 65/94 kB | 45/69 kBProgress (2): 65/94 kB | 61/69 kBProgress (2): 65/94 kB | 69 kB   Progress (2): 81/94 kB | 69 kBProgress (2): 94 kB | 69 kB                              Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-exec/1.6.0/commons-exec-1.6.0.jar (69 kB at 866 kB/s)
+app-1  | Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 1.2 MB/s)
+app-1  | Progress (1): 7.7/75 kBProgress (1): 16/75 kB Progress (1): 25/75 kBProgress (1): 41/75 kBProgress (1): 57/75 kBProgress (1): 74/75 kBProgress (1): 75 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/9.9.1/asm-commons-9.9.1.jar (75 kB at 798 kB/s)
+app-1  | Progress (1): 7.7/52 kBProgress (1): 12/52 kB Progress (1): 29/52 kBProgress (1): 45/52 kBProgress (1): 52 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/9.9.1/asm-tree-9.9.1.jar (52 kB at 486 kB/s)
+app-1  | === DBLP LOADER START ===
+app-1  | Start time: 2026-04-26T15:25:15.033047904Z
+app-1  | JSON file: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | Neo4j IP: 172.24.0.10
+app-1  | Max articles to read: 4000000
+app-1  | Batch size: 1000
+app-1  | WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+app-1  | WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3 (file:/root/.m2/repository/org/neo4j/driver/neo4j-java-driver/4.4.5/neo4j-java-driver-4.4.5.jar)
+app-1  | WARNING: Please consider reporting this to the maintainers of class org.neo4j.driver.internal.shaded.io.netty.util.internal.PlatformDependent0$3
+app-1  | WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+app-1  | Waiting for Neo4j...
+db-1   | Changed password for user 'neo4j'. IMPORTANT: this change will only take effect if performed before the database is started for the first time.
+db-1   | 2026-04-26 15:25:17.304+0000 INFO  Starting...
+db-1   | 2026-04-26 15:25:17.660+0000 INFO  This instance is ServerId{c6c44441} (c6c44441-ad66-44d4-b34d-d0aa630ee189)
+db-1   | 2026-04-26 15:25:18.662+0000 INFO  ======== Neo4j 4.4.15 ========
+app-1  | Neo4j not ready yet.
+app-1  | Waiting for Neo4j...
+db-1   | 2026-04-26 15:25:20.331+0000 INFO  Initializing system graph model for component 'security-users' with version -1 and status UNINITIALIZED
+db-1   | 2026-04-26 15:25:20.339+0000 INFO  Setting up initial user from `auth.ini` file: neo4j
+db-1   | 2026-04-26 15:25:20.340+0000 INFO  Creating new user 'neo4j' (passwordChangeRequired=false, suspended=false)
+db-1   | 2026-04-26 15:25:20.358+0000 INFO  Setting version for 'security-users' to 3
+db-1   | 2026-04-26 15:25:20.362+0000 INFO  After initialization of system graph model component 'security-users' have version 3 and status CURRENT
+db-1   | 2026-04-26 15:25:20.366+0000 INFO  Performing postInitialization step for component 'security-users' with version 3 and status CURRENT
+db-1   | 2026-04-26 15:25:20.702+0000 INFO  Bolt enabled on [0:0:0:0:0:0:0:0%0]:7687.
+db-1   | 2026-04-26 15:25:21.313+0000 INFO  Remote interface available at http://localhost:7474/
+db-1   | 2026-04-26 15:25:21.317+0000 INFO  id: 2EAEDB4A252AB3CCEE5074DAFB5AC7FA6DDB85A2E554949D50800DB908DFBB6D
+db-1   | 2026-04-26 15:25:21.317+0000 INFO  name: system
+db-1   | 2026-04-26 15:25:21.318+0000 INFO  creationDate: 2026-04-26T15:25:19.292Z
+db-1   | 2026-04-26 15:25:21.318+0000 INFO  Started.
+app-1  | Connected to Neo4j.
+app-1  | Constraints created or already existing.
+app-1  | Pass 1/2: loading ARTICLE, AUTHOR and AUTHORED...
+app-1  | Opening remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | Pass 1 progress - articles read: 10000
+app-1  | Pass 1 progress - articles read: 20000
+app-1  | Pass 1 progress - articles read: 30000
+app-1  | Pass 1 progress - articles read: 40000
+app-1  | Pass 1 progress - articles read: 50000
+app-1  | Pass 1 progress - articles read: 60000
+app-1  | Pass 1 progress - articles read: 70000
+app-1  | Pass 1 progress - articles read: 80000
+app-1  | Pass 1 progress - articles read: 90000
+app-1  | Pass 1 progress - articles read: 100000
+app-1  | Pass 1 progress - articles read: 110000
+app-1  | Pass 1 progress - articles read: 120000
+app-1  | Pass 1 progress - articles read: 130000
+app-1  | Pass 1 progress - articles read: 140000
+app-1  | Pass 1 progress - articles read: 150000
+app-1  | Pass 1 progress - articles read: 160000
+app-1  | Pass 1 progress - articles read: 170000
+app-1  | Pass 1 progress - articles read: 180000
+app-1  | Pass 1 progress - articles read: 190000
+app-1  | Pass 1 progress - articles read: 200000
+app-1  | Pass 1 progress - articles read: 210000
+app-1  | Pass 1 progress - articles read: 220000
+app-1  | Pass 1 progress - articles read: 230000
+app-1  | Pass 1 progress - articles read: 240000
+app-1  | Pass 1 progress - articles read: 250000
+app-1  | Pass 1 progress - articles read: 260000
+app-1  | Pass 1 progress - articles read: 270000
+app-1  | Pass 1 progress - articles read: 280000
+app-1  | Pass 1 progress - articles read: 290000
+app-1  | Pass 1 progress - articles read: 300000
+app-1  | Pass 1 progress - articles read: 310000
+app-1  | Pass 1 progress - articles read: 320000
+app-1  | Pass 1 progress - articles read: 330000
+app-1  | Pass 1 progress - articles read: 340000
+app-1  | Pass 1 progress - articles read: 350000
+app-1  | Pass 1 progress - articles read: 360000
+app-1  | Pass 1 progress - articles read: 370000
+app-1  | Pass 1 progress - articles read: 380000
+app-1  | Pass 1 progress - articles read: 390000
+app-1  | Pass 1 progress - articles read: 400000
+app-1  | Pass 1 progress - articles read: 410000
+app-1  | Pass 1 progress - articles read: 420000
+app-1  | Pass 1 progress - articles read: 430000
+app-1  | Pass 1 progress - articles read: 440000
+app-1  | Pass 1 progress - articles read: 450000
+app-1  | Pass 1 progress - articles read: 460000
+app-1  | Pass 1 progress - articles read: 470000
+app-1  | Pass 1 progress - articles read: 480000
+app-1  | Pass 1 progress - articles read: 490000
+app-1  | Pass 1 progress - articles read: 500000
+app-1  | Pass 1 progress - articles read: 510000
+app-1  | Pass 1 progress - articles read: 520000
+app-1  | Pass 1 progress - articles read: 530000
+app-1  | Pass 1 progress - articles read: 540000
+app-1  | Pass 1 progress - articles read: 550000
+app-1  | Pass 1 progress - articles read: 560000
+app-1  | Pass 1 progress - articles read: 570000
+app-1  | Pass 1 progress - articles read: 580000
+app-1  | Pass 1 progress - articles read: 590000
+app-1  | Pass 1 progress - articles read: 600000
+app-1  | Pass 1 progress - articles read: 610000
+app-1  | Pass 1 progress - articles read: 620000
+app-1  | Pass 1 progress - articles read: 630000
+app-1  | Pass 1 progress - articles read: 640000
+app-1  | Pass 1 progress - articles read: 650000
+app-1  | Pass 1 progress - articles read: 660000
+app-1  | Pass 1 progress - articles read: 670000
+app-1  | Pass 1 progress - articles read: 680000
+app-1  | Pass 1 progress - articles read: 690000
+app-1  | Pass 1 progress - articles read: 700000
+app-1  | Pass 1 progress - articles read: 710000
+app-1  | Pass 1 progress - articles read: 720000
+app-1  | Pass 1 progress - articles read: 730000
+app-1  | Pass 1 progress - articles read: 740000
+app-1  | Pass 1 progress - articles read: 750000
+app-1  | Pass 1 progress - articles read: 760000
+app-1  | Pass 1 progress - articles read: 770000
+app-1  | Pass 1 progress - articles read: 780000
+app-1  | Pass 1 progress - articles read: 790000
+app-1  | Pass 1 progress - articles read: 800000
+app-1  | Pass 1 progress - articles read: 810000
+app-1  | Pass 1 progress - articles read: 820000
+app-1  | Pass 1 progress - articles read: 830000
+app-1  | Pass 1 progress - articles read: 840000
+app-1  | Pass 1 progress - articles read: 850000
+app-1  | Pass 1 progress - articles read: 860000
+app-1  | Pass 1 progress - articles read: 870000
+app-1  | Pass 1 progress - articles read: 880000
+app-1  | Pass 1 progress - articles read: 890000
+app-1  | Pass 1 progress - articles read: 900000
+app-1  | Pass 1 progress - articles read: 910000
+app-1  | Pass 1 progress - articles read: 920000
+app-1  | Pass 1 progress - articles read: 930000
+app-1  | Pass 1 progress - articles read: 940000
+app-1  | Pass 1 progress - articles read: 950000
+app-1  | Pass 1 progress - articles read: 960000
+app-1  | Pass 1 progress - articles read: 970000
+app-1  | Pass 1 progress - articles read: 980000
+app-1  | Pass 1 progress - articles read: 990000
+app-1  | Pass 1 progress - articles read: 1000000
+app-1  | Pass 1 progress - articles read: 1010000
+app-1  | Pass 1 progress - articles read: 1020000
+app-1  | Pass 1 progress - articles read: 1030000
+app-1  | Pass 1 progress - articles read: 1040000
+app-1  | Pass 1 progress - articles read: 1050000
+app-1  | Pass 1 progress - articles read: 1060000
+app-1  | Pass 1 progress - articles read: 1070000
+app-1  | Pass 1 progress - articles read: 1080000
+app-1  | Pass 1 progress - articles read: 1090000
+app-1  | Pass 1 progress - articles read: 1100000
+app-1  | Pass 1 progress - articles read: 1110000
+app-1  | Pass 1 progress - articles read: 1120000
+app-1  | Pass 1 progress - articles read: 1130000
+app-1  | Pass 1 progress - articles read: 1140000
+app-1  | Pass 1 progress - articles read: 1150000
+app-1  | Pass 1 progress - articles read: 1160000
+app-1  | Pass 1 progress - articles read: 1170000
+app-1  | Pass 1 progress - articles read: 1180000
+app-1  | Pass 1 progress - articles read: 1190000
+app-1  | Pass 1 progress - articles read: 1200000
+app-1  | Pass 1 progress - articles read: 1210000
+app-1  | Pass 1 progress - articles read: 1220000
+app-1  | Pass 1 progress - articles read: 1230000
+app-1  | Pass 1 progress - articles read: 1240000
+app-1  | Pass 1 progress - articles read: 1250000
+app-1  | Pass 1 progress - articles read: 1260000
+app-1  | Pass 1 progress - articles read: 1270000
+app-1  | Pass 1 progress - articles read: 1280000
+app-1  | Pass 1 progress - articles read: 1290000
+app-1  | Pass 1 progress - articles read: 1300000
+app-1  | Pass 1 progress - articles read: 1310000
+app-1  | Pass 1 progress - articles read: 1320000
+app-1  | Pass 1 progress - articles read: 1330000
+app-1  | Pass 1 progress - articles read: 1340000
+app-1  | Pass 1 progress - articles read: 1350000
+app-1  | Pass 1 progress - articles read: 1360000
+app-1  | Pass 1 progress - articles read: 1370000
+app-1  | Pass 1 progress - articles read: 1380000
+app-1  | Pass 1 progress - articles read: 1390000
+app-1  | Pass 1 progress - articles read: 1400000
+app-1  | Pass 1 progress - articles read: 1410000
+app-1  | Pass 1 progress - articles read: 1420000
+app-1  | Pass 1 progress - articles read: 1430000
+app-1  | Pass 1 progress - articles read: 1440000
+app-1  | Pass 1 progress - articles read: 1450000
+app-1  | Pass 1 progress - articles read: 1460000
+app-1  | Pass 1 progress - articles read: 1470000
+app-1  | Pass 1 progress - articles read: 1480000
+app-1  | Pass 1 progress - articles read: 1490000
+app-1  | Pass 1 progress - articles read: 1500000
+app-1  | Pass 1 progress - articles read: 1510000
+app-1  | Pass 1 progress - articles read: 1520000
+app-1  | Pass 1 progress - articles read: 1530000
+app-1  | Pass 1 progress - articles read: 1540000
+app-1  | Pass 1 progress - articles read: 1550000
+app-1  | Pass 1 progress - articles read: 1560000
+app-1  | Pass 1 progress - articles read: 1570000
+app-1  | Pass 1 progress - articles read: 1580000
+app-1  | Pass 1 progress - articles read: 1590000
+app-1  | Pass 1 progress - articles read: 1600000
+app-1  | Pass 1 progress - articles read: 1610000
+app-1  | Pass 1 progress - articles read: 1620000
+app-1  | Pass 1 progress - articles read: 1630000
+app-1  | Pass 1 progress - articles read: 1640000
+app-1  | Pass 1 progress - articles read: 1650000
+app-1  | Pass 1 progress - articles read: 1660000
+app-1  | Pass 1 progress - articles read: 1670000
+app-1  | Pass 1 progress - articles read: 1680000
+app-1  | Pass 1 progress - articles read: 1690000
+app-1  | Pass 1 progress - articles read: 1700000
+app-1  | Pass 1 progress - articles read: 1710000
+app-1  | Pass 1 progress - articles read: 1720000
+app-1  | Pass 1 progress - articles read: 1730000
+app-1  | Pass 1 progress - articles read: 1740000
+app-1  | Pass 1 progress - articles read: 1750000
+app-1  | Pass 1 progress - articles read: 1760000
+app-1  | Pass 1 progress - articles read: 1770000
+app-1  | Pass 1 progress - articles read: 1780000
+app-1  | Pass 1 progress - articles read: 1790000
+app-1  | Pass 1 progress - articles read: 1800000
+app-1  | Pass 1 progress - articles read: 1810000
+app-1  | Pass 1 progress - articles read: 1820000
+app-1  | Pass 1 progress - articles read: 1830000
+app-1  | Pass 1 progress - articles read: 1840000
+app-1  | Pass 1 progress - articles read: 1850000
+app-1  | Pass 1 progress - articles read: 1860000
+app-1  | Pass 1 progress - articles read: 1870000
+app-1  | Pass 1 progress - articles read: 1880000
+app-1  | Pass 1 progress - articles read: 1890000
+app-1  | Pass 1 progress - articles read: 1900000
+app-1  | Pass 1 progress - articles read: 1910000
+app-1  | Pass 1 progress - articles read: 1920000
+app-1  | Pass 1 progress - articles read: 1930000
+app-1  | Pass 1 progress - articles read: 1940000
+app-1  | Pass 1 progress - articles read: 1950000
+app-1  | Pass 1 progress - articles read: 1960000
+app-1  | Pass 1 progress - articles read: 1970000
+app-1  | Pass 1 progress - articles read: 1980000
+app-1  | Pass 1 progress - articles read: 1990000
+app-1  | Pass 1 progress - articles read: 2000000
+app-1  | Pass 1 progress - articles read: 2010000
+app-1  | Pass 1 progress - articles read: 2020000
+app-1  | Pass 1 progress - articles read: 2030000
+app-1  | Pass 1 progress - articles read: 2040000
+app-1  | Pass 1 progress - articles read: 2050000
+app-1  | Pass 1 progress - articles read: 2060000
+app-1  | Pass 1 progress - articles read: 2070000
+app-1  | Pass 1 progress - articles read: 2080000
+app-1  | Pass 1 progress - articles read: 2090000
+app-1  | Pass 1 progress - articles read: 2100000
+app-1  | Pass 1 progress - articles read: 2110000
+app-1  | Pass 1 progress - articles read: 2120000
+app-1  | Pass 1 progress - articles read: 2130000
+app-1  | Pass 1 progress - articles read: 2140000
+app-1  | Pass 1 progress - articles read: 2150000
+app-1  | Pass 1 progress - articles read: 2160000
+app-1  | Pass 1 progress - articles read: 2170000
+app-1  | Pass 1 progress - articles read: 2180000
+app-1  | Pass 1 progress - articles read: 2190000
+app-1  | Pass 1 progress - articles read: 2200000
+app-1  | Pass 1 progress - articles read: 2210000
+app-1  | Pass 1 progress - articles read: 2220000
+app-1  | Pass 1 progress - articles read: 2230000
+app-1  | Pass 1 progress - articles read: 2240000
+app-1  | Pass 1 progress - articles read: 2250000
+app-1  | Pass 1 progress - articles read: 2260000
+app-1  | Pass 1 progress - articles read: 2270000
+app-1  | Pass 1 progress - articles read: 2280000
+app-1  | Pass 1 progress - articles read: 2290000
+app-1  | Pass 1 progress - articles read: 2300000
+app-1  | Pass 1 progress - articles read: 2310000
+app-1  | Pass 1 progress - articles read: 2320000
+app-1  | Pass 1 progress - articles read: 2330000
+app-1  | Pass 1 progress - articles read: 2340000
+app-1  | Pass 1 progress - articles read: 2350000
+app-1  | Pass 1 progress - articles read: 2360000
+app-1  | Pass 1 progress - articles read: 2370000
+app-1  | Pass 1 progress - articles read: 2380000
+app-1  | Pass 1 progress - articles read: 2390000
+app-1  | Pass 1 progress - articles read: 2400000
+app-1  | Pass 1 progress - articles read: 2410000
+app-1  | Pass 1 progress - articles read: 2420000
+app-1  | Pass 1 progress - articles read: 2430000
+app-1  | Pass 1 progress - articles read: 2440000
+app-1  | Pass 1 progress - articles read: 2450000
+app-1  | Pass 1 progress - articles read: 2460000
+app-1  | Pass 1 progress - articles read: 2470000
+app-1  | Pass 1 progress - articles read: 2480000
+app-1  | Pass 1 progress - articles read: 2490000
+app-1  | Pass 1 progress - articles read: 2500000
+app-1  | Pass 1 progress - articles read: 2510000
+app-1  | Pass 1 progress - articles read: 2520000
+app-1  | Pass 1 progress - articles read: 2530000
+app-1  | Pass 1 progress - articles read: 2540000
+app-1  | Pass 1 progress - articles read: 2550000
+app-1  | Pass 1 progress - articles read: 2560000
+app-1  | Pass 1 progress - articles read: 2570000
+app-1  | Pass 1 progress - articles read: 2580000
+app-1  | Pass 1 progress - articles read: 2590000
+app-1  | Pass 1 progress - articles read: 2600000
+app-1  | Pass 1 progress - articles read: 2610000
+app-1  | Pass 1 progress - articles read: 2620000
+app-1  | Pass 1 progress - articles read: 2630000
+app-1  | Pass 1 progress - articles read: 2640000
+app-1  | Pass 1 progress - articles read: 2650000
+app-1  | Pass 1 progress - articles read: 2660000
+app-1  | Pass 1 progress - articles read: 2670000
+app-1  | Pass 1 progress - articles read: 2680000
+app-1  | Pass 1 progress - articles read: 2690000
+app-1  | Pass 1 progress - articles read: 2700000
+app-1  | Pass 1 progress - articles read: 2710000
+app-1  | Pass 1 progress - articles read: 2720000
+app-1  | Pass 1 progress - articles read: 2730000
+app-1  | Pass 1 progress - articles read: 2740000
+app-1  | Pass 1 progress - articles read: 2750000
+app-1  | Pass 1 progress - articles read: 2760000
+app-1  | Pass 1 progress - articles read: 2770000
+app-1  | Pass 1 progress - articles read: 2780000
+app-1  | Pass 1 progress - articles read: 2790000
+app-1  | Pass 1 progress - articles read: 2800000
+app-1  | Pass 1 progress - articles read: 2810000
+app-1  | Pass 1 progress - articles read: 2820000
+app-1  | Pass 1 progress - articles read: 2830000
+app-1  | Pass 1 progress - articles read: 2840000
+app-1  | Pass 1 progress - articles read: 2850000
+app-1  | Pass 1 progress - articles read: 2860000
+app-1  | Pass 1 progress - articles read: 2870000
+app-1  | Pass 1 progress - articles read: 2880000
+app-1  | Pass 1 progress - articles read: 2890000
+app-1  | Pass 1 progress - articles read: 2900000
+app-1  | Pass 1 progress - articles read: 2910000
+app-1  | Pass 1 progress - articles read: 2920000
+app-1  | Pass 1 progress - articles read: 2930000
+app-1  | Pass 1 progress - articles read: 2940000
+app-1  | Pass 1 progress - articles read: 2950000
+app-1  | Pass 1 progress - articles read: 2960000
+app-1  | Pass 1 progress - articles read: 2970000
+app-1  | Pass 1 progress - articles read: 2980000
+app-1  | Pass 1 progress - articles read: 2990000
+app-1  | Pass 1 progress - articles read: 3000000
+app-1  | Pass 1 progress - articles read: 3010000
+app-1  | Pass 1 progress - articles read: 3020000
+app-1  | Pass 1 progress - articles read: 3030000
+app-1  | Pass 1 progress - articles read: 3040000
+app-1  | Pass 1 progress - articles read: 3050000
+app-1  | Pass 1 progress - articles read: 3060000
+app-1  | Pass 1 progress - articles read: 3070000
+app-1  | Pass 1 progress - articles read: 3080000
+app-1  | Pass 1 progress - articles read: 3090000
+app-1  | Pass 1 progress - articles read: 3100000
+app-1  | Pass 1 progress - articles read: 3110000
+app-1  | Pass 1 progress - articles read: 3120000
+app-1  | Pass 1 progress - articles read: 3130000
+app-1  | Pass 1 progress - articles read: 3140000
+app-1  | Pass 1 progress - articles read: 3150000
+app-1  | Pass 1 progress - articles read: 3160000
+app-1  | Pass 1 progress - articles read: 3170000
+app-1  | Pass 1 progress - articles read: 3180000
+app-1  | Pass 1 progress - articles read: 3190000
+app-1  | Pass 1 progress - articles read: 3200000
+app-1  | Pass 1 progress - articles read: 3210000
+app-1  | Pass 1 progress - articles read: 3220000
+app-1  | Pass 1 progress - articles read: 3230000
+app-1  | Pass 1 progress - articles read: 3240000
+app-1  | Pass 1 progress - articles read: 3250000
+app-1  | Pass 1 progress - articles read: 3260000
+app-1  | Pass 1 progress - articles read: 3270000
+app-1  | Pass 1 progress - articles read: 3280000
+app-1  | Pass 1 progress - articles read: 3290000
+app-1  | Pass 1 progress - articles read: 3300000
+app-1  | Pass 1 progress - articles read: 3310000
+app-1  | Pass 1 progress - articles read: 3320000
+app-1  | Pass 1 progress - articles read: 3330000
+app-1  | Pass 1 progress - articles read: 3340000
+app-1  | Pass 1 progress - articles read: 3350000
+app-1  | Pass 1 progress - articles read: 3360000
+app-1  | Pass 1 progress - articles read: 3370000
+app-1  | Pass 1 progress - articles read: 3380000
+app-1  | Pass 1 progress - articles read: 3390000
+app-1  | Pass 1 progress - articles read: 3400000
+app-1  | Pass 1 progress - articles read: 3410000
+app-1  | Pass 1 progress - articles read: 3420000
+app-1  | Pass 1 progress - articles read: 3430000
+app-1  | Pass 1 progress - articles read: 3440000
+app-1  | Pass 1 progress - articles read: 3450000
+app-1  | Pass 1 progress - articles read: 3460000
+app-1  | Pass 1 progress - articles read: 3470000
+app-1  | Pass 1 progress - articles read: 3480000
+app-1  | Pass 1 progress - articles read: 3490000
+app-1  | Pass 1 progress - articles read: 3500000
+app-1  | Pass 1 progress - articles read: 3510000
+app-1  | Pass 1 progress - articles read: 3520000
+app-1  | Pass 1 progress - articles read: 3530000
+app-1  | Pass 1 progress - articles read: 3540000
+app-1  | Pass 1 progress - articles read: 3550000
+app-1  | Pass 1 progress - articles read: 3560000
+app-1  | Pass 1 progress - articles read: 3570000
+app-1  | Pass 1 progress - articles read: 3580000
+app-1  | Pass 1 progress - articles read: 3590000
+app-1  | Pass 1 progress - articles read: 3600000
+app-1  | Pass 1 progress - articles read: 3610000
+app-1  | Pass 1 progress - articles read: 3620000
+app-1  | Pass 1 progress - articles read: 3630000
+app-1  | Pass 1 progress - articles read: 3640000
+app-1  | Pass 1 progress - articles read: 3650000
+app-1  | Pass 1 progress - articles read: 3660000
+app-1  | Pass 1 progress - articles read: 3670000
+app-1  | Pass 1 progress - articles read: 3680000
+app-1  | Pass 1 progress - articles read: 3690000
+app-1  | Pass 1 progress - articles read: 3700000
+app-1  | Pass 1 progress - articles read: 3710000
+app-1  | Pass 1 progress - articles read: 3720000
+app-1  | Pass 1 progress - articles read: 3730000
+app-1  | Pass 1 progress - articles read: 3740000
+app-1  | Pass 1 progress - articles read: 3750000
+app-1  | Pass 1 progress - articles read: 3760000
+app-1  | Pass 1 progress - articles read: 3770000
+app-1  | Pass 1 progress - articles read: 3780000
+app-1  | Pass 1 progress - articles read: 3790000
+app-1  | Pass 1 progress - articles read: 3800000
+app-1  | Pass 1 progress - articles read: 3810000
+app-1  | Pass 1 progress - articles read: 3820000
+app-1  | Pass 1 progress - articles read: 3830000
+app-1  | Pass 1 progress - articles read: 3840000
+app-1  | Pass 1 progress - articles read: 3850000
+app-1  | Pass 1 progress - articles read: 3860000
+app-1  | Pass 1 progress - articles read: 3870000
+app-1  | Pass 1 progress - articles read: 3880000
+app-1  | Pass 1 progress - articles read: 3890000
+app-1  | Pass 1 progress - articles read: 3900000
+app-1  | Pass 1 progress - articles read: 3910000
+app-1  | Pass 1 progress - articles read: 3920000
+app-1  | Pass 1 progress - articles read: 3930000
+app-1  | Pass 1 progress - articles read: 3940000
+app-1  | Pass 1 progress - articles read: 3950000
+app-1  | Pass 1 progress - articles read: 3960000
+app-1  | Pass 1 progress - articles read: 3970000
+app-1  | Pass 1 progress - articles read: 3980000
+app-1  | Pass 1 progress - articles read: 3990000
+app-1  | Pass 1 progress - articles read: 4000000
+app-1  | Pass 2/2: loading CITES relationships...
+app-1  | Opening remote JSONL stream: http://vmrum.isc.heia-fr.ch/files/DBLP-Citation-network-V18.jsonl
+app-1  | Pass 2 progress - articles read: 40000
+app-1  | Pass 2 progress - articles read: 420000
+app-1  | Pass 2 progress - articles read: 2140000
+app-1  | Pass 2 progress - articles read: 2900000
+app-1  | Pass 2 progress - articles read: 3320000
+app-1  | Pass 2 progress - articles read: 3380000
+app-1  | === DBLP LOADER END ===
+app-1  | End time: 2026-04-26T16:14:32.083948260Z
+app-1  | Duration seconds: 2957
+app-1  | Input article lines read: 4000000
+app-1  | Articles loaded: 4000000
+app-1  | Authors loaded: 3639993
+app-1  | Total nodes loaded: 7639993
+app-1  | AUTHORED relationships loaded: 13659841
+app-1  | CITES relationships loaded: 26018427
+app-1  | [INFO] ------------------------------------------------------------------------
+app-1  | [INFO] BUILD SUCCESS
+app-1  | [INFO] ------------------------------------------------------------------------
+app-1  | [INFO] Total time:  49:20 min
+app-1  | [INFO] Finished at: 2026-04-26T16:14:33Z
+app-1  | [INFO] ------------------------------------------------------------------------
+[Kapp-1 exited with code 0
